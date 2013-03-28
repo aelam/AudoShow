@@ -1,5 +1,5 @@
 //
-//  RWViewController.h
+//  RWSaleLoginViewController.h
 //  AutoShow
 //
 //  Created by Ryan Wang on 13-3-28.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RWViewController : UIViewController
+@interface RWSaleLoginViewController : UIViewController
 
 @end
