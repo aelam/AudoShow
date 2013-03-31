@@ -12,4 +12,7 @@
 
 - (IBAction)popViewController:(id)sender;
 
+- (IBAction)dismissModalViewController:(id)sender;
+
+
 @end

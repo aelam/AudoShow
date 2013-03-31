@@ -11,6 +11,7 @@
 
 @interface RWAdminPageController ()
 
+@property (nonatomic, strong)UITabBarController *tabBarController;
 @end
 
 @implementation RWAdminPageController
@@ -32,6 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    tabBarController =
+    
     
 //    _adminCarEditController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWAdminCarEditController"];
 //

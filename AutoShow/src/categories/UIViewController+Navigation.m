@@ -13,4 +13,9 @@
 - (IBAction)popViewController:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (IBAction)dismissModalViewController:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 @end

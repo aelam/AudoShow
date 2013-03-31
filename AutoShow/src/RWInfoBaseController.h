@@ -11,6 +11,6 @@
 @interface RWInfoBaseController : UIViewController
 
 @property (nonatomic, strong) UIView *containerView;
-//@property (nonatomic, strong)
+@property (nonatomic, strong) IBOutlet UICollectionView *fakeTabBar;
 
 @end
