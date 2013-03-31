@@ -14,7 +14,6 @@
 		9462011617073BCF0006B517 /* content.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9462011517073BCF0006B517 /* content.sqlite */; };
 		9462011B170741A90006B517 /* RWCarDetailContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9462011A170741A90006B517 /* RWCarDetailContentController.m */; };
 		9462011D170743490006B517 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9462011C170743490006B517 /* MediaPlayer.framework */; };
-		9462011F170744BE0006B517 /* 2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9462011E170744BE0006B517 /* 2.mov */; };
 		947D261F1706F52F0057E6CB /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947D261E1706F52F0057E6CB /* CustomCell.xib */; };
 		947D2670170735950057E6CB /* RWClientInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 947D266F170735950057E6CB /* RWClientInfoCell.m */; };
 		947D2672170735AF0057E6CB /* RWClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947D2671170735AE0057E6CB /* RWClientCell.xib */; };
@@ -99,8 +98,6 @@
 		94620119170741A80006B517 /* RWCarDetailContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarDetailContentController.h; sourceTree = "<group>"; };
 		9462011A170741A90006B517 /* RWCarDetailContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarDetailContentController.m; sourceTree = "<group>"; };
 		9462011C170743490006B517 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		9462011E170744BE0006B517 /* 2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.mov; sourceTree = "<group>"; };
-		94620120170745590006B517 /* 3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4v; sourceTree = "<group>"; };
 		947D261E1706F52F0057E6CB /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		947D266E170735950057E6CB /* RWClientInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClientInfoCell.h; sourceTree = "<group>"; };
 		947D266F170735950057E6CB /* RWClientInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWClientInfoCell.m; sourceTree = "<group>"; };
@@ -272,8 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				9462011517073BCF0006B517 /* content.sqlite */,
-				94620120170745590006B517 /* 3.m4v */,
-				9462011E170744BE0006B517 /* 2.mov */,
 				94A3AC9317047E3F00DF350B /* MainStoryboard.storyboard */,
 				947D261E1706F52F0057E6CB /* CustomCell.xib */,
 				947D2671170735AE0057E6CB /* RWClientCell.xib */,
@@ -474,7 +469,6 @@
 				94A3AC9417047E3F00DF350B /* MainStoryboard.storyboard in Resources */,
 				947D261F1706F52F0057E6CB /* CustomCell.xib in Resources */,
 				947D2672170735AF0057E6CB /* RWClientCell.xib in Resources */,
-				9462011F170744BE0006B517 /* 2.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
