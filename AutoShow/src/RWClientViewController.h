@@ -10,4 +10,11 @@
 
 @interface RWClientViewController : UIViewController
 
+
+@property (nonatomic, strong) IBOutlet UINavigationController *embeddedNavigator;
+
+- (IBAction)switchAction:(id)sender;
+- (IBAction)pop:(id)sender;
+
+
 @end

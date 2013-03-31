@@ -14,6 +14,8 @@
 
 @implementation RWClientViewController
 
+@synthesize embeddedNavigator = _embeddedNavigator;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,7 +29,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _embeddedNavigator = [self.childViewControllers lastObject];
+    
 }
+
+- (IBAction)switchAction:(UISegmentedControl *)sender {
+    
+    UIViewController *v;
+    if (sender.selectedSegmentIndex == 1) {
+        v = [self.storyboard instantiateViewControllerWithIdentifier:@"client_list"];
+    } else {
+        v = [self.storyboard instantiateViewControllerWithIdentifier:@"model_choose"];
+    }
+    
+    [_embeddedNavigator setViewControllers:[NSArray arrayWithObject:v]];
+
+}
+
+- (IBAction)pop:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

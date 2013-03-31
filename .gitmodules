@@ -4,3 +4,6 @@
 [submodule "SDWebImage"]
 	path = SDWebImage
 	url = https://github.com/rs/SDWebImage
+[submodule "fmdb"]
+	path = fmdb
+	url = https://github.com/ccgus/fmdb.git
