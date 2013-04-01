@@ -34,7 +34,7 @@
 {
     [super viewDidLoad];
     
-    tabTitles = [NSArray arrayWithObjects:@"车系/车型/颜色",@"客户信息",@"金融信息",@"税费",nil];
+    tabTitles = [NSArray arrayWithObjects:@"车系/车型/颜色",@"客户信息"/*,@"金融信息"*/,@"税费",nil];
     highlightedIndex = 0;
     
     tabBarController = [self.childViewControllers lastObject];
