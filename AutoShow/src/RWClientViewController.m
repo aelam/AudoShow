@@ -30,7 +30,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _embeddedNavigator = [self.childViewControllers lastObject];
-    
+
+    [self switchAction:nil];
+
 }
 
 - (IBAction)switchAction:(UISegmentedControl *)sender {

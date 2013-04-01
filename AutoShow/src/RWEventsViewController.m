@@ -36,9 +36,6 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"event_cell" forIndexPath:indexPath];
-//    UILabel *label = (UILabel *)[cell viewWithTag:1];
-//    label.text = [NSString stringWithFormat:@"%d-%d",indexPath.section,indexPath.row];
-    
     return cell;
 }
 

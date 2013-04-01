@@ -10,4 +10,6 @@
 
 @interface RWFilterTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *data;
+
 @end

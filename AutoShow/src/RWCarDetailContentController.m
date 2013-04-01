@@ -8,12 +8,21 @@
 
 #import "RWCarDetailContentController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "RWCarImageBrowser.h"
+#import "RWCarConfigViewController.h"
 
 @interface RWCarDetailContentController ()
+
+@property (nonatomic, strong)MPMoviePlayerController *moviePlayer;
+@property (nonatomic, strong) RWCarImageBrowser *imageBrowser;
+@property (nonatomic, strong) RWCarConfigViewController *carConfigController;
 
 @end
 
 @implementation RWCarDetailContentController
+
+@synthesize moviePlayer;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,17 +37,17 @@
 {
     [super viewDidLoad];
     
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"mov"];
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"mp4"];
     
     NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
     
-    __strong MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
 
-    player.view.frame = CGRectMake(184, 200, 400, 300);
-    [self.view addSubview:player.view];
-    player.shouldAutoplay = YES;
-    [player prepareToPlay];
-    [player play];
+    self.moviePlayer.view.frame = CGRectMake(184, 200, 400, 300);
+    [self.view addSubview:self.moviePlayer.view];
+    self.moviePlayer.shouldAutoplay = YES;
+    [self.moviePlayer prepareToPlay];
+    [self.moviePlayer play];
 	// Do any additional setup after loading the view.
 }
 
@@ -46,6 +55,28 @@
     UIViewController *v = [[UIViewController alloc] init];
     [self presentModalViewController:v animated:YES];
 }
+
+- (IBAction)imageBrowserTapped:(id)sender {
+    
+}
+
+- (IBAction)colorChooseTapped:(id)sender {
+    
+}
+
+- (IBAction)carConfigTapped:(id)sender {
+    if (self.carConfigController == nil) {
+        self.carConfigController = [[RWCarConfigViewController alloc] init];
+        
+    }
+    
+    [self.view addSubview:self.carConfigController.view];
+}
+
+- (IBAction)activityTapped:(id)sender {
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning

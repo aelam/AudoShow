@@ -11,6 +11,5 @@
 @interface RWCarDetailContentController : UIViewController
 
 
-- (IBAction)tapOnScreen:(id)sender;
 
 @end

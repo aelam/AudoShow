@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9445EF131709BE570068D524 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9445EF121709BE570068D524 /* 2.mp4 */; };
+		9445EF181709BED00068D524 /* RWCarImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF171709BED00068D524 /* RWCarImageBrowser.m */; };
+		9445EF1B1709BFCE0068D524 /* RWActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF1A1709BFCE0068D524 /* RWActivityViewController.m */; };
+		9445EF1E1709BFE50068D524 /* RWCarConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF1D1709BFE50068D524 /* RWCarConfigViewController.m */; };
+		9445EF231709CA3A0068D524 /* RWCarColorBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF221709CA3A0068D524 /* RWCarColorBrowserController.m */; };
+		9445EF251709D5B50068D524 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9445EF241709D5B50068D524 /* QuartzCore.framework */; };
 		945951E517049F8200DA57BF /* RWSaleLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951E417049F8200DA57BF /* RWSaleLoginViewController.m */; };
 		945951E81704A19B00DA57BF /* RWClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951E71704A19B00DA57BF /* RWClientViewController.m */; };
 		945951EE1704A57E00DA57BF /* RWClientInfo1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951ED1704A57E00DA57BF /* RWClientInfo1Controller.m */; };
@@ -86,6 +92,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9445EF121709BE570068D524 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		9445EF161709BED00068D524 /* RWCarImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarImageBrowser.h; sourceTree = "<group>"; };
+		9445EF171709BED00068D524 /* RWCarImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarImageBrowser.m; sourceTree = "<group>"; };
+		9445EF191709BFCE0068D524 /* RWActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWActivityViewController.h; sourceTree = "<group>"; };
+		9445EF1A1709BFCE0068D524 /* RWActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWActivityViewController.m; sourceTree = "<group>"; };
+		9445EF1C1709BFE40068D524 /* RWCarConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarConfigViewController.h; sourceTree = "<group>"; };
+		9445EF1D1709BFE50068D524 /* RWCarConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarConfigViewController.m; sourceTree = "<group>"; };
+		9445EF211709CA390068D524 /* RWCarColorBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarColorBrowserController.h; sourceTree = "<group>"; };
+		9445EF221709CA3A0068D524 /* RWCarColorBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarColorBrowserController.m; sourceTree = "<group>"; };
+		9445EF241709D5B50068D524 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		945951E317049F8200DA57BF /* RWSaleLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSaleLoginViewController.h; sourceTree = "<group>"; };
 		945951E417049F8200DA57BF /* RWSaleLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSaleLoginViewController.m; sourceTree = "<group>"; };
 		945951E61704A19B00DA57BF /* RWClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClientViewController.h; sourceTree = "<group>"; };
@@ -173,6 +189,7 @@
 				94A3AC4F17047D2C00DF350B /* CoreGraphics.framework in Frameworks */,
 				94A3ACA817049D3500DF350B /* ImageIO.framework in Frameworks */,
 				9462011D170743490006B517 /* MediaPlayer.framework in Frameworks */,
+				9445EF251709D5B50068D524 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +229,7 @@
 		94A3AC4917047D2C00DF350B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9445EF241709D5B50068D524 /* QuartzCore.framework */,
 				9462011C170743490006B517 /* MediaPlayer.framework */,
 				94A3ACA717049D3500DF350B /* ImageIO.framework */,
 				94A3AC4A17047D2C00DF350B /* UIKit.framework */,
@@ -269,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				9462011517073BCF0006B517 /* content.sqlite */,
+				9445EF121709BE570068D524 /* 2.mp4 */,
 				94A3AC9317047E3F00DF350B /* MainStoryboard.storyboard */,
 				947D261E1706F52F0057E6CB /* CustomCell.xib */,
 				947D2671170735AE0057E6CB /* RWClientCell.xib */,
@@ -291,6 +310,14 @@
 				94A3AC96170492F600DF350B /* RWCarModelViewController.m */,
 				94A3AC98170497A900DF350B /* RWCarDetailViewController.h */,
 				94A3AC99170497A900DF350B /* RWCarDetailViewController.m */,
+				9445EF161709BED00068D524 /* RWCarImageBrowser.h */,
+				9445EF171709BED00068D524 /* RWCarImageBrowser.m */,
+				9445EF1C1709BFE40068D524 /* RWCarConfigViewController.h */,
+				9445EF1D1709BFE50068D524 /* RWCarConfigViewController.m */,
+				9445EF191709BFCE0068D524 /* RWActivityViewController.h */,
+				9445EF1A1709BFCE0068D524 /* RWActivityViewController.m */,
+				9445EF211709CA390068D524 /* RWCarColorBrowserController.h */,
+				9445EF221709CA3A0068D524 /* RWCarColorBrowserController.m */,
 				94620119170741A80006B517 /* RWCarDetailContentController.h */,
 				9462011A170741A90006B517 /* RWCarDetailContentController.m */,
 				94FD487A1707F31700BED06B /* Sales */,
@@ -319,8 +346,6 @@
 		94FD487A1707F31700BED06B /* Sales */ = {
 			isa = PBXGroup;
 			children = (
-				94FD48701707DB3700BED06B /* RWCarModelChooseController.h */,
-				94FD48711707DB3700BED06B /* RWCarModelChooseController.m */,
 				94FD48731707E04800BED06B /* RWClientInfoController.h */,
 				94FD48741707E04800BED06B /* RWClientInfoController.m */,
 				94FD488517084D7800BED06B /* RWTaxInfoController.h */,
@@ -333,6 +358,8 @@
 				945951F01704A58E00DA57BF /* RWClientInfo2Controller.m */,
 				945951E61704A19B00DA57BF /* RWClientViewController.h */,
 				945951E71704A19B00DA57BF /* RWClientViewController.m */,
+				94FD48701707DB3700BED06B /* RWCarModelChooseController.h */,
+				94FD48711707DB3700BED06B /* RWCarModelChooseController.m */,
 				94B7905E1706834D00FD88E4 /* RWClientListViewController.h */,
 				94B7905F1706834D00FD88E4 /* RWClientListViewController.m */,
 				94FD487B170815C000BED06B /* RWFilterTableViewController.h */,
@@ -478,6 +505,7 @@
 			files = (
 				94A3AC7917047D2D00DF350B /* InfoPlist.strings in Resources */,
 				9462011617073BCF0006B517 /* content.sqlite in Resources */,
+				9445EF131709BE570068D524 /* 2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +558,10 @@
 				94FD48931708630400BED06B /* RWAdminSalesEditController.m in Sources */,
 				94FD48961708635300BED06B /* RWAdminDealerEditController.m in Sources */,
 				94FD48991708639200BED06B /* RWAdminPasswordEditController.m in Sources */,
+				9445EF181709BED00068D524 /* RWCarImageBrowser.m in Sources */,
+				9445EF1B1709BFCE0068D524 /* RWActivityViewController.m in Sources */,
+				9445EF1E1709BFE50068D524 /* RWCarConfigViewController.m in Sources */,
+				9445EF231709CA3A0068D524 /* RWCarColorBrowserController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

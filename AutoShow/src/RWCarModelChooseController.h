@@ -15,4 +15,8 @@
 @property (nonatomic, strong) IBOutlet UITableView *modelsTableView;
 @property (nonatomic, strong) IBOutlet UITableView *colorsTableView;
 
+@property (nonatomic, strong) IBOutlet UILabel *seriesLabel;
+@property (nonatomic, strong) IBOutlet UILabel *modelLabel;
+@property (nonatomic, strong) IBOutlet UILabel *colorLabel;
+
 @end
