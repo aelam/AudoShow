@@ -7,13 +7,18 @@
 //
 
 #import "RWAppDelegate.h"
+#import "FMDatabase+App.h"
 
 @implementation RWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    FMDatabase *db = [FMDatabase mainDatabase];
+    
     return YES;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

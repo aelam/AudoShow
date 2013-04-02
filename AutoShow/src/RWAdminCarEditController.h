@@ -10,4 +10,18 @@
 
 @interface RWAdminCarEditController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *seriersField;
+
+@property (strong, nonatomic) IBOutlet UITextField *modelField;
+@property (strong, nonatomic) IBOutlet UITextField *priceField;
+@property (strong, nonatomic) IBOutlet UITextField *colorField;
+
+@property (strong, nonatomic) IBOutlet UITableView *seriesTable;
+@property (strong, nonatomic) IBOutlet UITableView *modelsTable;
+@property (strong, nonatomic) IBOutlet UITableView *colorsTable;
+
+- (IBAction)addSeriesAction:(UIButton *)sender;
+- (IBAction)addModelAction:(UIButton *)sender;
+- (IBAction)addColorAction:(id)sender;
+
 @end
