@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>M16 TEASER</string>
+		<key>image</key>
+		<string>M16</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>T21 TEASER</string>
+		<key>image</key>
+		<string>T21</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>ANT 2</string>
+		<key>image</key>
+		<string>ANT2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>新风云2 两厢</string>
+		<key>image</key>
+		<string>新风云</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>新风云2 三厢</string>
+		<key>image</key>
+		<string>新风云</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>A3 两厢</string>
+		<key>image</key>
+		<string>A3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>瑞虎</string>
+		<key>image</key>
+		<string>瑞虎</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>新QQ</string>
+		<key>image</key>
+		<string>新QQ</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>E5</string>
+		<key>image</key>
+		<string>E5</string>
+	</dict>
+</array>
+</plist>

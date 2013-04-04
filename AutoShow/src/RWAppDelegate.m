@@ -8,14 +8,88 @@
 
 #import "RWAppDelegate.h"
 #import "FMDatabase+App.h"
+#import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
+
+#import "RWCarSeries.h"
+
 
 @implementation RWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    RKObjectManager *objectManager = [RKObjectManager sharedManager];
+    NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
+    objectManager.managedObjectStore = managedObjectStore;
     
-    FMDatabase *db = [FMDatabase mainDatabase];
+    // Uncomment this to use XML, comment it to use JSON
+    //  objectManager.acceptMIMEType = RKMIMETypeXML;
+    //  [objectManager.mappingProvider setMapping:statusMapping forKeyPath:@"statuses.status"];
+    
+    // Database seeding is configured as a copied target of the main application. There are only two differences
+    // between the main application target and the 'Generate Seed Database' target:
+    //  1) RESTKIT_GENERATE_SEED_DB is defined in the 'Preprocessor Macros' section of the build setting for the target
+    //      This is what triggers the conditional compilation to cause the seed database to be built
+    //  2) Source JSON files are added to the 'Generate Seed Database' target to be copied into the bundle. This is required
+    //      so that the object seeder can find the files when run in the simulator.
+#ifdef RESTKIT_GENERATE_SEED_DB
+    RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelInfo);
+    RKLogConfigureByName("RestKit/CoreData", RKLogLevelTrace);
+    
+    NSError *error;
+    NSString *seedStorePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
+    RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:managedObjectModel storePath:seedStorePath];
+    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"restkit" ofType:@"json"]
+                              withMapping:tweetMapping
+                                  keyPath:nil
+                                    error:&error];
+    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"users" ofType:@"json"]
+                              withMapping:userMapping
+                                  keyPath:@"user"
+                                    error:&error];
+    BOOL success = [importer finishImporting:&error];
+    if (success) {
+        [importer logSeedingInfo];
+    } else {
+        RKLogError(@"Failed to finish import and save seed database due to error: %@", error);
+    }
+    
+    // Clear out the root view controller
+    [self.window setRootViewController:[UIViewController new]];
+#else
+    /**
+     Complete Core Data stack initialization
+     */
+    [managedObjectStore createPersistentStoreCoordinator];
+    NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"AutoShow.sqlite"];
+    NSString *seedPath = [[NSBundle mainBundle] pathForResource:@"RKSeedDatabase" ofType:@"sqlite"];
+    NSError *error;
+    NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:nil error:&error];
+    NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
+    
+    // Create the managed object contexts
+    [managedObjectStore createManagedObjectContexts];
+    
+    // Configure a managed object cache to ensure we do not create duplicate objects
+    managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc] initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
+#endif
+
+    /* 插入数据
+    
+    RWCarSeries *carSeries = (RWCarSeries *)[NSEntityDescription insertNewObjectForEntityForName:@"RWCarSeries" inManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
+
+    carSeries.seriesName = @"奇瑞QQ";
+
+    NSError *error1= nil;
+    
+    if ([managedObjectStore.persistentStoreManagedObjectContext hasChanges]) {
+        [managedObjectStore.persistentStoreManagedObjectContext save:&error1];
+        if (error1) {
+            NSLog(@"%@", error1);
+        }
+    }
+    */
     
     return YES;
     

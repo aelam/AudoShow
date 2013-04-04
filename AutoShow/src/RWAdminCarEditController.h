@@ -20,6 +20,10 @@
 @property (strong, nonatomic) IBOutlet UITableView *modelsTable;
 @property (strong, nonatomic) IBOutlet UITableView *colorsTable;
 
+@property (weak, nonatomic) IBOutlet UIButton *hasNoneTurboButton;
+@property (weak, nonatomic) IBOutlet UIButton *hasTurboButton;
+
+
 - (IBAction)addSeriesAction:(UIButton *)sender;
 - (IBAction)addModelAction:(UIButton *)sender;
 - (IBAction)addColorAction:(id)sender;

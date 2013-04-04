@@ -40,17 +40,17 @@
 {
     [super viewDidLoad];
 
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"mp4"];
-    
-    NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
-    
-    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-    
-    self.moviePlayer.view.frame = CGRectMake(184, 200, 400, 300);
-    [self.contentView addSubview:self.moviePlayer.view];
-    self.moviePlayer.shouldAutoplay = YES;
-    [self.moviePlayer prepareToPlay];
-    [self.moviePlayer play];
+//    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"mp4"];
+//    
+//    NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
+//    
+//    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+//    
+//    self.moviePlayer.view.frame = CGRectMake(184, 200, 400, 300);
+//    [self.contentView addSubview:self.moviePlayer.view];
+//    self.moviePlayer.shouldAutoplay = YES;
+//    [self.moviePlayer prepareToPlay];
+//    [self.moviePlayer play];
 
 }
 

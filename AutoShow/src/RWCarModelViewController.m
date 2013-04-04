@@ -7,8 +7,13 @@
 //
 
 #import "RWCarModelViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RWCarModelViewController ()
+
+@property (nonatomic, strong) NSArray *carSeries;
+@property (nonatomic, strong) NSString *bundlePath;
+
 
 @end
 
@@ -23,20 +28,43 @@
     return self;
 }
 
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    
+    self.bundlePath = [[NSBundle mainBundle] pathForResource:@"showingCars" ofType:@"bundle"];
+    NSString *plistPath = [self.bundlePath stringByAppendingPathComponent:@"CarSeries.plist"];
+    self.carSeries = [NSArray arrayWithContentsOfFile:plistPath];
+    
+    
+}
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 7;
+    return self.carSeries.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"car_model_cell" forIndexPath:indexPath];
+
     UILabel *label = (UILabel *)[cell viewWithTag:1];
-    label.text = [NSString stringWithFormat:@"%d-%d",indexPath.section,indexPath.row];
+    UIImageView *foregroundImageView = (UIImageView *)[cell viewWithTag:101];
+    UIImageView *backgroundImageView = (UIImageView *)[cell viewWithTag:100];
     
+    backgroundImageView.image = [UIImage imageNamed:@"showingCars.bundle/car_series_bg.png"];
+
+    NSDictionary *info = [self.carSeries objectAtIndex:indexPath.row];
+    NSString *imageName = [info objectForKey:@"image"];
+    
+    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"showingCars.bundle/%@.png",imageName]];
+    backgroundImageView.image = image;
+    
+    label.text = [info objectForKey:@"title"];;
     return cell;
 }
 
@@ -45,13 +73,6 @@
     NSLog(@"%@",indexPath);
 }
 
-
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
 
 - (void)didReceiveMemoryWarning
 {

@@ -1,0 +1,99 @@
+
+
+
+
+
+CREATE TABLE "car_color" (
+        "carcolor_id" INTEGER PRIMARY KEY  NOT NULL ,
+        "cartype_id" INTEGER,
+        "carcolor_name" VARCHAR
+);
+
+CREATE TABLE "car_style" (
+        "carstyle_id" INTEGER PRIMARY KEY  NOT NULL ,
+        "carstyle_name" VARCHAR,
+        "carstyle_remark" VARCHAR
+);
+
+CREATE TABLE "car_type" (
+        "cartype_id"        INTEGER PRIMARY KEY  NOT NULL ,
+        "carstyle_id"       INTEGER,
+        "cartype_name"      VARCHAR,
+        "cartype_price"     VARCHAR,
+        "cartype_press"     VARCHAR,
+        "cartype_remark"    VARCHAR,
+        "cartype_gas"       VARCHAR
+);
+
+CREATE TABLE "customer" (
+        "customer_id" INTEGER PRIMARY KEY  NOT NULL ,
+        "customer_name" VARCHAR,
+        "customer_tel" VARCHAR,
+        "customer_address" VARCHAR,
+        "customer_picture" VARCHAR,
+        "customer_budget" VARCHAR,
+        "customer_channel" VARCHAR,
+        "customer_first" INTEGER,
+        "customer_oldcar" VARCHAR,
+        "customer_cartype" VARCHAR,
+        "customer_other" VARCHAR,
+        "customer_date" VARCHAR,
+        "customer_price" VARCHAR,
+        "customer_evaluators" VARCHAR,
+        "customer_firstdate" VARCHAR,
+        "carstyle_id" INTEGER,
+        "cartype_id" INTEGER,
+        "carcolor_id" INTEGER,
+        "customer_swap" TEXT
+);
+
+CREATE TABLE dealer (
+        "dealer_id" INTEGER PRIMARY KEY AUTOINCREMENT,
+        "dealer_name" varchaar,
+        "dealer_tel" varchaar,
+        "dealer_address" varchaar,
+        "dealer_url" varchaar,
+        "dealer_email" varchaar,
+        "dealer_date" varchaar
+);
+
+CREATE TABLE interestrate (
+        interestrate_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        interestrate_type VARCHAR,
+        interestrate_thirteen VARCHAR,
+        interestrate_twentyfour VARCHAR,
+        interestrate_thirtysix VARCHAR,
+        interestrate_fortyeight VARCHAR,
+        interestrate_sixty VARCHAR
+);
+
+CREATE TABLE "pay" (
+        "pay_id" INTEGER PRIMARY KEY ,
+        "customer_id" INTEGER,
+        "pay_way" INTEGER,
+        "pay_first" varchar,
+        "pay_surtax" VARCHAR,
+        "pay_cardcharges" VARCHAR,
+        "pay_insurance" VARCHAR,
+        "pay_insurancetype" VARCHAR,
+        "pay_threeprice" VARCHAR,
+        "pay_license" VARCHAR,
+        "pay_design" VARCHAR,
+        "pay_other" VARCHAR,
+        "pay_free" VARCHAR,
+        "pay_month" VARCHAR,
+        "pay_sumfirst" VARCHAR,
+        "pay_note" VARCHAR,
+        "pay_pricedate" VARCHAR,
+        "pay_manager" VARCHAR
+);
+
+CREATE TABLE "user" (
+        "user_id" INTEGER PRIMARY KEY  NOT NULL ,
+        "user_user" VARCHAR,
+        "user_name" VARCHAR,
+        "user_passwd" VARCHAR,
+        "user_mobile" VARCHAR,
+        "user_type" INTEGER
+);
+

@@ -15,4 +15,6 @@
 - (IBAction)dismissModalViewController:(id)sender;
 
 
+- (IBAction)checkBoxAction:(UIButton *)sender;
+
 @end

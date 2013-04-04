@@ -31,9 +31,6 @@
     
     self.view.layer.borderWidth = 3;
     self.view.layer.borderColor = [UIColor redColor].CGColor;
-//    UIView *yellowView = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) - 50 - 200, CGRectGetWidth(self.view.frame), 100)];
-//    yellowView.backgroundColor = [UIColor yellowColor];
-//    [self.view addSubview:yellowView];
     
     self.smallImageView.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - 50 - 200, CGRectGetWidth(self.view.frame), 100);
     

@@ -18,4 +18,10 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (IBAction)checkBoxAction:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    
+}
+
+
 @end
