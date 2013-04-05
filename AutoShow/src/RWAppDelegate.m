@@ -25,46 +25,53 @@
     
     
     RKEntityMapping *userMapping = [RKEntityMapping mappingForEntityForName:@"RWManager" inManagedObjectStore:managedObjectStore];
-    [userMapping addAttributeMappingsFromArray:@[ @"userId",@"username",@"password",@"isAdmin" ]];
+    [userMapping addAttributeMappingsFromArray:@[ @"userId",@"username",@"password",@"isAdmin",@"phone"]];
     [userMapping setIdentificationAttributes:@[@"userId",@"username"]];
     
-    [managedObjectStore createPersistentStoreCoordinator];
-    NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"AutoShow.sqlite"];
-    NSString *seedPath = [[NSBundle mainBundle] pathForResource:@"RKSeedDatabase" ofType:@"sqlite"];
-//    NSString *seedPath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
 
     NSError *error;
-    NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:nil error:&error];
-    NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
 
+#define GENERATE_SEED_DB  0
+#if GENERATE_SEED_DB
+
+    NSString *seedPath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
+
+    RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:managedObjectModel storePath:seedPath];
     
-//    RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:managedObjectModel storePath:seedPath];
-//    
+    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"user" ofType:@"json"]
+                              withMapping:userMapping
+                                  keyPath:nil
+                                    error:&error];
     
-//    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"user" ofType:@"json"]
-//                              withMapping:userMapping
-//                                  keyPath:nil
-//                                    error:&error];
-    
-//    BOOL success = [importer finishImporting:&error];
-//    if (success) {
-//        [importer logSeedingInfo];
-//    }
+    BOOL success = [importer finishImporting:&error];
+    if (success) {
+        [importer logSeedingInfo];
+    }
     if (error) {
         NSLog(@"error : %@",error);
-    
+        
     }
+
+//    NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:nil error:&error];
+//    NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
+
+#else
+
+    [managedObjectStore createPersistentStoreCoordinator];
+    
+    NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"AutoShow-2.sqlite"];
+
+    NSString *seedPath = [[NSBundle mainBundle] pathForResource:@"RKSeedDatabase" ofType:@"sqlite"];
+
+    NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:nil error:&error];
+    NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
     // Create the managed object contexts
     [managedObjectStore createManagedObjectContexts];
-    
+
     // Configure a managed object cache to ensure we do not create duplicate objects
     managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc] initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
-//#endif
-    
-    
-    
-    
 
+#endif
     
     return YES;
     
@@ -88,6 +95,10 @@
     
 }
  */
+
+- (void)addAdmin {
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

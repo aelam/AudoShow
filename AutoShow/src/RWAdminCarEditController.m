@@ -302,11 +302,7 @@
             [self.currentContext save:&error1];
             if (error1) {
                 NSLog(@"%@", error1);
-            } else {
-//                [self.seriesTable reloadData];
             }
-            
-            
         }
         
     }

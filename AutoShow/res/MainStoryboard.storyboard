@@ -2583,6 +2583,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addSalesAction:" destination="vu5-vF-zfH" eventType="touchUpInside" id="SVb-Hg-far"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2633,6 +2636,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updatePhoneAction:" destination="vu5-vF-zfH" eventType="touchUpInside" id="mcq-Ez-dQ3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2678,20 +2684,12 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36I-O9-Yrz">
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="新密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmb-aW-xeg">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="oDC-Pe-koj"/>
-                                        </constraints>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="重复" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmb-aW-xeg">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="电话" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwE-fq-PDH">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="旧密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9R-AA-bkf">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="新密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9R-AA-bkf">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -2710,10 +2708,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veu-cK-hFR">
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-LC-JHj">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="135" id="CTP-aR-0fL"/>
@@ -2726,28 +2720,26 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updatePasswordAction:" destination="vu5-vF-zfH" eventType="touchUpInside" id="nHf-iN-7LV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="AbH-LC-JHj" firstAttribute="top" secondItem="veu-cK-hFR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0vN-HC-RFl"/>
-                                    <constraint firstItem="LwE-fq-PDH" firstAttribute="top" secondItem="veu-cK-hFR" secondAttribute="top" type="default" id="4Xz-l0-tkB"/>
                                     <constraint firstItem="RPl-mI-JCN" firstAttribute="baseline" secondItem="H9R-AA-bkf" secondAttribute="baseline" type="default" id="9Ec-vJ-n4E"/>
                                     <constraint firstItem="a4D-v7-OeH" firstAttribute="top" secondItem="36I-O9-Yrz" secondAttribute="top" constant="62" id="9wW-ts-m00"/>
-                                    <constraint firstItem="AbH-LC-JHj" firstAttribute="leading" secondItem="veu-cK-hFR" secondAttribute="leading" type="default" id="DT6-fu-bk6"/>
+                                    <constraint firstAttribute="bottom" secondItem="AbH-LC-JHj" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Am9-Is-TMA"/>
                                     <constraint firstItem="H9R-AA-bkf" firstAttribute="top" secondItem="36I-O9-Yrz" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Ewq-2d-bpO"/>
+                                    <constraint firstItem="AbH-LC-JHj" firstAttribute="leading" secondItem="36I-O9-Yrz" secondAttribute="leading" constant="75" id="JtA-Sy-lrc"/>
+                                    <constraint firstItem="Fmb-aW-xeg" firstAttribute="top" secondItem="36I-O9-Yrz" secondAttribute="top" constant="66" id="LV6-U0-4vL"/>
                                     <constraint firstItem="RPl-mI-JCN" firstAttribute="leading" secondItem="H9R-AA-bkf" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LpN-lT-NSf"/>
                                     <constraint firstItem="a4D-v7-OeH" firstAttribute="baseline" secondItem="Fmb-aW-xeg" secondAttribute="baseline" type="default" id="NOh-6P-eg3"/>
-                                    <constraint firstItem="veu-cK-hFR" firstAttribute="top" secondItem="a4D-v7-OeH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XAc-sU-EUC"/>
+                                    <constraint firstItem="Fmb-aW-xeg" firstAttribute="centerX" secondItem="H9R-AA-bkf" secondAttribute="centerX" type="default" id="Uc4-wq-E69"/>
                                     <constraint firstItem="a4D-v7-OeH" firstAttribute="leading" secondItem="RPl-mI-JCN" secondAttribute="leading" type="default" id="YKa-m1-McI"/>
-                                    <constraint firstItem="a4D-v7-OeH" firstAttribute="leading" secondItem="Fmb-aW-xeg" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ayy-3k-VKZ"/>
-                                    <constraint firstItem="Fmb-aW-xeg" firstAttribute="top" secondItem="36I-O9-Yrz" secondAttribute="top" constant="59" id="cQH-xn-6Ia"/>
-                                    <constraint firstItem="LwE-fq-PDH" firstAttribute="baseline" secondItem="veu-cK-hFR" secondAttribute="baseline" type="default" id="iAn-vh-JfL"/>
                                     <constraint firstItem="a4D-v7-OeH" firstAttribute="trailing" secondItem="RPl-mI-JCN" secondAttribute="trailing" type="default" id="ntn-cx-PqE"/>
+                                    <constraint firstItem="AbH-LC-JHj" firstAttribute="centerX" secondItem="36I-O9-Yrz" secondAttribute="centerX" type="default" id="pHJ-WJ-MEv"/>
                                     <constraint firstItem="H9R-AA-bkf" firstAttribute="leading" secondItem="36I-O9-Yrz" secondAttribute="leading" constant="36" id="qAy-WP-uYd"/>
-                                    <constraint firstItem="veu-cK-hFR" firstAttribute="leading" secondItem="a4D-v7-OeH" secondAttribute="leading" type="default" id="smv-gT-geY"/>
-                                    <constraint firstItem="veu-cK-hFR" firstAttribute="leading" secondItem="LwE-fq-PDH" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wZF-yJ-oO7"/>
-                                    <constraint firstItem="veu-cK-hFR" firstAttribute="trailing" secondItem="a4D-v7-OeH" secondAttribute="trailing" type="default" id="xYK-yL-ntE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2759,7 +2751,6 @@
                             <constraint firstItem="36I-O9-Yrz" firstAttribute="top" secondItem="SqD-Oo-7eC" secondAttribute="top" constant="275" id="G72-EA-gfd"/>
                             <constraint firstItem="36I-O9-Yrz" firstAttribute="leading" secondItem="NKQ-aN-T9M" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="IMh-ze-dz5"/>
                             <constraint firstItem="36I-O9-Yrz" firstAttribute="leading" secondItem="Hgw-Y1-B6V" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="atY-e8-UEU"/>
-                            <constraint firstAttribute="trailing" secondItem="36I-O9-Yrz" secondAttribute="trailing" constant="143" id="blJ-2H-N4F"/>
                             <constraint firstItem="dKp-rk-6Jh" firstAttribute="leading" secondItem="NKQ-aN-T9M" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cOI-6c-bQv"/>
                             <constraint firstItem="dKp-rk-6Jh" firstAttribute="top" secondItem="36I-O9-Yrz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eOS-8A-Kdc"/>
                             <constraint firstItem="Hgw-Y1-B6V" firstAttribute="top" secondItem="SqD-Oo-7eC" secondAttribute="top" constant="38" id="eSn-cL-Ldg"/>
@@ -2770,6 +2761,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="lVE-1X-8EZ"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="password2Field" destination="a4D-v7-OeH" id="ouj-XF-7Ko"/>
+                        <outlet property="passwordField" destination="RPl-mI-JCN" id="Xa6-W0-EdA"/>
+                        <outlet property="phoneField" destination="EeQ-Qb-0qH" id="Vdc-Ps-M9c"/>
+                        <outlet property="salesNameField" destination="Lcb-aP-fy3" id="dls-ra-1C1"/>
+                        <outlet property="salesPasswordField" destination="XCC-A2-Pc1" id="yYX-pQ-xQv"/>
+                        <outlet property="salesPhoneField" destination="rtO-em-Ng0" id="Trg-oT-b5a"/>
+                        <outlet property="tableView" destination="NKQ-aN-T9M" id="muw-C6-fvE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yno-ga-VsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2781,16 +2781,16 @@
                 <tabBarController storyboardIdentifier="InfoBase" definesPresentationContext="YES" id="LLf-oA-2S7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Q3H-RR-G0S"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="2fD-el-Uui">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" id="2fD-el-Uui">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="Cld-CK-6Ab" kind="relationship" relationship="viewControllers" id="DuP-QQ-UX9"/>
-                        <segue destination="DP4-Vc-weR" kind="relationship" relationship="viewControllers" id="mRu-dt-05f"/>
-                        <segue destination="2Ga-xj-KOj" kind="relationship" relationship="viewControllers" id="BkI-TM-d0m"/>
                         <segue destination="vu5-vF-zfH" kind="relationship" relationship="viewControllers" id="uwp-Hy-h7c"/>
+                        <segue destination="DP4-Vc-weR" kind="relationship" relationship="viewControllers" id="9lp-T7-adr"/>
+                        <segue destination="2Ga-xj-KOj" kind="relationship" relationship="viewControllers" id="agR-cu-m4B"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qg-Yg-BUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2985,6 +2985,7 @@
         <class className="RWAdminPageController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminPageController.h"/>
             <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
                 <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="tabBarController" candidateClass="UITabBarController"/>
             </relationships>
@@ -2994,6 +2995,18 @@
         </class>
         <class className="RWAdminSalesEditController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminSalesEditController.h"/>
+            <relationships>
+                <relationship kind="action" name="addSalesAction:"/>
+                <relationship kind="action" name="updatePasswordAction:"/>
+                <relationship kind="action" name="updatePhoneAction:"/>
+                <relationship kind="outlet" name="password2Field" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="phoneField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="salesNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="salesPasswordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="salesPhoneField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="RWCarConfigViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarConfigViewController.h"/>

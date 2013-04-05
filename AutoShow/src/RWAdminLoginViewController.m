@@ -10,9 +10,6 @@
 #import <CoreData/CoreData.h>
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
-#import "RWCarSeries.h"
-#import "RWCarModel.h"
-#import "RWCarColor.h"
 #import "RWManager.h"
 
 #define LOGIN_BUTTON_TAG 10101
