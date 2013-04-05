@@ -36,19 +36,7 @@
     [super viewDidLoad];
 
     self.currentContext = [RKManagedObjectStore defaultStore].persistentStoreManagedObjectContext;
-    
-//    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"RWManager"];
-//    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO];
-//    fetchRequest.sortDescriptors = @[descriptor];
-    
-//    self.fetchedSeriesController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
-//                                                                       managedObjectContext:self.currentContext
-//                                                                         sectionNameKeyPath:nil
-//                                                                                  cacheName:nil];
-//
-//    [self.fetchedSeriesController performFetch:&error];
 
-    
 
 }
 
@@ -101,9 +89,5 @@
     return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
 }
 
-
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    [super prepareForSegue:segue sender:sender];
-//}
 
 @end

@@ -77,9 +77,9 @@
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tu0-9P-MgA">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9F-qO-0Sy">
+                                    <button opaque="NO" tag="10101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9F-qO-0Sy">
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="进入系统">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -114,7 +114,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3qJ-rs-VyP" firstAttribute="top" secondItem="pqg-KH-Hca" secondAttribute="top" constant="124" id="Ckc-6n-iFt"/>
-                            <constraint firstItem="vrw-D4-cuo" firstAttribute="top" secondItem="ABm-Rs-ZgV" secondAttribute="top" type="default" id="NMg-rf-JRG"/>
                             <constraint firstItem="3qJ-rs-VyP" firstAttribute="leading" secondItem="pqg-KH-Hca" secondAttribute="leading" constant="47" id="NRi-nu-hTy"/>
                             <constraint firstItem="vrw-D4-cuo" firstAttribute="leading" secondItem="ABm-Rs-ZgV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="O5x-yg-Wzz"/>
                             <constraint firstAttribute="bottom" secondItem="3qJ-rs-VyP" secondAttribute="bottom" constant="482" id="RPw-ND-dJi"/>
@@ -125,6 +124,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZZs-aI-moi"/>
+                    <connections>
+                        <outlet property="passwordField" destination="tu0-9P-MgA" id="Hqr-6z-wUp"/>
+                        <outlet property="usernameField" destination="NVQ-8s-DSg" id="bsy-78-KJ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDz-6U-Oy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -699,7 +702,7 @@
                                     <constraint firstAttribute="width" constant="225" id="AWh-1n-jOO"/>
                                 </constraints>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uSK-a0-grf">
-                                    <rect key="frame" x="0.0" y="0.0" width="225" height="4300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="4730"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <sections/>
@@ -1149,6 +1152,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="kod-Fp-n0c" kind="push" id="z0g-8g-8Fj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="车系, 车型, 颜色选择" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUh-rr-Qmw">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1636,7 +1642,7 @@
             <objects>
                 <viewController id="kod-Fp-n0c" customClass="RWTaxInfoController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hJq-3W-y9F">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="725"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="661"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mY5-VI-39m">
@@ -1874,6 +1880,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kC3-iZ-XGM"/>
+                    <navigationItem key="navigationItem" id="fPv-QG-zyG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gtu-ig-Fgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2565,7 +2572,7 @@
                                             <constraint firstAttribute="height" constant="30" id="Ki9-Bp-OfU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtO-em-Ng0">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2699,14 +2706,14 @@
                                             <constraint firstAttribute="width" constant="144" id="L37-it-dRe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-v7-OeH">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="PjU-NU-AO7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-LC-JHj">
                                         <constraints>
@@ -2842,15 +2849,15 @@
                                             <constraint firstAttribute="width" constant="144" id="dGi-1D-fYr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAj-9G-Crq">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CR6-oz-KQW">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-qO-nV2">
                                         <constraints>
@@ -2864,6 +2871,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updatePasswordAction:" destination="2Ga-xj-KOj" eventType="touchUpInside" id="JsE-BP-Gla"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2896,10 +2906,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="5v5-hP-hav"/>
+                    <connections>
+                        <outlet property="oldPasswordField" destination="PHi-1T-Z5e" id="1UG-qh-DB9"/>
+                        <outlet property="password2Field" destination="CR6-oz-KQW" id="tzv-4i-i1M"/>
+                        <outlet property="passwordField" destination="pAj-9G-Crq" id="yA6-rE-6fW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYU-3k-uHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4128" y="2887"/>
+            <point key="canvasLocation" x="5170" y="3979"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="TiV-6x-cyX">
@@ -2992,6 +3007,12 @@
         </class>
         <class className="RWAdminPasswordEditController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminPasswordEditController.h"/>
+            <relationships>
+                <relationship kind="action" name="updatePasswordAction:"/>
+                <relationship kind="outlet" name="oldPasswordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password2Field" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="RWAdminSalesEditController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminSalesEditController.h"/>
@@ -3077,6 +3098,10 @@
         </class>
         <class className="RWSaleLoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWSaleLoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="RWTaxInfoController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWTaxInfoController.h"/>
@@ -3107,5 +3132,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="OSP-Co-aKi"/>
         <segue reference="gs4-LF-9s2"/>
+        <segue reference="z0g-8g-8Fj"/>
     </inferredMetricsTieBreakers>
 </document>

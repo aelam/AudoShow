@@ -10,4 +10,8 @@
 
 @interface RWSaleLoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+
+
 @end
