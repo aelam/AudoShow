@@ -8,13 +8,19 @@
 
 #import "RWCarModelChooseController.h"
 #import "RWFilterTableViewController.h"
+#import <CoreData/CoreData.h>
+#import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
+#import "RWCarSeries.h"
+#import "RWCarModel.h"
+#import "RWCarColor.h"
 
 @interface RWCarModelChooseController ()
 
 
-@property (nonatomic, strong) NSArray *carSeries;
-@property (nonatomic, strong) NSArray *carModels;
-@property (nonatomic, strong) NSArray *carColors;
+//@property (nonatomic, strong) NSArray *carSeries;
+//@property (nonatomic, strong) NSArray *carModels;
+//@property (nonatomic, strong) NSArray *carColors;
 
 @property (nonatomic, strong) UIPopoverController *modelPopover;
 @property (nonatomic, strong) UIPopoverController *colorPopover;
@@ -22,17 +28,26 @@
 @property (nonatomic, strong) RWFilterTableViewController *modelsTableViewController;
 @property (nonatomic, strong) RWFilterTableViewController *colorsTableViewController;
 
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedSeriesController;
+@property (nonatomic, retain) NSManagedObjectContext *currentContext;
+
+@property (nonatomic, retain) RWCarSeries *selectedSeries;
+@property (nonatomic, retain) NSArray *currentModels;
+@property (nonatomic, retain) RWCarModel *selectedModel;
+@property (nonatomic, retain) NSArray *currentColors;
+@property (nonatomic, retain) RWCarColor *selectedColor;
+
+
 @end
 
 @implementation RWCarModelChooseController
 
 @synthesize seriesTableView = _seriesTableView;
-//@synthesize modelsTableView = _modelsTableView;
-//@synthesize colorsTableView = _colorsTableView;
 
-@synthesize carSeries = _carSeries;
-@synthesize carModels = _carModels;
-@synthesize carColors = _carColors;
+//@synthesize carSeries = _carSeries;
+//@synthesize carModels = _carModels;
+//@synthesize carColors = _carColors;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,14 +62,32 @@
 {
     [super viewDidLoad];
  
-    _carSeries = [NSArray arrayWithObjects:
-                  @"赛才",
-                  @"肯",
-                  @"zou",
-                  nil];
     
-    _carModels = [NSArray arrayWithObjects:@"Model1",@"Model2",@"Model3",@"Model4",@"Model5", nil];
-    _carColors = [NSArray arrayWithObjects:@"Red",@"Yellow",@"Green",@"Cyan",@"Gray", nil];
+    self.currentContext = [RKManagedObjectStore defaultStore].persistentStoreManagedObjectContext;
+    
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"RWCarSeries"];
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO];
+    fetchRequest.sortDescriptors = @[descriptor];
+    
+    // Setup fetched results
+    self.fetchedSeriesController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                                                       managedObjectContext:self.currentContext
+                                                                         sectionNameKeyPath:nil
+                                                                                  cacheName:nil];
+    [self.fetchedSeriesController setDelegate:self];
+    NSError *error = nil;
+    [self.fetchedSeriesController performFetch:&error];
+
+    
+//    
+//    _carSeries = [NSArray arrayWithObjects:
+//                  @"赛才",
+//                  @"肯",
+//                  @"zou",
+//                  nil];
+    
+//    _carModels = [NSArray arrayWithObjects:@"Model1",@"Model2",@"Model3",@"Model4",@"Model5", nil];
+//    _carColors = [NSArray arrayWithObjects:@"Red",@"Yellow",@"Green",@"Cyan",@"Gray", nil];
 
 }
 
@@ -69,17 +102,26 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (tableView == _seriesTableView) {
-        return [_carSeries count];
-    } else if (tableView == _modelsTableView) {
-        return [_carModels count];
-    } else if (tableView == _colorsTableView ) {
-        return [_carColors count];
+        return [self.fetchedSeriesController.fetchedObjects count];
+    } else if (tableView == self.modelsTableViewController.tableView) {
+        return [self.currentModels count];
+    } else if(tableView == self.colorsTableViewController.tableView) {
+        return [self.currentColors count];
     }
     return 0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"车系选择";
+    if (tableView == self.seriesTableView) {
+        return @"车系选择";
+    } else if (tableView == self.modelsTableViewController.tableView) {
+        return @"车型选择";
+    } else if(tableView == self.colorsTableViewController.tableView) {
+        return @"颜色选择";
+    } else {
+        return nil;
+    }
+
 }
 
 
@@ -91,11 +133,14 @@
     NSString *title;
     
     if (tableView == _seriesTableView) {
-        title = [_carSeries objectAtIndex:indexPath.row];
-    } else if (tableView == _modelsTableView) {
-        title = [_carModels objectAtIndex:indexPath.row];
-    } else if (tableView == _colorsTableView ) {
-        title = [_carColors objectAtIndex:indexPath.row];
+        RWCarSeries *series = [self.fetchedSeriesController objectAtIndexPath:indexPath];
+        title = series.seriesName;
+    } else if (tableView == self.modelsTableViewController.tableView) {
+        RWCarModel *carModel = [self.currentModels objectAtIndex:indexPath.row];
+        title = carModel.modelName;
+    } else if (tableView == self.colorsTableViewController.tableView) {
+        RWCarColor *color = [self.currentColors objectAtIndex:indexPath.row];
+        title = color.colorName;
     }
 
     cell.textLabel.text = title;
@@ -106,13 +151,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == _seriesTableView) {
         
-        _seriesLabel.text = [_carSeries objectAtIndex:indexPath.row];
-        
+        self.selectedSeries = [self.fetchedSeriesController objectAtIndexPath:indexPath];
+            
+
+        _seriesLabel.text =  self.selectedSeries.seriesName;
         self.modelsTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWFilterTableViewController"];//[[RWFilterTableViewController alloc] init];
+        
+        
+        
+        NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO]];
+        self.currentModels = [[self.selectedSeries.models allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+
         self.modelsTableViewController.tableView.delegate = self;
-        self.modelsTableViewController.data = _carModels;
+        self.modelsTableViewController.tableView.dataSource = self;
         self.modelsTableViewController.contentSizeForViewInPopover = CGSizeMake(150,300);
         self.modelPopover = [[UIPopoverController alloc] initWithContentViewController:self.modelsTableViewController];
+        [self.modelsTableViewController.tableView reloadData];
         
         CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
         CGRect rect0 = [self.view convertRect:rect fromView:tableView];
@@ -120,27 +174,50 @@
         [self.modelPopover presentPopoverFromRect:rect0 inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
         
     } else if (tableView == _modelsTableView || tableView == self.modelsTableViewController.tableView) {
-        _modelLabel.text = [_carModels objectAtIndex:indexPath.row];
-
+        self.selectedModel = [self.currentModels objectAtIndex:indexPath.row];
+        _modelLabel.text = self.selectedModel.modelName;
     
-        self.colorsTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWFilterTableViewController"];//[[RWFilterTableViewController alloc] init];
+        NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO]];
+        self.currentColors = [[self.selectedModel.colors allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+        
+        self.colorsTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWFilterTableViewController"];
         self.colorsTableViewController.tableView.delegate = self;
-        self.colorsTableViewController.data = _carColors;
+        self.colorsTableViewController.tableView.dataSource = self;
         self.colorsTableViewController.contentSizeForViewInPopover = CGSizeMake(150,300);
         self.colorPopover = [[UIPopoverController alloc] initWithContentViewController:self.colorsTableViewController];
-        
+//
         CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
         CGRect rect0 = [self.view convertRect:rect fromView:tableView];
-
+//
         [self.colorPopover presentPopoverFromRect:rect0 inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 
     
     } else if (tableView == _colorsTableView || tableView == self.colorsTableViewController.tableView) {
-        _colorLabel.text = [_carColors objectAtIndex:indexPath.row];
+        self.selectedColor = [self.currentColors objectAtIndex:indexPath.row];
+        _colorLabel.text = self.selectedColor.colorName;
         
         [self.colorPopover dismissPopoverAnimated:YES];
         [self.modelPopover dismissPopoverAnimated:YES];
     }
+    
+}
+
+
+- (void)updateModelsAndTable {
+    NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO]];
+    self.currentModels = [[self.selectedSeries.models allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    self.modelsTableViewController.data = self.currentModels;
+    
+    [self.modelsTableViewController.tableView reloadData];
+}
+
+- (void)updateColorsAndTable {
+    NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO]];
+    self.currentColors = [[self.selectedModel.colors allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    
+    self.colorsTableViewController.data = self.currentColors;
+    [self.colorsTableViewController.tableView reloadData];
+    
     
 }
 

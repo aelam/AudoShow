@@ -29,6 +29,19 @@
 	// Do any additional setup after loading the view.
 }
 
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sales_cell"];
+    
+    return cell;
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

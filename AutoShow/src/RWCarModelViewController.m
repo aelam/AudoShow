@@ -53,7 +53,7 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"car_model_cell" forIndexPath:indexPath];
 
     UILabel *label = (UILabel *)[cell viewWithTag:1];
-    UIImageView *foregroundImageView = (UIImageView *)[cell viewWithTag:101];
+//    UIImageView *foregroundImageView = (UIImageView *)[cell viewWithTag:101];
     UIImageView *backgroundImageView = (UIImageView *)[cell viewWithTag:100];
     
     backgroundImageView.image = [UIImage imageNamed:@"showingCars.bundle/car_series_bg.png"];

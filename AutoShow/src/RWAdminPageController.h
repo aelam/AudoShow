@@ -15,8 +15,12 @@
 @interface RWAdminPageController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIView *contentView;
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) RWAdminCarEditController *adminCarEditController;
 @property (nonatomic, strong) RWAdminSalesEditController *salesEditController;
+@property (nonatomic, strong) IBOutlet UITabBarController *tabBarController;
+
+
 //@property (nonatomic, strong) RWAdminCarEditController *adminCarEditController;
 //@property (nonatomic, strong) RWAdminCarEditController *adminCarEditController;
 //@property (nonatomic, strong) RWAdminCarEditController *adminCarEditController;

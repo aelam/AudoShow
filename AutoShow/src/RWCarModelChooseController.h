@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RWCarModelChooseController : UIViewController
+@interface RWCarModelChooseController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *seriesTableView;
 

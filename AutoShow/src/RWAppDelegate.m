@@ -23,64 +23,60 @@
     RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
     objectManager.managedObjectStore = managedObjectStore;
     
-    // Uncomment this to use XML, comment it to use JSON
-    //  objectManager.acceptMIMEType = RKMIMETypeXML;
-    //  [objectManager.mappingProvider setMapping:statusMapping forKeyPath:@"statuses.status"];
     
-    // Database seeding is configured as a copied target of the main application. There are only two differences
-    // between the main application target and the 'Generate Seed Database' target:
-    //  1) RESTKIT_GENERATE_SEED_DB is defined in the 'Preprocessor Macros' section of the build setting for the target
-    //      This is what triggers the conditional compilation to cause the seed database to be built
-    //  2) Source JSON files are added to the 'Generate Seed Database' target to be copied into the bundle. This is required
-    //      so that the object seeder can find the files when run in the simulator.
-#ifdef RESTKIT_GENERATE_SEED_DB
-    RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelInfo);
-    RKLogConfigureByName("RestKit/CoreData", RKLogLevelTrace);
+    RKEntityMapping *userMapping = [RKEntityMapping mappingForEntityForName:@"RWManager" inManagedObjectStore:managedObjectStore];
+    [userMapping addAttributeMappingsFromArray:@[ @"userId",@"username",@"password",@"isAdmin" ]];
+    [userMapping setIdentificationAttributes:@[@"userId",@"username"]];
     
-    NSError *error;
-    NSString *seedStorePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
-    RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:managedObjectModel storePath:seedStorePath];
-    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"restkit" ofType:@"json"]
-                              withMapping:tweetMapping
-                                  keyPath:nil
-                                    error:&error];
-    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"users" ofType:@"json"]
-                              withMapping:userMapping
-                                  keyPath:@"user"
-                                    error:&error];
-    BOOL success = [importer finishImporting:&error];
-    if (success) {
-        [importer logSeedingInfo];
-    } else {
-        RKLogError(@"Failed to finish import and save seed database due to error: %@", error);
-    }
-    
-    // Clear out the root view controller
-    [self.window setRootViewController:[UIViewController new]];
-#else
-    /**
-     Complete Core Data stack initialization
-     */
     [managedObjectStore createPersistentStoreCoordinator];
     NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"AutoShow.sqlite"];
     NSString *seedPath = [[NSBundle mainBundle] pathForResource:@"RKSeedDatabase" ofType:@"sqlite"];
+//    NSString *seedPath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
+
     NSError *error;
     NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:nil error:&error];
     NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
+
     
+//    RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:managedObjectModel storePath:seedPath];
+//    
+    
+//    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"user" ofType:@"json"]
+//                              withMapping:userMapping
+//                                  keyPath:nil
+//                                    error:&error];
+    
+//    BOOL success = [importer finishImporting:&error];
+//    if (success) {
+//        [importer logSeedingInfo];
+//    }
+    if (error) {
+        NSLog(@"error : %@",error);
+    
+    }
     // Create the managed object contexts
     [managedObjectStore createManagedObjectContexts];
     
     // Configure a managed object cache to ensure we do not create duplicate objects
     managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc] initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
-#endif
+//#endif
+    
+    
+    
+    
 
-    /* 插入数据
+    
+    return YES;
+    
+}
+
+/*
+- (void)insertObject{
     
     RWCarSeries *carSeries = (RWCarSeries *)[NSEntityDescription insertNewObjectForEntityForName:@"RWCarSeries" inManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
-
+    
     carSeries.seriesName = @"奇瑞QQ";
-
+    
     NSError *error1= nil;
     
     if ([managedObjectStore.persistentStoreManagedObjectContext hasChanges]) {
@@ -89,12 +85,10 @@
             NSLog(@"%@", error1);
         }
     }
-    */
-    
-    return YES;
     
 }
-							
+ */
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
