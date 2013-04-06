@@ -33,6 +33,65 @@
 		<string>新风云</string>
 		<key>colors</key>
 		<string>新风云2-colors</string>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string>活力蓝</string>
+				<key>colorValue</key>
+				<string>#3b7cb2</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>激情红</string>
+				<key>colorValue</key>
+				<string>#D5372A</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>魅力橙</string>
+				<key>colorValue</key>
+				<string>#DD7B29</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>极速白</string>
+				<key>colorValue</key>
+				<string>#EEEEEE</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>闪电银</string>
+				<key>colorValue</key>
+				<string>#8c8c90</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>海豚灰</string>
+				<key>colorValue</key>
+				<string>#687686</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>琥珀金</string>
+				<key>colorValue</key>
+				<string>#6B5A49</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -41,6 +100,65 @@
 		<string>新风云</string>
 		<key>colors</key>
 		<string>新风云2-colors</string>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string>活力蓝</string>
+				<key>colorValue</key>
+				<string>#3b7cb2</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>激情红</string>
+				<key>colorValue</key>
+				<string>#D5372A</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>魅力橙</string>
+				<key>colorValue</key>
+				<string>#DD7B29</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>极速白</string>
+				<key>colorValue</key>
+				<string>#EEEEEE</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>闪电银</string>
+				<key>colorValue</key>
+				<string>#8c8c90</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>海豚灰</string>
+				<key>colorValue</key>
+				<string>#687686</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>琥珀金</string>
+				<key>colorValue</key>
+				<string>#6B5A49</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -49,6 +167,57 @@
 		<string>A3</string>
 		<key>colors</key>
 		<string>A3-colors</string>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string>纳斯达克银</string>
+				<key>colorValue</key>
+				<string>#8c8c8c</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>塞纳金</string>
+				<key>colorValue</key>
+				<string>#D1BE81</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>爱琴海蓝</string>
+				<key>colorValue</key>
+				<string>#3D4E93</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>红</string>
+				<key>colorValue</key>
+				<string>#BE252B</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>徽墨黑</string>
+				<key>colorValue</key>
+				<string>#2b2b2b</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>狼堡灰</string>
+				<key>colorValue</key>
+				<string>#504939</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -57,6 +226,57 @@
 		<string>瑞虎</string>
 		<key>colors</key>
 		<string>瑞虎-colors</string>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string>徽墨黑</string>
+				<key>colorValue</key>
+				<string>#2B2B2B</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>纳斯达克银</string>
+				<key>colorValue</key>
+				<string>#8C8C8C</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>奇瑞白</string>
+				<key>colorValue</key>
+				<string>#E3EAED</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>玛格丽特蓝</string>
+				<key>colorValue</key>
+				<string>#082B7E</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>狼堡灰</string>
+				<key>colorValue</key>
+				<string>#1D2B43</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>品尚红</string>
+				<key>colorValue</key>
+				<string>#63111C</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -65,6 +285,57 @@
 		<string>新QQ</string>
 		<key>colors</key>
 		<string>新QQ-colors</string>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string>红</string>
+				<key>colorValue</key>
+				<string>#EB2F2E</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>白</string>
+				<key>colorValue</key>
+				<string>#FEFEFE</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>紫</string>
+				<key>colorValue</key>
+				<string>#AE90BD</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>棕</string>
+				<key>colorValue</key>
+				<string>#704f31</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>米色</string>
+				<key>colorValue</key>
+				<string>#c1beb5</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>米色</string>
+				<key>colorValue</key>
+				<string>#3e7eac</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -73,6 +344,57 @@
 		<string>E5</string>
 		<key>colors</key>
 		<string>E5-colors</string>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string></string>
+				<key>colorValue</key>
+				<string>#937b61</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string></string>
+				<key>colorValue</key>
+				<string>#0E0E0E</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>红</string>
+				<key>colorValue</key>
+				<string>#8A1621</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string></string>
+				<key>colorValue</key>
+				<string>#79756A</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string></string>
+				<key>colorValue</key>
+				<string>#73737B</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string></string>
+				<key>colorValue</key>
+				<string>#b5b5b7</string>
+				<key>colorImage</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 </array>
 </plist>
