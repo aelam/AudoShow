@@ -11,6 +11,8 @@
 @interface RWCarImageBrowser : UIViewController
 
 
+@property (nonatomic, strong)NSDictionary *carSeriesInfo;
+
 @property (nonatomic, strong)IBOutlet UICollectionView *bigImageView;
 @property (nonatomic, strong)IBOutlet UICollectionView *smallImageView;
 

@@ -10,7 +10,11 @@
 
 @interface RWCarDetailViewController : UIViewController
 
+
+@property (nonatomic, strong)NSDictionary *carSeriesInfo;
+
 @property (nonatomic,strong) IBOutlet UIView *contentView;
+@property (nonatomic,strong) IBOutlet UICollectionView *collectionView;
 
 - (IBAction)tapOnScreen:(id)sender;
 - (IBAction)imageBrowserTapped:(id)sender;

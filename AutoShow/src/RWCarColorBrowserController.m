@@ -7,8 +7,11 @@
 //
 
 #import "RWCarColorBrowserController.h"
+#import "RWResourceManager.h"
 
-@interface RWCarColorBrowserController ()
+@interface RWCarColorBrowserController () <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) NSArray *carImages;
 
 @end
 
@@ -27,12 +30,40 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor yellowColor];
-    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:self.scrollView];
+//    self.view.backgroundColor = [UIColor yellowColor];
+    
+    NSString *imagesPath= [[NSBundle mainBundle] resourcePath];
+
+    NSFileManager *fmanager=[NSFileManager defaultManager];
+    NSString *searchPath = [NSString stringWithFormat:@"%@/%@",[RWResourceManager resourcePath],[self.carSeriesInfo objectForKey:@"colors"] ];
+	self.carImages = [fmanager contentsOfDirectoryAtPath:searchPath error:nil];
+
+    
+    //    self.imageResources
     
 	// Do any additional setup after loading the view.
 }
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.carImages.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"big_cell" forIndexPath:indexPath];
+    
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
+    
+    NSString *imageFolder = [NSString stringWithFormat:@"%@/%@",[RWResourceManager bundleName],[self.carSeriesInfo objectForKey:@"colors"] ];
+    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@",imageFolder, [self.carImages objectAtIndex:indexPath.row]]];
+    
+    
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

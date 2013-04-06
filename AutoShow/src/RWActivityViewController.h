@@ -10,4 +10,6 @@
 
 @interface RWActivityViewController : UIViewController
 
+@property (nonatomic, strong)NSDictionary *carSeriesInfo;
+
 @end

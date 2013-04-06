@@ -7,54 +7,72 @@
 		<string>M16 TEASER</string>
 		<key>image</key>
 		<string>M16</string>
+		<key>colors</key>
+		<string>M16-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>T21 TEASER</string>
 		<key>image</key>
 		<string>T21</string>
+		<key>colors</key>
+		<string>T21-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>ANT 2</string>
 		<key>image</key>
 		<string>ANT2</string>
+		<key>colors</key>
+		<string>ANT2-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>新风云2 两厢</string>
 		<key>image</key>
 		<string>新风云</string>
+		<key>colors</key>
+		<string>新风云2-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>新风云2 三厢</string>
 		<key>image</key>
 		<string>新风云</string>
+		<key>colors</key>
+		<string>新风云2-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>A3 两厢</string>
 		<key>image</key>
 		<string>A3</string>
+		<key>colors</key>
+		<string>A3-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>瑞虎</string>
 		<key>image</key>
 		<string>瑞虎</string>
+		<key>colors</key>
+		<string>瑞虎-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>新QQ</string>
 		<key>image</key>
 		<string>新QQ</string>
+		<key>colors</key>
+		<string>新QQ-colors</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>E5</string>
 		<key>image</key>
 		<string>E5</string>
+		<key>colors</key>
+		<string>E5-colors</string>
 	</dict>
 </array>
 </plist>

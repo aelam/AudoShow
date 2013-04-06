@@ -10,4 +10,6 @@
 
 @interface RWCarModelViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+
 @end

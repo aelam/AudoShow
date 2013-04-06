@@ -11,6 +11,7 @@
 @interface RWCarConfigViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong)NSDictionary *carSeriesInfo;
 
 
 @end

@@ -8,6 +8,7 @@
 
 #import "RWCarModelViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "RWCarDetailViewController.h"
 
 @interface RWCarModelViewController ()
 
@@ -68,9 +69,15 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UICollectionViewCell *cell = (UICollectionViewCell *)sender;
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    NSDictionary *carSeriesInfo = [self.carSeries objectAtIndex:indexPath.row];
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%@",indexPath);
+    RWCarDetailViewController *contentViewController = (RWCarDetailViewController *)segue.destinationViewController;
+    contentViewController.carSeriesInfo = carSeriesInfo;
+    
+    [super prepareForSegue:segue sender:sender];
 }
 
 
