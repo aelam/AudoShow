@@ -31,6 +31,10 @@
 		943FDFC51710127F005EC47D /* show_menu_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 943FDFC11710127F005EC47D /* show_menu_on.png */; };
 		943FDFC61710127F005EC47D /* show_menu_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 943FDFC21710127F005EC47D /* show_menu_on@2x.png */; };
 		943FDFCC17105CA9005EC47D /* RWResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 943FDFCB17105CA9005EC47D /* RWResourceManager.m */; };
+		943FDFCE171082AD005EC47D /* top_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 943FDFCD171082AD005EC47D /* top_bar@2x.png */; };
+		943FDFD0171082C4005EC47D /* top_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 943FDFCF171082C4005EC47D /* top_bar.png */; };
+		943FDFD3171083A2005EC47D /* color_browser_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 943FDFD1171083A2005EC47D /* color_browser_bg.png */; };
+		943FDFD4171083A2005EC47D /* color_browser_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 943FDFD2171083A2005EC47D /* color_browser_bg@2x.png */; };
 		9442E6CA170BFCA9005D7FE6 /* RWStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442E6C9170BFCA9005D7FE6 /* RWStuff.m */; };
 		9445EF181709BED00068D524 /* RWCarImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF171709BED00068D524 /* RWCarImageBrowser.m */; };
 		9445EF1B1709BFCE0068D524 /* RWActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF1A1709BFCE0068D524 /* RWActivityViewController.m */; };
@@ -201,6 +205,10 @@
 		943FDFC21710127F005EC47D /* show_menu_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show_menu_on@2x.png"; sourceTree = "<group>"; };
 		943FDFCA17105CA9005EC47D /* RWResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWResourceManager.h; sourceTree = "<group>"; };
 		943FDFCB17105CA9005EC47D /* RWResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWResourceManager.m; sourceTree = "<group>"; };
+		943FDFCD171082AD005EC47D /* top_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_bar@2x.png"; sourceTree = "<group>"; };
+		943FDFCF171082C4005EC47D /* top_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_bar.png; sourceTree = "<group>"; };
+		943FDFD1171083A2005EC47D /* color_browser_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_browser_bg.png; sourceTree = "<group>"; };
+		943FDFD2171083A2005EC47D /* color_browser_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color_browser_bg@2x.png"; sourceTree = "<group>"; };
 		9442E6C8170BFCA9005D7FE6 /* RWStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStuff.h; sourceTree = "<group>"; };
 		9442E6C9170BFCA9005D7FE6 /* RWStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStuff.m; sourceTree = "<group>"; };
 		9442E6CD170BFD87005D7FE6 /* db.schema */ = {isa = PBXFileReference; lastKnownFileType = text; path = db.schema; sourceTree = "<group>"; };
@@ -362,6 +370,10 @@
 		94058BA4170D806600D28C49 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				943FDFD1171083A2005EC47D /* color_browser_bg.png */,
+				943FDFD2171083A2005EC47D /* color_browser_bg@2x.png */,
+				943FDFCF171082C4005EC47D /* top_bar.png */,
+				943FDFCD171082AD005EC47D /* top_bar@2x.png */,
 				943FDFBF1710127F005EC47D /* show_menu_off.png */,
 				943FDFC01710127F005EC47D /* show_menu_off@2x.png */,
 				943FDFC11710127F005EC47D /* show_menu_on.png */,
@@ -861,6 +873,10 @@
 				943FDFC41710127F005EC47D /* show_menu_off@2x.png in Resources */,
 				943FDFC51710127F005EC47D /* show_menu_on.png in Resources */,
 				943FDFC61710127F005EC47D /* show_menu_on@2x.png in Resources */,
+				943FDFCE171082AD005EC47D /* top_bar@2x.png in Resources */,
+				943FDFD0171082C4005EC47D /* top_bar.png in Resources */,
+				943FDFD3171083A2005EC47D /* color_browser_bg.png in Resources */,
+				943FDFD4171083A2005EC47D /* color_browser_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

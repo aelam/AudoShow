@@ -1884,7 +1884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gtu-ig-Fgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6390" y="201"/>
+            <point key="canvasLocation" x="8486" y="-223"/>
         </scene>
         <!--Car Config View Controller - Item-->
         <scene sceneID="pNG-hv-ICz">
@@ -1971,7 +1971,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l8T-Fq-0bI">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="865" id="2ae-VI-rRM"/>
+                                    <constraint firstAttribute="height" constant="738" id="7Lr-GB-Dza"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ic5-gl-Ie2">
                                     <size key="itemSize" width="214" height="165"/>
@@ -2035,15 +2035,18 @@
                                     <constraint firstItem="U2H-G1-JII" firstAttribute="top" secondItem="h9t-os-yKb" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dVr-8X-qyX"/>
                                 </constraints>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="top_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="CrQ-2M-ARU"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="l8T-Fq-0bI" firstAttribute="trailing" secondItem="YYC-fp-R3E" secondAttribute="trailing" type="default" id="4nl-3a-5a1"/>
                             <constraint firstItem="l8T-Fq-0bI" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="8UJ-bn-5MD"/>
                             <constraint firstItem="l8T-Fq-0bI" firstAttribute="bottom" secondItem="YYC-fp-R3E" secondAttribute="bottom" type="default" id="NwG-MA-ymd"/>
+                            <constraint firstItem="CrQ-2M-ARU" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="PSY-Ss-btL"/>
+                            <constraint firstItem="CrQ-2M-ARU" firstAttribute="top" secondItem="YYC-fp-R3E" secondAttribute="top" type="default" id="Ssi-49-q7Y"/>
                             <constraint firstItem="h9t-os-yKb" firstAttribute="trailing" secondItem="YYC-fp-R3E" secondAttribute="trailing" type="default" id="iRs-kU-h2d"/>
                             <constraint firstItem="h9t-os-yKb" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="m3v-XJ-a3t"/>
-                            <constraint firstItem="h9t-os-yKb" firstAttribute="top" secondItem="YYC-fp-R3E" secondAttribute="top" type="default" id="uBK-Pl-Qdd"/>
+                            <constraint firstItem="l8T-Fq-0bI" firstAttribute="top" secondItem="h9t-os-yKb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pyN-84-xeO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qc8-wk-Llm"/>
@@ -2077,7 +2080,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGF-xi-MfR">
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yi2-6K-FVF">
-                                        <color key="backgroundColor" red="1" green="0.30301636910000002" blue="0.26620406819999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="213" id="T9v-r3-VTe"/>
                                         </constraints>
@@ -2380,7 +2382,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="88d-oG-hRf">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="746" id="l1I-uT-j13"/>
+                                    <constraint firstAttribute="height" constant="621" id="kwN-97-pEp"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LCx-aj-rti">
                                     <size key="itemSize" width="252" height="206"/>
@@ -2431,7 +2433,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E0-c3-aE0">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="销售包按钮">
+                                <state key="normal" title="销售包">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2442,18 +2444,21 @@
                                     <segue destination="byr-Uq-gdf" kind="push" id="YWH-hf-UjO"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="top_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="5yg-Zh-Ted"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o2F-xK-qhF" firstAttribute="leading" secondItem="SGj-kk-TwE" secondAttribute="leading" type="default" id="0Ew-OM-rqK"/>
                             <constraint firstAttribute="trailing" secondItem="2E0-c3-aE0" secondAttribute="trailing" constant="62" id="3H3-BU-yaz"/>
+                            <constraint firstItem="5yg-Zh-Ted" firstAttribute="leading" secondItem="SGj-kk-TwE" secondAttribute="leading" type="default" id="6z3-ky-02C"/>
                             <constraint firstItem="o2F-xK-qhF" firstAttribute="trailing" secondItem="SGj-kk-TwE" secondAttribute="trailing" type="default" id="9HV-el-1PI"/>
-                            <constraint firstAttribute="bottom" secondItem="o2F-xK-qhF" secondAttribute="bottom" constant="865" id="E8p-FH-iid"/>
                             <constraint firstItem="88d-oG-hRf" firstAttribute="trailing" secondItem="SGj-kk-TwE" secondAttribute="trailing" type="default" id="Lag-Xq-tCC"/>
-                            <constraint firstItem="o2F-xK-qhF" firstAttribute="top" secondItem="SGj-kk-TwE" secondAttribute="top" type="default" id="gyL-rv-Mt5"/>
+                            <constraint firstItem="o2F-xK-qhF" firstAttribute="top" secondItem="SGj-kk-TwE" secondAttribute="top" constant="120" id="QSL-pR-h2H"/>
+                            <constraint firstItem="88d-oG-hRf" firstAttribute="top" secondItem="SGj-kk-TwE" secondAttribute="top" constant="223" id="aoK-Hj-Fs4"/>
+                            <constraint firstItem="5yg-Zh-Ted" firstAttribute="top" secondItem="SGj-kk-TwE" secondAttribute="top" type="default" id="ifN-C7-fZX"/>
                             <constraint firstAttribute="bottom" secondItem="2E0-c3-aE0" secondAttribute="bottom" constant="40" id="kOD-hs-ZwE"/>
-                            <constraint firstItem="88d-oG-hRf" firstAttribute="top" secondItem="SGj-kk-TwE" secondAttribute="top" constant="98" id="kwh-j3-VZm"/>
                             <constraint firstItem="88d-oG-hRf" firstAttribute="leading" secondItem="SGj-kk-TwE" secondAttribute="leading" type="default" id="rP1-hF-rC4"/>
+                            <constraint firstItem="88d-oG-hRf" firstAttribute="top" secondItem="o2F-xK-qhF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ygj-iS-cEy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ng1-y6-1Or"/>
@@ -2982,7 +2987,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GdJ-yj-xnJ">
-                                <color key="backgroundColor" red="1" green="0.30301636910000002" blue="0.26620406819999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="BRP-e1-xYq">
                                     <size key="itemSize" width="768" height="594"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -3040,6 +3045,7 @@
         <image name="ipd_checkon.png" width="40" height="40"/>
         <image name="menu_bg.png" width="690" height="197"/>
         <image name="show_menu_off.png" width="127" height="29"/>
+        <image name="top_bar.png" width="768" height="120"/>
         <image name="touch_screen.png" width="768" height="170"/>
         <image name="your_event.png" width="175" height="55"/>
         <image name="活动选择.png" width="144" height="35"/>
@@ -3202,6 +3208,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
