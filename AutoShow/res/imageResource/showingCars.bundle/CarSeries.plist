@@ -9,6 +9,8 @@
 		<string>M16</string>
 		<key>colors</key>
 		<string>M16-colors</string>
+		<key>video</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -32,7 +34,7 @@
 		<key>image</key>
 		<string>新风云</string>
 		<key>colors</key>
-		<string>新风云2-colors</string>
+		<string>新风云</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -92,6 +94,8 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>video</key>
+		<string>奇瑞风云2-30秒</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -99,7 +103,7 @@
 		<key>image</key>
 		<string>新风云</string>
 		<key>colors</key>
-		<string>新风云2-colors</string>
+		<string>新风云</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -159,6 +163,8 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>video</key>
+		<string>奇瑞风云2-30秒</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -166,7 +172,7 @@
 		<key>image</key>
 		<string>A3</string>
 		<key>colors</key>
-		<string>A3-colors</string>
+		<string>A3</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -218,6 +224,8 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>video</key>
+		<string>A3 30广告片（用这个）</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -225,7 +233,7 @@
 		<key>image</key>
 		<string>瑞虎</string>
 		<key>colors</key>
-		<string>瑞虎-colors</string>
+		<string>瑞虎</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -284,7 +292,7 @@
 		<key>image</key>
 		<string>新QQ</string>
 		<key>colors</key>
-		<string>新QQ-colors</string>
+		<string>新QQ</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -329,13 +337,15 @@
 			</dict>
 			<dict>
 				<key>colorName</key>
-				<string>米色</string>
+				<string>蓝</string>
 				<key>colorValue</key>
 				<string>#3e7eac</string>
 				<key>colorImage</key>
 				<string></string>
 			</dict>
 		</array>
+		<key>video</key>
+		<string>Chery_new_QQ_30s_2048x1536_MP4</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -343,7 +353,7 @@
 		<key>image</key>
 		<string>E5</string>
 		<key>colors</key>
-		<string>E5-colors</string>
+		<string>E5</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -395,6 +405,8 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>video</key>
+		<string>奇瑞E5TVC</string>
 	</dict>
 </array>
 </plist>

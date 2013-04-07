@@ -10,7 +10,9 @@
 
 @interface RWCarColorBrowserController : UIViewController
 
-@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong)NSDictionary *carSeriesInfo;
+
+@property (nonatomic, strong) IBOutlet UIImageView *carImageView;
 
 @end
