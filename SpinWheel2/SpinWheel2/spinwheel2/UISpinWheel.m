@@ -35,7 +35,7 @@ static NSInteger const kPieceTagOffset = 2000;
 
         
         UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(rotateGestureAction:)];
-//        recognizer.delegate = self;
+
         [recognizer setMinimumNumberOfTouches:1];
         [recognizer setMaximumNumberOfTouches:1];
         [self addGestureRecognizer:recognizer];

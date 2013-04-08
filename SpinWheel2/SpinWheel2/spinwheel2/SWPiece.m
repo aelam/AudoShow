@@ -47,15 +47,13 @@
     
 }
 
+
 - (void)drawRect:(CGRect)rect
 {
-    if (self.sectorColor == nil) {
-        return;
-    }
     // Drawing code
     CGContextRef context =UIGraphicsGetCurrentContext();
-    
-    
+    //
+    //
     UIColor *color = self.sectorColor;//[UIColor orangeColor];
     CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
     
@@ -70,27 +68,28 @@
     }
     
     const CGFloat *components = CGColorGetComponents(color.CGColor);
-
-//    
-//
+    //
+    ////
+    ////
     CGContextSetFillColor(context,components);
     CGContextSetLineWidth(context, 5.0f);
     CGContextSetRGBStrokeColor(context, 1,1,1,1);
-
-    
-//
+    //
+    //
+    ////
     CGFloat width = rect.size.width;
     CGFloat height = rect.size.height;
-//
-//    
-//
+    
     CGContextMoveToPoint(context,  CGRectGetWidth(rect) * 0.5,height);
-    CGContextAddArc(context,CGRectGetWidth(rect) * 0.5, height, height, M_PI * 1.5- asin(width * 0.5/ height) ,M_PI * 1.5+ asin(width * 0.5/ height) , 0);
-
+    CGContextAddArc(context,CGRectGetWidth(rect) * 0.5, height, height, M_PI * 1.5- asin(width * 0.5/ height)+0.015 ,M_PI * 1.5+ asin(width * 0.5/ height) - 0.015 , 0);
+    
     CGContextFillPath(context);
     CGContextDrawPath(context, kCGPathFillStroke);
     CGContextStrokePath(context);
-
+    
+    
+    CGContextRef contextRef =UIGraphicsGetCurrentContext();
+    
     //clearColor
     red = 1, green = 0.0, blue = 0.0, alpha = 0.0;
     color = [UIColor yellowColor];
@@ -105,22 +104,24 @@
         alpha = components[3];
     }
     
+    
     components = CGColorGetComponents(color.CGColor);
-    CGContextSetRGBStrokeColor(context, red,green,blue,alpha);
-//
-    CGContextMoveToPoint(context,  CGRectGetWidth(rect) * 0.5,height);
-//
-    CGContextAddArc(context,CGRectGetWidth(rect) * 0.5, height, height * 0.5, M_PI * 1.5- asin(width * 0.5/ height) ,M_PI * 1.5+ asin(width * 0.5/ height) , 0);
-//
-//    CGContextFillPath(context);
-
-    CGContextDrawPath(context, kCGPathFillStroke);
-
-    CGContextStrokePath(context);
-//
+    
+    CGContextSetBlendMode(context, kCGBlendModeClear) ;
+    CGContextSetRGBFillColor(contextRef,1,0,0,0);
+    
+    
+    CGContextSetRGBStrokeColor(contextRef, 1,1,1,1);
+    //
+    CGContextMoveToPoint(contextRef,  CGRectGetWidth(rect) * 0.5,height);
+    //
+    CGContextAddArc(contextRef,CGRectGetWidth(rect) * 0.5, height, height * 0.62, M_PI * 1.5- asin(width * 0.5/ height) ,M_PI * 1.5+ asin(width * 0.5/ height) , 0);
+    
+    CGContextFillPath(contextRef);
+    CGContextStrokePath(contextRef);
+    
     
 }
-
 
 - (void)layoutSubviews {
     [super layoutSubviews];

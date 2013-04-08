@@ -13,10 +13,12 @@
 #import "RWCarColorBrowserController.h"
 #import "RWCarImageBrowser.h"
 #import "RWActivityViewController.h"
+#import "RWResourceManager.h"
+#import "UIViewController+Navigation.h"
 
 @interface RWCarDetailViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (nonatomic, strong)MPMoviePlayerController *moviePlayer;
+@property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 @property (nonatomic, strong) RWCarColorBrowserController *carColorBrowserController;
 @property (nonatomic, strong) RWCarImageBrowser *carImageBrowser;
 @property (nonatomic, strong) RWCarConfigViewController *carConfigController;
@@ -48,15 +50,7 @@
 
 //    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"mp4"];
 //    
-//    NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
-//    
-//    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-//    
-//    self.moviePlayer.view.frame = CGRectMake(184, 200, 400, 300);
-//    [self.contentView addSubview:self.moviePlayer.view];
-//    self.moviePlayer.shouldAutoplay = YES;
-//    [self.moviePlayer prepareToPlay];
-//    [self.moviePlayer play];
+    
     
     self.menuTitles = @[@"车型颜色",@"车型配置",@"精美照片",@"活动信息"];
     
@@ -79,57 +73,91 @@
     self.carImageBrowser.carSeriesInfo = self.carSeriesInfo;
     self.activityController.carSeriesInfo = self.carSeriesInfo;
     
-    self.highlightedIndex = 0;
-    self.tabBarController.selectedIndex = self.highlightedIndex;
-    [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
 
+    
+    
+    self.contentView.hidden = YES;
+    [self playVideo];
+    
+    [self selectIndex:-1];
+    
+}
 
+- (void)selectIndex:(NSInteger)index {
+    
+
+    // deselect old index
+    if (self.highlightedIndex >= 0) {
+        UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
+        [self updateCell:cell selected:NO];
+    }
+
+    
+    self.highlightedIndex = index;
+    if (index < 0) {
+        self.redBorder.hidden = YES;
+        self.contentView.hidden = YES;
+    } else {
+        self.redBorder.hidden = NO;
+        self.contentView.hidden = NO;
+        self.tabBarController.selectedIndex = self.highlightedIndex;
+        UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
+        
+        [self updateCell:cell selected:YES];
+    }
+}
+
+- (void)playVideo {
+    NSLog(@"%@",self.carSeriesInfo);
+    
+    NSString *videoPath = [NSString stringWithFormat:@"%@/video/%@.mp4",[RWResourceManager resourcePath],[self.carSeriesInfo objectForKey:@"video"]];
+    
+    if([[NSFileManager defaultManager] fileExistsAtPath:videoPath] == NO) {
+        return;
+    }
+    
+    NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
+    
+   self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+  
+    
+   self.moviePlayer.view.frame = CGRectMake(-80,0, 768+160, 585+150);
+   [self.view addSubview:self.moviePlayer.view];
+    self.moviePlayer.controlStyle = MPMovieControlStyleNone;
+   self.moviePlayer.shouldAutoplay = YES;
+   [self.moviePlayer prepareToPlay];
+   [self.moviePlayer play];
+
+//        [self.videoContentView addSubview:self.moviePlayer.view];
+    [self.view insertSubview:self.moviePlayer.view belowSubview:self.touchScreenButton];
+    
+    [self.view bringSubviewToFront:self.homeButton];
+    [self.view bringSubviewToFront:self.backButton];
 }
 
 
 - (IBAction)tapOnScreen:(id)sender {
-//    UIViewController *v = [[UIViewController alloc] init];
-//    [self presentModalViewController:v animated:YES];
+    self.contentView.hidden = NO;
+    [self.view sendSubviewToBack: self.moviePlayer.view];
 }
 
-- (IBAction)imageBrowserTapped:(id)sender {
-    if (self.carImageBrowser == nil) {
-        self.carImageBrowser = [self.storyboard instantiateViewControllerWithIdentifier:@"RWCarImageBrowser"];
-    }
-    [self.contentView addSubview:self.carImageBrowser.view];
-    self.carImageBrowser.view.frame = self.contentView.bounds;
-    
-    
-}
-
-- (IBAction)colorChooseTapped:(id)sender {
-    if (self.carColorBrowserController == nil) {
-        self.carColorBrowserController = [[RWCarColorBrowserController alloc] init];
-    }
-    [self.contentView addSubview:self.carColorBrowserController.view];
-    self.carColorBrowserController.view.frame = self.contentView.bounds;
-    
-    
-}
-
-- (IBAction)carConfigTapped:(id)sender {
-    if (self.carConfigController == nil) {
-        self.carConfigController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWCarConfigViewController"];
+- (IBAction)backButtonAcion:(id)sender {
+    if (self.highlightedIndex < 0) {
+        self.contentView.hidden = NO;
+        [self selectIndex:self.tabBarController.selectedIndex];
         
+    } else  {
+        self.contentView.hidden = YES;
+        [self selectIndex:-1];
+//        self.highlightedIndex = -1;
+
     }
     
     
-    [self.contentView addSubview:self.carConfigController.view];
-    self.carConfigController.view.frame = self.contentView.bounds;
 }
 
-- (IBAction)activityTapped:(id)sender {
-    if(self.activityController == nil) {
-        self.activityController = [[RWActivityViewController alloc] init];
-    }
-    [self.contentView addSubview:self.activityController.view];
-    self.activityController.view.frame = self.contentView.bounds;
-    
+- (IBAction)homeButtonAcion:(id)sender {
+    [self popToCarSeriesController:sender];
     
 }
 
@@ -156,19 +184,21 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == self.highlightedIndex) {
-        return;
-    } else {
-        UICollectionViewCell *oldCell = [collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
-        [self updateCell:oldCell selected:NO];
-
-        UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-        [self updateCell:cell selected:YES];
-
-        self.highlightedIndex = indexPath.row;
+//    if (indexPath.row == self.highlightedIndex) {
+//        return;
+//    } else {
+//        UICollectionViewCell *oldCell = [collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
+//        [self updateCell:oldCell selected:NO];
+//
+//        UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+//        [self updateCell:cell selected:YES];
+//
+//        self.highlightedIndex = indexPath.row;
+    
+        [self selectIndex:indexPath.row];
         self.tabBarController.selectedIndex = self.highlightedIndex;
 
-    }
+//    }
 }
 
 - (void)updateCell:(UICollectionViewCell *)cell selected:(BOOL)selected{

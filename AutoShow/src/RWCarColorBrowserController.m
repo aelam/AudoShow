@@ -37,40 +37,38 @@
     [super viewDidLoad];
     
     
-//    NSString *imagesPath= [[NSBundle mainBundle] resourcePath];
-
-    
-    
-//    NSFileManager *fmanager=[NSFileManager defaultManager];
-//    NSString *searchPath = [NSString stringWithFormat:@"%@/%@",[RWResourceManager resourcePath],[self.carSeriesInfo objectForKey:@"colors"] ];
-//	self.carImages = [fmanager contentsOfDirectoryAtPath:searchPath error:nil];
-
-    
     self.carColorInfo = [self.carSeriesInfo objectForKey:@"colorInfo"];
     
-    self.spinWheel = [[UISpinWheel alloc] initWithFrame:CGRectMake(0, 0, 379, 379)];
-    
-    self.spinWheel.center = CGPointMake(CGRectGetWidth(self.view.frame) * 0.5 ,CGRectGetHeight(self.view.frame)- 200 - 100) ;
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chex014"]];
+    bg.center =  CGPointMake(CGRectGetWidth(self.view.frame) * 0.5 ,CGRectGetHeight(self.view.frame)- 200 - 130);
+    [self.view addSubview:bg];
+    bg.userInteractionEnabled = YES;
+    self.spinWheel = [[UISpinWheel alloc] initWithFrame:CGRectMake(0, 0, 354, 354)];
 
-//    NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint
-//                                            constraintWithItem:self.spinWheel
-//                                            attribute:NSLayoutAttributeWidth
-//                                            relatedBy:NSLayoutRelationEqual
-//                                            toItem: nil
-//                                            attribute:NSLayoutAttributeNotAnAttribute
-//                                            multiplier:1.0f
-//                                            constant:200.0f
-//                                            ];
+    
+    UIImageView *arrow_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow_bg"]];
+    arrow_bg.center =  CGPointMake(CGRectGetWidth(bg.frame) * 0.5 ,7);
+    [bg addSubview:arrow_bg];
     
     
-//    [self.view addConstraint:bottomConstraint];
-
+    self.spinWheel.center = CGPointMake(CGRectGetWidth(bg.bounds) * 0.5, CGRectGetHeight(bg.bounds) * 0.5);
+    [bg addSubview:self.spinWheel];
+    
     self.spinWheel.delegate = self;
     
     
-    [self.view addSubview:self.spinWheel];
+    [bg addSubview:self.spinWheel];
     [self.spinWheel reloadData];
+
     
+    UIImageView *arrow_fg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow_fg"]];
+    arrow_fg.center =  CGPointMake(CGRectGetWidth(bg.frame) * 0.5 ,9);
+    [bg addSubview:arrow_fg];
+
+    
+    UIImageView *fg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chex012"]];
+    fg.center = CGPointMake(CGRectGetWidth(bg.bounds) * 0.5 + 19, CGRectGetHeight(bg.bounds) * 0.5 -70);
+    [bg addSubview:fg];
     
     [self displayImageForIndex:0];
 

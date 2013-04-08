@@ -16,6 +16,8 @@
 - (IBAction)dismissModalViewController:(id)sender;
 
 
+- (IBAction)popToCarSeriesController:(id)sender;
+
 - (IBAction)checkBoxAction:(UIButton *)sender;
 
 @end

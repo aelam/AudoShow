@@ -95,7 +95,7 @@
 			</dict>
 		</array>
 		<key>video</key>
-		<string>奇瑞风云2-30秒</string>
+		<string>风云2</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -164,7 +164,7 @@
 			</dict>
 		</array>
 		<key>video</key>
-		<string>奇瑞风云2-30秒</string>
+		<string>风云2</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -225,7 +225,7 @@
 			</dict>
 		</array>
 		<key>video</key>
-		<string>A3 30广告片（用这个）</string>
+		<string>A3</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -234,6 +234,8 @@
 		<string>瑞虎</string>
 		<key>colors</key>
 		<string>瑞虎</string>
+		<key>video</key>
+		<string>瑞虎TVC</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -345,7 +347,7 @@
 			</dict>
 		</array>
 		<key>video</key>
-		<string>Chery_new_QQ_30s_2048x1536_MP4</string>
+		<string>new_QQ</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -406,7 +408,7 @@
 			</dict>
 		</array>
 		<key>video</key>
-		<string>奇瑞E5TVC</string>
+		<string>E5TVC</string>
 	</dict>
 </array>
 </plist>

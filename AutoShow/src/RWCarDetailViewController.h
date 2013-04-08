@@ -12,15 +12,21 @@
 
 
 @property (nonatomic, strong)NSDictionary *carSeriesInfo;
-
+@property (nonatomic,strong) IBOutlet UIView *redBorder;
+@property (nonatomic,strong) IBOutlet UIView *topBar;
+@property (nonatomic,strong) IBOutlet UIView *bottomView;
+@property (nonatomic,strong) IBOutlet UIView *videoContentView;
 @property (nonatomic,strong) IBOutlet UIView *contentView;
+@property (nonatomic,strong) IBOutlet UIButton *touchScreenButton;
 @property (nonatomic,strong) IBOutlet UICollectionView *collectionView;
 
-- (IBAction)tapOnScreen:(id)sender;
-- (IBAction)imageBrowserTapped:(id)sender;
-- (IBAction)colorChooseTapped:(id)sender;
-- (IBAction)carConfigTapped:(id)sender;
-- (IBAction)activityTapped:(id)sender;
+@property (nonatomic,strong) IBOutlet UIButton *homeButton;
+@property (nonatomic,strong) IBOutlet UIButton *backButton;
 
+
+- (IBAction)tapOnScreen:(id)sender;
+
+- (IBAction)backButtonAcion:(id)sender;
+- (IBAction)homeButtonAcion:(id)sender;
 
 @end

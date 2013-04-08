@@ -34,15 +34,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
     
-    self.view.layer.borderWidth = 3;
-    self.view.layer.borderColor = [UIColor redColor].CGColor;
     
-//    self.smallImageView.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - 50 - 200, CGRectGetWidth(self.view.frame), 100);
-//    
-//    [self.view setNeedsLayout];
-
-//    NSString *folderName = [self.carSeriesInfo objectForKey:@"colors"];
-  
     NSFileManager *fmanager=[NSFileManager defaultManager];
     NSString *searchPath = [NSString stringWithFormat:@"%@/%@",[RWResourceManager resourcePath],[self.carSeriesInfo objectForKey:kJingFolderKey]];
     
