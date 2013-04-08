@@ -26,8 +26,6 @@
 {
     [super viewDidLoad];
     self.title = NSStringFromClass([self class]);
-    self.view.backgroundColor = [UIColor yellowColor];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

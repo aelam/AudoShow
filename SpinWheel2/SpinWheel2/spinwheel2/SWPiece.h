@@ -15,8 +15,7 @@
 @property (nonatomic,readonly) UILabel *titleLabel;
 @property (nonatomic,readonly) NSString *identifier;
 
-//@property (nonatomic, assign) CGFloat sectorColor[4];
-@property (nonatomic, assign) UIColor *sectorColor;
+@property (nonatomic, strong) UIColor *sectorColor;
 
 - (id)initWithImage:(UIImage *)image;
 

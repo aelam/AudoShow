@@ -27,8 +27,6 @@ static NSInteger const kPieceTagOffset = 2000;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.layer.borderWidth = 1;
-        self.layer.borderColor = [UIColor yellowColor].CGColor;
         
         self.contentView = [[UIView alloc] initWithFrame:self.bounds];
         [self addSubview:self.contentView];

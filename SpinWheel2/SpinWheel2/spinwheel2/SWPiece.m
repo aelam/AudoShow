@@ -49,6 +49,9 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    if (self.sectorColor == nil) {
+        return;
+    }
     // Drawing code
     CGContextRef context =UIGraphicsGetCurrentContext();
     
