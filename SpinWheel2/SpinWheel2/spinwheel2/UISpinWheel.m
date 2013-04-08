@@ -143,8 +143,8 @@ static NSInteger const kPieceTagOffset = 2000;
             CGFloat radians = atan2f(_contentView.transform.b, _contentView.transform.a);
             NSInteger index = nearbyint(radians / angleSize);
             [self _adjustWheelToFakeIndex:index  animated:YES];
-            NSInteger newIndex = nearbyint(radians / angleSize);
-            NSInteger newLogicalIndex = [self logicalIndexWithCycleIndex:newIndex];
+//            NSInteger newIndex = nearbyint(radians / angleSize);
+//            NSInteger newLogicalIndex = [self logicalIndexWithCycleIndex:newIndex];
             
         }
     }

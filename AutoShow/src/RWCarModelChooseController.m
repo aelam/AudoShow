@@ -15,7 +15,7 @@
 #import "RWCarModel.h"
 #import "RWCarColor.h"
 
-@interface RWCarModelChooseController ()
+@interface RWCarModelChooseController () <NSFetchedResultsControllerDelegate>
 
 
 //@property (nonatomic, strong) NSArray *carSeries;

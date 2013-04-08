@@ -20,7 +20,7 @@
 
 
 - (IBAction)dismissModalViewController:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (IBAction)checkBoxAction:(UIButton *)sender {

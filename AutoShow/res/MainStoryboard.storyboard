@@ -161,7 +161,6 @@
                                             <segment title="新客户"/>
                                             <segment title="客户列表"/>
                                         </segments>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <connections>
                                             <action selector="switchAction:" destination="jEv-jP-7ej" eventType="valueChanged" id="aNx-F8-9iV"/>
                                         </connections>
@@ -2604,11 +2603,11 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S1Q-2Q-oBQ">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell_header" id="S1Q-2Q-oBQ">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="121"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
-                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9vE-97-Bvb">
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell_footer" id="9vE-97-Bvb">
                                     <rect key="frame" x="166" y="0.0" width="50" height="121"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
