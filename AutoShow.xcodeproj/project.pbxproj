@@ -52,15 +52,9 @@
 		945951F11704A58E00DA57BF /* RWClientInfo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951F01704A58E00DA57BF /* RWClientInfo2Controller.m */; };
 		9462011B170741A90006B517 /* RWCarDetailContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9462011A170741A90006B517 /* RWCarDetailContentController.m */; };
 		9462011D170743490006B517 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9462011C170743490006B517 /* MediaPlayer.framework */; };
-		946D6F81170B2B5C008F1BC7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D6F77170B2B5C008F1BC7 /* FMDatabase.m */; };
-		946D6F82170B2B5C008F1BC7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D6F79170B2B5C008F1BC7 /* FMDatabaseAdditions.m */; };
-		946D6F83170B2B5C008F1BC7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D6F7B170B2B5C008F1BC7 /* FMDatabasePool.m */; };
-		946D6F84170B2B5C008F1BC7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D6F7D170B2B5C008F1BC7 /* FMDatabaseQueue.m */; };
-		946D6F86170B2B5C008F1BC7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D6F80170B2B5C008F1BC7 /* FMResultSet.m */; };
 		946D6F8D170B2EBA008F1BC7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 946D6F8C170B2EBA008F1BC7 /* libsqlite3.0.dylib */; };
 		946D6F8E170B3776008F1BC7 /* content.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9462011517073BCF0006B517 /* content.sqlite */; };
 		946D6F90170B4154008F1BC7 /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946D6F8F170B4154008F1BC7 /* BaseCell.xib */; };
-		946D6F93170B4584008F1BC7 /* FMDatabase+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D6F92170B4584008F1BC7 /* FMDatabase+App.m */; };
 		947C30821711EF3B00799888 /* RWCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 947C30811711EF3B00799888 /* RWCollectionViewFlowLayout.m */; };
 		947C308C1711F1E300799888 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 947C30881711F1E300799888 /* back.png */; };
 		947C308D1711F1E300799888 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 947C30891711F1E300799888 /* back@2x.png */; };
@@ -251,20 +245,8 @@
 		94620119170741A80006B517 /* RWCarDetailContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarDetailContentController.h; sourceTree = "<group>"; };
 		9462011A170741A90006B517 /* RWCarDetailContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarDetailContentController.m; sourceTree = "<group>"; };
 		9462011C170743490006B517 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		946D6F76170B2B5C008F1BC7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		946D6F77170B2B5C008F1BC7 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		946D6F78170B2B5C008F1BC7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		946D6F79170B2B5C008F1BC7 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		946D6F7A170B2B5C008F1BC7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		946D6F7B170B2B5C008F1BC7 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		946D6F7C170B2B5C008F1BC7 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		946D6F7D170B2B5C008F1BC7 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		946D6F7F170B2B5C008F1BC7 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		946D6F80170B2B5C008F1BC7 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		946D6F8C170B2EBA008F1BC7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		946D6F8F170B4154008F1BC7 /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
-		946D6F91170B4584008F1BC7 /* FMDatabase+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+App.h"; sourceTree = "<group>"; };
-		946D6F92170B4584008F1BC7 /* FMDatabase+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+App.m"; sourceTree = "<group>"; };
 		947C30801711EF3B00799888 /* RWCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		947C30811711EF3B00799888 /* RWCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		947C30881711F1E300799888 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -457,24 +439,6 @@
 			);
 			name = spinwheel2;
 			path = SpinWheel2/SpinWheel2/spinwheel2;
-			sourceTree = SOURCE_ROOT;
-		};
-		946D6F75170B2B5C008F1BC7 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				946D6F76170B2B5C008F1BC7 /* FMDatabase.h */,
-				946D6F77170B2B5C008F1BC7 /* FMDatabase.m */,
-				946D6F78170B2B5C008F1BC7 /* FMDatabaseAdditions.h */,
-				946D6F79170B2B5C008F1BC7 /* FMDatabaseAdditions.m */,
-				946D6F7A170B2B5C008F1BC7 /* FMDatabasePool.h */,
-				946D6F7B170B2B5C008F1BC7 /* FMDatabasePool.m */,
-				946D6F7C170B2B5C008F1BC7 /* FMDatabaseQueue.h */,
-				946D6F7D170B2B5C008F1BC7 /* FMDatabaseQueue.m */,
-				946D6F7F170B2B5C008F1BC7 /* FMResultSet.h */,
-				946D6F80170B2B5C008F1BC7 /* FMResultSet.m */,
-			);
-			name = FMDB;
-			path = fmdb/src;
 			sourceTree = SOURCE_ROOT;
 		};
 		94A3AC3E17047D2C00DF350B = {
@@ -732,11 +696,8 @@
 		94FD487E170823A100BED06B /* models */ = {
 			isa = PBXGroup;
 			children = (
-				946D6F75170B2B5C008F1BC7 /* FMDB */,
 				9442E6C8170BFCA9005D7FE6 /* RWStuff.h */,
 				9442E6C9170BFCA9005D7FE6 /* RWStuff.m */,
-				946D6F91170B4584008F1BC7 /* FMDatabase+App.h */,
-				946D6F92170B4584008F1BC7 /* FMDatabase+App.m */,
 				94F4E3C3170F20F000825CE2 /* RWManager.h */,
 				94F4E3C4170F20F000825CE2 /* RWManager.m */,
 				94BD6805170DC6E00087CF1E /* RWClient.h */,
@@ -993,11 +954,6 @@
 				9445EF1B1709BFCE0068D524 /* RWActivityViewController.m in Sources */,
 				9445EF1E1709BFE50068D524 /* RWCarConfigViewController.m in Sources */,
 				9445EF231709CA3A0068D524 /* RWCarColorBrowserController.m in Sources */,
-				946D6F81170B2B5C008F1BC7 /* FMDatabase.m in Sources */,
-				946D6F82170B2B5C008F1BC7 /* FMDatabaseAdditions.m in Sources */,
-				946D6F83170B2B5C008F1BC7 /* FMDatabasePool.m in Sources */,
-				946D6F84170B2B5C008F1BC7 /* FMDatabaseQueue.m in Sources */,
-				946D6F86170B2B5C008F1BC7 /* FMResultSet.m in Sources */,
 				9442E6CA170BFCA9005D7FE6 /* RWStuff.m in Sources */,
 				94DBA6AD170C74CF003A8689 /* AutoShowModels.xcdatamodeld in Sources */,
 				94DBA765170C97DE003A8689 /* RWCarColor.m in Sources */,
@@ -1022,7 +978,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A3AC7C17047D2D00DF350B /* AutoShowTests.m in Sources */,
-				946D6F93170B4584008F1BC7 /* FMDatabase+App.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

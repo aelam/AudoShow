@@ -88,8 +88,8 @@
 
 
 - (IBAction)tapOnScreen:(id)sender {
-    UIViewController *v = [[UIViewController alloc] init];
-    [self presentModalViewController:v animated:YES];
+//    UIViewController *v = [[UIViewController alloc] init];
+//    [self presentModalViewController:v animated:YES];
 }
 
 - (IBAction)imageBrowserTapped:(id)sender {
