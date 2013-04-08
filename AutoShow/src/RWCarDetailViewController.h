@@ -14,7 +14,6 @@
 @property (nonatomic, strong)NSDictionary *carSeriesInfo;
 @property (nonatomic,strong) IBOutlet UIView *redBorder;
 @property (nonatomic,strong) IBOutlet UIView *topBar;
-@property (nonatomic,strong) IBOutlet UIView *bottomView;
 @property (nonatomic,strong) IBOutlet UIView *videoContentView;
 @property (nonatomic,strong) IBOutlet UIView *contentView;
 @property (nonatomic,strong) IBOutlet UIButton *touchScreenButton;
@@ -22,6 +21,9 @@
 
 @property (nonatomic,strong) IBOutlet UIButton *homeButton;
 @property (nonatomic,strong) IBOutlet UIButton *backButton;
+
+@property (nonatomic,strong) IBOutlet UIView *bottomView;
+@property (nonatomic,strong) IBOutlet UIView *bottomBackgroundView;
 
 
 - (IBAction)tapOnScreen:(id)sender;

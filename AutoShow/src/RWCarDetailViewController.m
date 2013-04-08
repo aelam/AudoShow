@@ -97,9 +97,11 @@
     if (index < 0) {
         self.redBorder.hidden = YES;
         self.contentView.hidden = YES;
+        self.bottomBackgroundView.hidden = YES;
     } else {
         self.redBorder.hidden = NO;
         self.contentView.hidden = NO;
+        self.bottomBackgroundView.hidden = NO;
         self.tabBarController.selectedIndex = self.highlightedIndex;
         UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
         
@@ -139,8 +141,12 @@
 - (IBAction)tapOnScreen:(id)sender {
     self.contentView.hidden = NO;
     [self.view sendSubviewToBack: self.moviePlayer.view];
+    
+    [self selectIndex:self.tabBarController.selectedIndex];
 }
 
+
+#if 0
 - (IBAction)backButtonAcion:(id)sender {
     if (self.highlightedIndex < 0) {
         self.contentView.hidden = NO;
@@ -149,7 +155,6 @@
     } else  {
         self.contentView.hidden = YES;
         [self selectIndex:-1];
-//        self.highlightedIndex = -1;
 
     }
     
@@ -158,9 +163,18 @@
 
 - (IBAction)homeButtonAcion:(id)sender {
     [self popToCarSeriesController:sender];
-    
+}
+#else
+
+
+- (IBAction)backButtonAcion:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)homeButtonAcion:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+#endif
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
