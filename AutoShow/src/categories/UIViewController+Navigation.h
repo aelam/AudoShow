@@ -11,6 +11,7 @@
 @interface UIViewController (Navigation)
 
 - (IBAction)popViewController:(id)sender;
+- (IBAction)popRootViewController:(id)sender;
 
 - (IBAction)dismissModalViewController:(id)sender;
 
