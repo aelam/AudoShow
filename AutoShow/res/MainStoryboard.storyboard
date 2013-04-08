@@ -2045,7 +2045,6 @@
                                 </state>
                                 <connections>
                                     <action selector="popRootViewController:" destination="QOz-i5-NzW" eventType="touchUpInside" id="JUa-Tq-Muh"/>
-                                    <action selector="popViewController:" destination="vod-ua-pnb" eventType="touchUpInside" id="fN1-uA-4fr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-10-mK7">
@@ -2062,7 +2061,6 @@
                                 </state>
                                 <connections>
                                     <action selector="popViewController:" destination="QOz-i5-NzW" eventType="touchUpInside" id="S34-mW-u7L"/>
-                                    <action selector="popViewController:" destination="vod-ua-pnb" eventType="touchUpInside" id="Zeo-lu-gFp"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9t-os-yKb">
@@ -2202,6 +2200,7 @@
                                 </state>
                                 <connections>
                                     <action selector="popRootViewController:" destination="QOz-i5-NzW" eventType="touchUpInside" id="7Tb-j8-aI6"/>
+                                    <action selector="popRootViewController:" destination="vod-ua-pnb" eventType="touchUpInside" id="LXP-6H-DlP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cp-Ac-8DJ">
