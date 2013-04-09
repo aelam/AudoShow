@@ -32,9 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
-    
-    
+
     NSFileManager *fmanager=[NSFileManager defaultManager];
     NSString *searchPath = [NSString stringWithFormat:@"%@/%@",[RWResourceManager resourcePath],[self.carSeriesInfo objectForKey:kJingFolderKey]];
     
@@ -42,7 +40,6 @@
 	self.bigImages = [fmanager contentsOfDirectoryAtPath:[searchPath stringByAppendingPathComponent:kJingBigImagesKey] error:nil];
     self.smallImages = [fmanager contentsOfDirectoryAtPath:[searchPath stringByAppendingPathComponent:kJingSmallImagesKey] error:nil];
 
-    
 }
 
 

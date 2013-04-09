@@ -32,4 +32,15 @@
     return YES;
 }
 
+//- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+//    NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
+//    NSMutableArray *newAttributes = [NSMutableArray arrayWithCapacity:attributes.count];
+//    for (UICollectionViewLayoutAttributes *attribute in attributes) {
+//        if (attribute.frame.origin.x + attribute.frame.size.width <= self.collectionViewContentSize.width) {
+//            [newAttributes addObject:attribute];
+//        }
+//    }
+//    return newAttributes;
+//}
+
 @end

@@ -85,6 +85,18 @@
 		947D261F1706F52F0057E6CB /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947D261E1706F52F0057E6CB /* CustomCell.xib */; };
 		947D2670170735950057E6CB /* RWClientInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 947D266F170735950057E6CB /* RWClientInfoCell.m */; };
 		947D2672170735AF0057E6CB /* RWClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947D2671170735AE0057E6CB /* RWClientCell.xib */; };
+		9484BB1E1714853B0022CBA5 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB1C1714853B0022CBA5 /* search.png */; };
+		9484BB1F1714853B0022CBA5 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB1D1714853B0022CBA5 /* search@2x.png */; };
+		9484BB221714854D0022CBA5 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB201714854C0022CBA5 /* exit.png */; };
+		9484BB231714854D0022CBA5 /* exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB211714854D0022CBA5 /* exit@2x.png */; };
+		9484BB26171485800022CBA5 /* searchbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB24171485800022CBA5 /* searchbar.png */; };
+		9484BB27171485800022CBA5 /* searchbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB25171485800022CBA5 /* searchbar@2x.png */; };
+		9484BB3C171486B00022CBA5 /* 上一步.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB381714869D0022CBA5 /* 上一步.png */; };
+		9484BB3D171486B00022CBA5 /* 上一步@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB391714869E0022CBA5 /* 上一步@2x.png */; };
+		9484BB3E171486B00022CBA5 /* 下一步.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB3A171486A20022CBA5 /* 下一步.png */; };
+		9484BB3F171486B00022CBA5 /* 下一步@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB3B171486A80022CBA5 /* 下一步@2x.png */; };
+		9484BB421714876A0022CBA5 /* sign_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB401714876A0022CBA5 /* sign_in.png */; };
+		9484BB431714876A0022CBA5 /* sign_in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9484BB411714876A0022CBA5 /* sign_in@2x.png */; };
 		94A3AC4B17047D2C00DF350B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4A17047D2C00DF350B /* UIKit.framework */; };
 		94A3AC4D17047D2C00DF350B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4C17047D2C00DF350B /* Foundation.framework */; };
 		94A3AC4F17047D2C00DF350B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4E17047D2C00DF350B /* CoreGraphics.framework */; };
@@ -113,6 +125,26 @@
 		94BD6804170DC6E00087CF1E /* RWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD6803170DC6DF0087CF1E /* RWChannel.m */; };
 		94BD6807170DC6E00087CF1E /* RWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD6806170DC6E00087CF1E /* RWClient.m */; };
 		94BD6827170DDE5C0087CF1E /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 94BD680B170DC89B0087CF1E /* user.json */; };
+		94C3618A17146FC400A16F5C /* title(奇瑞).png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3614E17146FC300A16F5C /* title(奇瑞).png */; };
+		94C3619517146FC400A16F5C /* 帮助按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3615A17146FC300A16F5C /* 帮助按钮.png */; };
+		94C3619617146FC400A16F5C /* 帮助按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3615B17146FC300A16F5C /* 帮助按钮@2x.png */; };
+		94C361B817146FC400A16F5C /* 渐变叠加底图.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3617F17146FC300A16F5C /* 渐变叠加底图.png */; };
+		94C361C017146FC400A16F5C /* 设置管理.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3618817146FC400A16F5C /* 设置管理.png */; };
+		94C361C117146FC400A16F5C /* 设置管理@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3618917146FC400A16F5C /* 设置管理@2x.png */; };
+		94C361C81714768800A16F5C /* manager_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361C61714768800A16F5C /* manager_login.png */; };
+		94C361C91714768800A16F5C /* manager_login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361C71714768800A16F5C /* manager_login@2x.png */; };
+		94C361D017147A2000A16F5C /* client_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361CE17147A1F00A16F5C /* client_info.png */; };
+		94C361D117147A2000A16F5C /* client_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361CF17147A1F00A16F5C /* client_info@2x.png */; };
+		94C361D6171480CA00A16F5C /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361D4171480CA00A16F5C /* line.png */; };
+		94C361D7171480CA00A16F5C /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361D5171480CA00A16F5C /* line@2x.png */; };
+		94C361E11714827F00A16F5C /* new_client_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361DD1714827F00A16F5C /* new_client_selected.png */; };
+		94C361E21714827F00A16F5C /* new_client_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361DE1714827F00A16F5C /* new_client_selected@2x.png */; };
+		94C361E31714827F00A16F5C /* new_client.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361DF1714827F00A16F5C /* new_client.png */; };
+		94C361E41714827F00A16F5C /* new_client@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361E01714827F00A16F5C /* new_client@2x.png */; };
+		94C361E91714833200A16F5C /* client_list_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361E51714833200A16F5C /* client_list_selected.png */; };
+		94C361EA1714833200A16F5C /* client_list_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361E61714833200A16F5C /* client_list_selected@2x.png */; };
+		94C361EB1714833200A16F5C /* client_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361E71714833200A16F5C /* client_list.png */; };
+		94C361EC1714833200A16F5C /* client_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C361E81714833200A16F5C /* client_list@2x.png */; };
 		94DBA6AD170C74CF003A8689 /* AutoShowModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94DBA6AB170C74CF003A8689 /* AutoShowModels.xcdatamodeld */; };
 		94DBA6D8170C7926003A8689 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBA6D7170C7926003A8689 /* CoreData.framework */; };
 		94DBA6E5170C7CA4003A8689 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBA6E4170C7CA4003A8689 /* SystemConfiguration.framework */; };
@@ -301,6 +333,18 @@
 		947D266E170735950057E6CB /* RWClientInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClientInfoCell.h; sourceTree = "<group>"; };
 		947D266F170735950057E6CB /* RWClientInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWClientInfoCell.m; sourceTree = "<group>"; };
 		947D2671170735AE0057E6CB /* RWClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RWClientCell.xib; path = ../src/RWClientCell.xib; sourceTree = "<group>"; };
+		9484BB1C1714853B0022CBA5 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		9484BB1D1714853B0022CBA5 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		9484BB201714854C0022CBA5 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		9484BB211714854D0022CBA5 /* exit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit@2x.png"; sourceTree = "<group>"; };
+		9484BB24171485800022CBA5 /* searchbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbar.png; sourceTree = "<group>"; };
+		9484BB25171485800022CBA5 /* searchbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchbar@2x.png"; sourceTree = "<group>"; };
+		9484BB381714869D0022CBA5 /* 上一步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上一步.png"; sourceTree = "<group>"; };
+		9484BB391714869E0022CBA5 /* 上一步@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上一步@2x.png"; sourceTree = "<group>"; };
+		9484BB3A171486A20022CBA5 /* 下一步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步.png"; sourceTree = "<group>"; };
+		9484BB3B171486A80022CBA5 /* 下一步@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步@2x.png"; sourceTree = "<group>"; };
+		9484BB401714876A0022CBA5 /* sign_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_in.png; sourceTree = "<group>"; };
+		9484BB411714876A0022CBA5 /* sign_in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_in@2x.png"; sourceTree = "<group>"; };
 		94A3AC4717047D2C00DF350B /* AutoShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3AC4A17047D2C00DF350B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94A3AC4C17047D2C00DF350B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -342,6 +386,26 @@
 		94BD6805170DC6E00087CF1E /* RWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClient.h; sourceTree = "<group>"; };
 		94BD6806170DC6E00087CF1E /* RWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWClient.m; sourceTree = "<group>"; };
 		94BD680B170DC89B0087CF1E /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		94C3614E17146FC300A16F5C /* title(奇瑞).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title(奇瑞).png"; sourceTree = "<group>"; };
+		94C3615A17146FC300A16F5C /* 帮助按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帮助按钮.png"; sourceTree = "<group>"; };
+		94C3615B17146FC300A16F5C /* 帮助按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帮助按钮@2x.png"; sourceTree = "<group>"; };
+		94C3617F17146FC300A16F5C /* 渐变叠加底图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "渐变叠加底图.png"; sourceTree = "<group>"; };
+		94C3618817146FC400A16F5C /* 设置管理.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置管理.png"; sourceTree = "<group>"; };
+		94C3618917146FC400A16F5C /* 设置管理@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置管理@2x.png"; sourceTree = "<group>"; };
+		94C361C61714768800A16F5C /* manager_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manager_login.png; sourceTree = "<group>"; };
+		94C361C71714768800A16F5C /* manager_login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manager_login@2x.png"; sourceTree = "<group>"; };
+		94C361CE17147A1F00A16F5C /* client_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = client_info.png; sourceTree = "<group>"; };
+		94C361CF17147A1F00A16F5C /* client_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "client_info@2x.png"; sourceTree = "<group>"; };
+		94C361D4171480CA00A16F5C /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		94C361D5171480CA00A16F5C /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		94C361DD1714827F00A16F5C /* new_client_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_client_selected.png; sourceTree = "<group>"; };
+		94C361DE1714827F00A16F5C /* new_client_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_client_selected@2x.png"; sourceTree = "<group>"; };
+		94C361DF1714827F00A16F5C /* new_client.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_client.png; sourceTree = "<group>"; };
+		94C361E01714827F00A16F5C /* new_client@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_client@2x.png"; sourceTree = "<group>"; };
+		94C361E51714833200A16F5C /* client_list_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = client_list_selected.png; sourceTree = "<group>"; };
+		94C361E61714833200A16F5C /* client_list_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "client_list_selected@2x.png"; sourceTree = "<group>"; };
+		94C361E71714833200A16F5C /* client_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = client_list.png; sourceTree = "<group>"; };
+		94C361E81714833200A16F5C /* client_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "client_list@2x.png"; sourceTree = "<group>"; };
 		94DBA6AC170C74CF003A8689 /* AutoShowModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoShowModels.xcdatamodel; sourceTree = "<group>"; };
 		94DBA6D7170C7926003A8689 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		94DBA6E4170C7CA4003A8689 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -593,6 +657,7 @@
 		94A3AC8817047E0F00DF350B /* res */ = {
 			isa = PBXGroup;
 			children = (
+				94C3614D17146FC300A16F5C /* 销售系统切图 */,
 				94058BA4170D806600D28C49 /* graphics */,
 				94BA697F170D76C100D61573 /* imageResource */,
 				9462011517073BCF0006B517 /* content.sqlite */,
@@ -666,6 +731,45 @@
 			children = (
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		94C3614D17146FC300A16F5C /* 销售系统切图 */ = {
+			isa = PBXGroup;
+			children = (
+				9484BB401714876A0022CBA5 /* sign_in.png */,
+				9484BB411714876A0022CBA5 /* sign_in@2x.png */,
+				94C361E51714833200A16F5C /* client_list_selected.png */,
+				94C361E61714833200A16F5C /* client_list_selected@2x.png */,
+				94C361E71714833200A16F5C /* client_list.png */,
+				94C361E81714833200A16F5C /* client_list@2x.png */,
+				94C361DD1714827F00A16F5C /* new_client_selected.png */,
+				94C361DE1714827F00A16F5C /* new_client_selected@2x.png */,
+				94C361DF1714827F00A16F5C /* new_client.png */,
+				94C361E01714827F00A16F5C /* new_client@2x.png */,
+				94C361D4171480CA00A16F5C /* line.png */,
+				94C361D5171480CA00A16F5C /* line@2x.png */,
+				94C361CE17147A1F00A16F5C /* client_info.png */,
+				94C361CF17147A1F00A16F5C /* client_info@2x.png */,
+				94C361C61714768800A16F5C /* manager_login.png */,
+				94C361C71714768800A16F5C /* manager_login@2x.png */,
+				94C3614E17146FC300A16F5C /* title(奇瑞).png */,
+				9484BB1C1714853B0022CBA5 /* search.png */,
+				9484BB1D1714853B0022CBA5 /* search@2x.png */,
+				9484BB201714854C0022CBA5 /* exit.png */,
+				9484BB211714854D0022CBA5 /* exit@2x.png */,
+				94C3615A17146FC300A16F5C /* 帮助按钮.png */,
+				94C3615B17146FC300A16F5C /* 帮助按钮@2x.png */,
+				9484BB24171485800022CBA5 /* searchbar.png */,
+				9484BB25171485800022CBA5 /* searchbar@2x.png */,
+				9484BB381714869D0022CBA5 /* 上一步.png */,
+				9484BB391714869E0022CBA5 /* 上一步@2x.png */,
+				9484BB3A171486A20022CBA5 /* 下一步.png */,
+				9484BB3B171486A80022CBA5 /* 下一步@2x.png */,
+				94C3617F17146FC300A16F5C /* 渐变叠加底图.png */,
+				94C3618817146FC400A16F5C /* 设置管理.png */,
+				94C3618917146FC400A16F5C /* 设置管理@2x.png */,
+			);
+			path = "销售系统切图";
 			sourceTree = "<group>";
 		};
 		94DBA6DB170C7A9F003A8689 /* Framworks */ = {
@@ -979,6 +1083,38 @@
 				947C30BE1713446100799888 /* arrow_fg@2x.png in Resources */,
 				942B613F171352AE001AFADE /* bottom_bg.png in Resources */,
 				942B6140171352AE001AFADE /* bottom_bg@2x.png in Resources */,
+				94C3618A17146FC400A16F5C /* title(奇瑞).png in Resources */,
+				94C3619517146FC400A16F5C /* 帮助按钮.png in Resources */,
+				94C3619617146FC400A16F5C /* 帮助按钮@2x.png in Resources */,
+				94C361B817146FC400A16F5C /* 渐变叠加底图.png in Resources */,
+				94C361C017146FC400A16F5C /* 设置管理.png in Resources */,
+				94C361C117146FC400A16F5C /* 设置管理@2x.png in Resources */,
+				94C361C81714768800A16F5C /* manager_login.png in Resources */,
+				94C361C91714768800A16F5C /* manager_login@2x.png in Resources */,
+				94C361D017147A2000A16F5C /* client_info.png in Resources */,
+				94C361D117147A2000A16F5C /* client_info@2x.png in Resources */,
+				94C361D6171480CA00A16F5C /* line.png in Resources */,
+				94C361D7171480CA00A16F5C /* line@2x.png in Resources */,
+				94C361E11714827F00A16F5C /* new_client_selected.png in Resources */,
+				94C361E21714827F00A16F5C /* new_client_selected@2x.png in Resources */,
+				94C361E31714827F00A16F5C /* new_client.png in Resources */,
+				94C361E41714827F00A16F5C /* new_client@2x.png in Resources */,
+				94C361E91714833200A16F5C /* client_list_selected.png in Resources */,
+				94C361EA1714833200A16F5C /* client_list_selected@2x.png in Resources */,
+				94C361EB1714833200A16F5C /* client_list.png in Resources */,
+				94C361EC1714833200A16F5C /* client_list@2x.png in Resources */,
+				9484BB1E1714853B0022CBA5 /* search.png in Resources */,
+				9484BB1F1714853B0022CBA5 /* search@2x.png in Resources */,
+				9484BB221714854D0022CBA5 /* exit.png in Resources */,
+				9484BB231714854D0022CBA5 /* exit@2x.png in Resources */,
+				9484BB26171485800022CBA5 /* searchbar.png in Resources */,
+				9484BB27171485800022CBA5 /* searchbar@2x.png in Resources */,
+				9484BB3C171486B00022CBA5 /* 上一步.png in Resources */,
+				9484BB3D171486B00022CBA5 /* 上一步@2x.png in Resources */,
+				9484BB3E171486B00022CBA5 /* 下一步.png in Resources */,
+				9484BB3F171486B00022CBA5 /* 下一步@2x.png in Resources */,
+				9484BB421714876A0022CBA5 /* sign_in.png in Resources */,
+				9484BB431714876A0022CBA5 /* sign_in@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
