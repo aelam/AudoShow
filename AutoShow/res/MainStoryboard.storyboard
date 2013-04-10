@@ -734,7 +734,7 @@
                                     <constraint firstAttribute="width" constant="225" id="AWh-1n-jOO"/>
                                 </constraints>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uSK-a0-grf">
-                                    <rect key="frame" x="0.0" y="0.0" width="225" height="10320"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="10750"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <sections/>
@@ -1840,34 +1840,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-Mv-rkD">
-                                <color key="backgroundColor" red="1" green="0.64768788733874727" blue="0.61286733164092944" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5aY-IY-8lb">
-                                    <size key="itemSize" width="768" height="455"/>
+                                    <size key="itemSize" width="768" height="450"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="big_cell" id="24T-gZ-Xte">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="455"/>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="big_cell" id="24T-gZ-Xte" customClass="RWBigImageCell">
+                                        <rect key="frame" x="0.0" y="2" width="768" height="450"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="455"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="450"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Xga-d1-bv1">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="455" id="qHI-Un-Omm"/>
-                                                        <constraint firstAttribute="width" constant="768" id="t8J-Sn-lFE"/>
+                                                        <constraint firstAttribute="width" constant="808" id="C30-hf-Q5N"/>
+                                                        <constraint firstAttribute="height" constant="500" id="eOX-Hc-fA9"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="Xga-d1-bv1" firstAttribute="leading" secondItem="24T-gZ-Xte" secondAttribute="leading" type="default" id="3rZ-JC-6Mj"/>
-                                            <constraint firstItem="Xga-d1-bv1" firstAttribute="top" secondItem="24T-gZ-Xte" secondAttribute="top" type="default" id="dWU-iy-cir"/>
+                                            <constraint firstItem="Xga-d1-bv1" firstAttribute="centerX" secondItem="24T-gZ-Xte" secondAttribute="centerX" type="default" id="ggB-eR-W9o"/>
+                                            <constraint firstItem="Xga-d1-bv1" firstAttribute="centerY" secondItem="24T-gZ-Xte" secondAttribute="centerY" type="default" id="q8u-V2-W0T"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
@@ -1883,7 +1884,7 @@
                                             <constraint firstAttribute="height" constant="155" type="user" id="UQJ-6k-yBQ"/>
                                         </constraints>
                                     </imageView>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-hp-BXR">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-hp-BXR">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="674" type="user" id="aTN-4H-U71"/>
@@ -1896,7 +1897,7 @@
                                             <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="small_cell" id="OTK-oh-d4w">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="small_cell" id="OTK-oh-d4w" customClass="RWSmallImageCell">
                                                 <rect key="frame" x="5" y="22" width="138" height="96"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1908,15 +1909,25 @@
                                                                 <constraint firstAttribute="height" constant="101" id="rpA-f0-FGS"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiI-4R-hxv">
+                                                            <color key="backgroundColor" red="1" green="0.30301636910000002" blue="0.26620406819999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="iLU-h2-LAE" firstAttribute="leading" secondItem="OTK-oh-d4w" secondAttribute="leading" type="default" id="YId-rc-NnY"/>
+                                                    <constraint firstItem="JiI-4R-hxv" firstAttribute="leading" secondItem="OTK-oh-d4w" secondAttribute="leading" type="default" id="8NF-cn-nBQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JiI-4R-hxv" secondAttribute="trailing" constant="-2" id="Jrl-iS-JQX"/>
+                                                    <constraint firstItem="JiI-4R-hxv" firstAttribute="leading" secondItem="iLU-h2-LAE" secondAttribute="leading" type="default" id="N1O-Il-Eeg"/>
+                                                    <constraint firstItem="JiI-4R-hxv" firstAttribute="top" secondItem="OTK-oh-d4w" secondAttribute="top" constant="90" id="bSb-bX-Yap"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JiI-4R-hxv" secondAttribute="bottom" type="user" id="c9w-wG-4uj"/>
                                                     <constraint firstItem="iLU-h2-LAE" firstAttribute="trailing" secondItem="OTK-oh-d4w" secondAttribute="trailing" type="default" id="tGj-fa-Pug"/>
                                                     <constraint firstItem="iLU-h2-LAE" firstAttribute="top" secondItem="OTK-oh-d4w" secondAttribute="top" constant="-1" id="zIV-sY-m39"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="bottomLine" destination="JiI-4R-hxv" id="siL-Ey-wGm"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -1933,6 +1944,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="prevPage:" destination="tYl-Vm-Aep" eventType="touchUpInside" id="GeX-UI-BfC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BS-aH-TTV">
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1943,6 +1957,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextPage:" destination="tYl-Vm-Aep" eventType="touchUpInside" id="PRa-Gf-eb1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -2726,6 +2743,197 @@
         <image name="your_event.png" width="175" height="55"/>
         <image name="活动选择.png" width="144" height="35"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RWActivityViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWActivityViewController.h"/>
+        </class>
+        <class className="RWAdminCarEditController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminCarEditController.h"/>
+            <relationships>
+                <relationship kind="action" name="addColorAction:"/>
+                <relationship kind="action" name="addModelAction:" candidateClass="UIButton"/>
+                <relationship kind="action" name="addSeriesAction:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="colorField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="colorsTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="hasNoneTurboButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="hasTurboButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="modelField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="modelsTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="priceField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="seriersField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="seriesTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RWAdminDealerEditController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminDealerEditController.h"/>
+        </class>
+        <class className="RWAdminLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminLoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RWAdminPageController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminPageController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="tabBarController" candidateClass="UITabBarController"/>
+            </relationships>
+        </class>
+        <class className="RWAdminPasswordEditController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminPasswordEditController.h"/>
+            <relationships>
+                <relationship kind="action" name="updatePasswordAction:"/>
+                <relationship kind="outlet" name="oldPasswordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password2Field" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RWAdminSalesEditController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminSalesEditController.h"/>
+            <relationships>
+                <relationship kind="action" name="addSalesAction:"/>
+                <relationship kind="action" name="updatePasswordAction:"/>
+                <relationship kind="action" name="updatePhoneAction:"/>
+                <relationship kind="outlet" name="password2Field" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="phoneField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="salesNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="salesPasswordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="salesPhoneField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RWBigImageCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWBigImageCell.h"/>
+        </class>
+        <class className="RWCarColorBrowserController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarColorBrowserController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="RWCarConfigViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarConfigViewController.h"/>
+        </class>
+        <class className="RWCarDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonAcion:"/>
+                <relationship kind="action" name="homeButtonAcion:"/>
+                <relationship kind="action" name="tapOnScreen:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="bottomBackgroundView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="bottomView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="homeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="redBorder" candidateClass="UIView"/>
+                <relationship kind="outlet" name="topBar" candidateClass="UIView"/>
+                <relationship kind="outlet" name="touchScreenButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="videoContentView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="RWCarImageBrowser" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarImageBrowser.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPage:"/>
+                <relationship kind="action" name="prevPage:"/>
+                <relationship kind="outlet" name="bigImageView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="smallImageView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="RWCarModelChooseController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarModelChooseController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="colorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="colorsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="modelLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modelsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="seriesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="seriesTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RWCarModelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCarModelViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="RWClientInfoController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWClientInfoController.h"/>
+        </class>
+        <class className="RWClientListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWClientListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RWClientViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWClientViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pop:"/>
+                <relationship kind="action" name="switchAction:"/>
+                <relationship kind="outlet" name="embeddedNavigator" candidateClass="UINavigationController"/>
+            </relationships>
+        </class>
+        <class className="RWEventsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWEventsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="RWFilterTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWFilterTableViewController.h"/>
+        </class>
+        <class className="RWInfoBaseController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWInfoBaseController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="fakeTabBar" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="RWSaleLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWSaleLoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RWSmallImageCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWSmallImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bottomLine" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="RWTaxInfoController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWTaxInfoController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="checkBoxAction:" candidateClass="UIButton"/>
+                <relationship kind="action" name="dismissModalViewController:"/>
+                <relationship kind="action" name="popRootViewController:"/>
+                <relationship kind="action" name="popToCarSeriesController:"/>
+                <relationship kind="action" name="popViewController:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

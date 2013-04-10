@@ -17,4 +17,7 @@
 @property (nonatomic, strong)IBOutlet UICollectionView *smallImageView;
 
 
+- (IBAction)nextPage:(id)sender;
+- (IBAction)prevPage:(id)sender;
+
 @end
