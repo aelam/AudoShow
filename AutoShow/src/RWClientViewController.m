@@ -12,6 +12,7 @@
 
 @end
 
+
 @implementation RWClientViewController
 
 @synthesize embeddedNavigator = _embeddedNavigator;
@@ -35,14 +36,35 @@
 
 }
 
-- (IBAction)switchAction:(UISegmentedControl *)sender {
+- (IBAction)switchAction:(UIButton *)sender {
     
     UIViewController *v;
-    if (sender.selectedSegmentIndex == 1) {
-        v = [self.storyboard instantiateViewControllerWithIdentifier:@"client_list"];
-    } else {
+
+    if (self.clientNewButton == sender) {
+        if (self.clientNewButton.selected) {
+            return;
+        }
+        
+        self.clientNewButton.selected = YES;
+        self.clientListButton.selected = NO;
         v = [self.storyboard instantiateViewControllerWithIdentifier:@"model_choose"];
+    } else {
+        if (self.clientListButton.selected) {
+            return;
+        }
+        
+        
+        self.clientNewButton.selected = NO;
+        self.clientListButton.selected = YES;
+        v = [self.storyboard instantiateViewControllerWithIdentifier:@"client_list"];
     }
+    
+//    UIViewController *v;
+//    if (sender.selectedSegmentIndex == 1) {
+//        v = [self.storyboard instantiateViewControllerWithIdentifier:@"client_list"];
+//    } else {
+//        v = [self.storyboard instantiateViewControllerWithIdentifier:@"model_choose"];
+//    }
     
     [_embeddedNavigator setViewControllers:[NSArray arrayWithObject:v]];
 

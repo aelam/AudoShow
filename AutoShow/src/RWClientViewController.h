@@ -12,8 +12,11 @@
 
 
 @property (nonatomic, strong) IBOutlet UINavigationController *embeddedNavigator;
+@property (nonatomic, strong) IBOutlet UIButton *clientNewButton;
+@property (nonatomic, strong) IBOutlet UIButton *clientListButton;
 
-- (IBAction)switchAction:(id)sender;
+
+- (IBAction)switchAction:(UIButton *)sender;
 - (IBAction)pop:(id)sender;
 
 

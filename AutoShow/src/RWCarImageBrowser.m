@@ -170,6 +170,9 @@
     if (self.bigImageView == scrollView) {
         
         NSIndexPath *firstVisibleIndexPath = [[self.bigImageView indexPathsForVisibleItems] objectAtIndex:0];
+        if (firstVisibleIndexPath.section == self.selectedIndexPath.section) {
+            return;
+        }
         [self.smallImageView scrollToItemAtIndexPath:firstVisibleIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
         
         
