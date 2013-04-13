@@ -11,5 +11,6 @@
 @interface RWSmallImageCell : UICollectionViewCell
 
 @property (nonatomic, strong) IBOutlet UIView *bottomLine;
+@property (nonatomic, strong) IBOutlet UIView *mask;
 
 @end

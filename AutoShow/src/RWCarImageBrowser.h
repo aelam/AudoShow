@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong)IBOutlet UICollectionView *bigImageView;
 @property (nonatomic, strong)IBOutlet UICollectionView *smallImageView;
+@property (nonatomic, strong)IBOutlet UIButton *prevPageButton;
+@property (nonatomic, strong)IBOutlet UIButton *nextPageButton;
 
 
 - (IBAction)nextPage:(id)sender;

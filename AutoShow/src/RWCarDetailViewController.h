@@ -19,6 +19,9 @@
 @property (nonatomic,strong) IBOutlet UIButton *touchScreenButton;
 @property (nonatomic,strong) IBOutlet UICollectionView *collectionView;
 
+@property (nonatomic,strong) IBOutlet UIImageView *jingShadow; //精美图片sharow
+
+
 @property (nonatomic,strong) IBOutlet UIButton *homeButton;
 @property (nonatomic,strong) IBOutlet UIButton *backButton;
 

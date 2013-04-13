@@ -28,6 +28,7 @@
     
     self.bottomLine.hidden = !selected;
     
+    self.mask.hidden = selected;
 }
 
 /*

@@ -139,11 +139,15 @@
         return;
     }
     NSDictionary *colorItem = [self.carColorInfo objectAtIndex:index];
-    NSString *imageName = [colorItem objectForKey:@"imageName"];
-    NSString *colorName = [colorItem objectForKey:@"colorName"];
-                              
+    NSString *colorImage = [colorItem objectForKey:@"colorImage"];
+    if (colorImage == nil || colorImage.length == 0) {
+        colorImage = [colorItem objectForKey:@"colorName"];
+    }
+    if (colorImage == nil || colorImage.length == 0) {
+        colorImage = [colorItem objectForKey:@"imageName"];
+    }
 
-    NSString *imageFull = [NSString stringWithFormat:@"%@/%@/colors/%@",[RWResourceManager bundleName],[self.carSeriesInfo objectForKey:@"colors"],imageName?imageName:colorName];
+    NSString *imageFull = [NSString stringWithFormat:@"%@/%@/colors/%@",[RWResourceManager bundleName],[self.carSeriesInfo objectForKey:@"colors"],colorImage];
     
     self.carImageView.image = [UIImage imageNamed:imageFull];
 

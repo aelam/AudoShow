@@ -47,6 +47,7 @@
 
     self.selectedIndexPath = [NSIndexPath indexPathForItem:0 inSection:0];
     
+    self.prevPageButton.enabled = NO;
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -72,8 +73,6 @@
     if (collectionView == self.bigImageView) {
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"big_cell" forIndexPath:indexPath];
 
-//        cell.layer.borderColor = [UIColor cyanColor].CGColor;
-//        cell.layer.borderWidth = 4;
         UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
         NSString *imageName = [self.bigImages objectAtIndex:indexPath.section];
         NSString *imageInBundle = [NSString stringWithFormat:@"%@/%@/%@/%@",[RWResourceManager bundleName],[self.carSeriesInfo objectForKey:kJingFolderKey],kJingBigImagesKey,imageName];
@@ -83,7 +82,7 @@
     } else if (collectionView == self.smallImageView) {
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"small_cell" forIndexPath:indexPath];
         UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
-    
+
         NSString *imageName = [self.bigImages objectAtIndex:indexPath.section];
         NSString *imageInBundle = [NSString stringWithFormat:@"%@/%@/%@/%@",[RWResourceManager bundleName],[self.carSeriesInfo objectForKey:kJingFolderKey],kJingSmallImagesKey,imageName];
         
@@ -148,6 +147,7 @@
     
     
     
+    
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -180,11 +180,7 @@
         UICollectionViewCell *smallCell = [self.smallImageView cellForItemAtIndexPath:self.selectedIndexPath];
         bigCell.selected = NO;
         smallCell.selected = NO;
-        //
-        
-//        NSLog(@"oldIndexPath = %@", self.selectedIndexPath);
-//        NSLog(@"bigCell.selected = %d",bigCell.selected);
-        
+
         self.selectedIndexPath = firstVisibleIndexPath;
         bigCell = [self.bigImageView cellForItemAtIndexPath:self.selectedIndexPath];
         smallCell = [self.smallImageView cellForItemAtIndexPath:self.selectedIndexPath];
@@ -192,14 +188,16 @@
         smallCell.selected = YES;
         
         
+        
     } else {
-//        NSIndexPath *firstVisibleIndexPath = [[self.smallImageView indexPathsForVisibleItems] objectAtIndex:0];
-//        [self.bigImageView scrollToItemAtIndexPath:firstVisibleIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+        [self updatePagingButtonState];
+
     }
 
 }
 
 
+#if 0
 - (IBAction)prevPage:(id)sender {
     NSInteger section = self.selectedIndexPath.section;
     if(section > 0) {
@@ -219,6 +217,90 @@
         [self selectIndexPath:self.selectedIndexPath centered:YES];
     }
 }
+#else
+- (IBAction)prevPage:(id)sender {
+    NSLog(@"offset %@",NSStringFromCGPoint(self.smallImageView.contentOffset));
+    NSLog(@"size %@",NSStringFromCGSize(self.smallImageView.contentSize));
+    
+    CGRect frame;
+    frame.origin.x = self.smallImageView.contentOffset.x - self.smallImageView.frame.size.width;
+    frame.origin.y = 0;
+    
+    frame.size = self.smallImageView.frame.size;
+    
+    [self.smallImageView scrollRectToVisible:frame animated:YES];
+    
+
+    
+}
+
+- (IBAction)nextPage:(id)sender {
+    NSLog(@"offset %@",NSStringFromCGPoint(self.smallImageView.contentOffset));
+    NSLog(@"size %@",NSStringFromCGSize(self.smallImageView.contentSize));
+
+    CGRect frame;
+    frame.origin.x = self.smallImageView.contentOffset.x +self.smallImageView.frame.size.width;
+    frame.origin.y = 0;
+
+    frame.size = self.smallImageView.frame.size;
+
+    [self.smallImageView scrollRectToVisible:frame animated:YES];
+
+
+    
+    
+    
+    
+}
+
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    
+    [self updatePagingButtonState];
+}
+
+
+- (void)updatePagingButtonState {
+    if (self.smallImages.count == 0) {
+        self.prevPageButton.enabled = NO;
+        self.nextPageButton.enabled = NO;
+        return;
+    }
+    
+    NSArray *visibleIndexPaths = [self.smallImageView indexPathsForVisibleItems];
+    if (visibleIndexPaths.count == 0) {
+        return;
+    }
+    
+    NSIndexPath *firstIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    NSIndexPath *lastIndexPath = [NSIndexPath indexPathForRow:0 inSection:(self.smallImages.count-1)];
+    
+    NSArray *sortedvisibleIndexPaths = [visibleIndexPaths sortedArrayUsingComparator:^(id obj1, id obj2) {
+        NSIndexPath *indexPath1 = (NSIndexPath *)obj1;
+        NSIndexPath *indexPath2 = (NSIndexPath *)obj2;
+        
+        return indexPath1.section > indexPath2.section;
+    }];
+
+    
+    NSIndexPath *firstIndexPath0 = [sortedvisibleIndexPaths objectAtIndex:0];
+    NSIndexPath *lastIndexPath0 = [sortedvisibleIndexPaths lastObject];
+    
+    if (firstIndexPath0.section <= firstIndexPath.section) {
+        self.prevPageButton.enabled = NO;
+    } else {
+        self.prevPageButton.enabled = YES;
+    }
+    
+    if (lastIndexPath0.section >= lastIndexPath.section) {
+        self.nextPageButton.enabled = NO;
+    } else {
+        self.nextPageButton.enabled = YES;
+    }
+}
+
+
+#endif
 
 - (void)deselectIndexPath:(NSIndexPath *)oldIndexPath {
     
@@ -248,16 +330,6 @@
     }
 
 }
-
-
-
-
--(void)performSelectionAnimations {
-
-
-}
-
-
 
 - (void)didReceiveMemoryWarning
 {

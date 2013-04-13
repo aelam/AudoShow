@@ -15,6 +15,7 @@
 #import "RWActivityViewController.h"
 #import "RWResourceManager.h"
 #import "UIViewController+Navigation.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RWCarDetailViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -73,8 +74,6 @@
     self.carImageBrowser.carSeriesInfo = self.carSeriesInfo;
     self.activityController.carSeriesInfo = self.carSeriesInfo;
     
-
-    
     
     self.contentView.hidden = YES;
     [self playVideo];
@@ -98,19 +97,28 @@
         self.redBorder.hidden = YES;
         self.contentView.hidden = YES;
         self.bottomBackgroundView.hidden = YES;
+        self.touchScreenButton.hidden = NO;
+        
+        self.jingShadow.hidden = YES;
     } else {
         self.redBorder.hidden = NO;
         self.contentView.hidden = NO;
         self.bottomBackgroundView.hidden = NO;
+        self.touchScreenButton.hidden = YES;
         self.tabBarController.selectedIndex = self.highlightedIndex;
         UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
         
         [self updateCell:cell selected:YES];
+        
+        if (self.highlightedIndex == 2) {
+            self.jingShadow.hidden = NO;
+        } else {
+            self.jingShadow.hidden = YES;
+        }
     }
 }
 
 - (void)playVideo {
-    NSLog(@"%@",self.carSeriesInfo);
     
     NSString *videoPath = [NSString stringWithFormat:@"%@/video/%@.mp4",[RWResourceManager resourcePath],[self.carSeriesInfo objectForKey:@"video"]];
     
@@ -130,15 +138,19 @@
    [self.moviePlayer prepareToPlay];
    [self.moviePlayer play];
 
-//        [self.videoContentView addSubview:self.moviePlayer.view];
     [self.view insertSubview:self.moviePlayer.view belowSubview:self.touchScreenButton];
     
     [self.view bringSubviewToFront:self.homeButton];
     [self.view bringSubviewToFront:self.backButton];
 }
 
+- (void)stopVideo {
+    [self.moviePlayer stop];
+}
+
 
 - (IBAction)tapOnScreen:(id)sender {
+    [self stopVideo];
     self.contentView.hidden = NO;
     [self.view sendSubviewToBack: self.moviePlayer.view];
     
@@ -198,21 +210,11 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//    if (indexPath.row == self.highlightedIndex) {
-//        return;
-//    } else {
-//        UICollectionViewCell *oldCell = [collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.highlightedIndex inSection:0]];
-//        [self updateCell:oldCell selected:NO];
-//
-//        UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-//        [self updateCell:cell selected:YES];
-//
-//        self.highlightedIndex = indexPath.row;
     
-        [self selectIndex:indexPath.row];
-        self.tabBarController.selectedIndex = self.highlightedIndex;
-
-//    }
+    [self selectIndex:indexPath.row];
+    self.tabBarController.selectedIndex = self.highlightedIndex;
+    [self stopVideo];
+    
 }
 
 - (void)updateCell:(UICollectionViewCell *)cell selected:(BOOL)selected{

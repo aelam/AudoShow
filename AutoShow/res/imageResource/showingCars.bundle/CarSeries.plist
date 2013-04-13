@@ -4,37 +4,11 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>M16 TEASER</string>
-		<key>image</key>
-		<string>M16</string>
-		<key>colors</key>
-		<string>M16-colors</string>
-		<key>video</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>T21 TEASER</string>
-		<key>image</key>
-		<string>T21</string>
-		<key>colors</key>
-		<string>T21-colors</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>ANT 2</string>
-		<key>image</key>
-		<string>ANT2</string>
-		<key>colors</key>
-		<string>ANT2-colors</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>新风云2 两厢</string>
 		<key>image</key>
-		<string>新风云</string>
+		<string>新风云两厢</string>
 		<key>colors</key>
-		<string>新风云</string>
+		<string>新风云两厢</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -101,9 +75,9 @@
 		<key>title</key>
 		<string>新风云2 三厢</string>
 		<key>image</key>
-		<string>新风云</string>
+		<string>新风云三厢</string>
 		<key>colors</key>
-		<string>新风云</string>
+		<string>新风云三厢</string>
 		<key>colorInfo</key>
 		<array>
 			<dict>
@@ -177,51 +151,51 @@
 		<array>
 			<dict>
 				<key>colorName</key>
-				<string>纳斯达克银</string>
-				<key>colorValue</key>
-				<string>#8c8c8c</string>
-				<key>colorImage</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>colorName</key>
 				<string>塞纳金</string>
 				<key>colorValue</key>
-				<string>#D1BE81</string>
+				<string>#CDB283</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>塞纳金</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
-				<string>爱琴海蓝</string>
+				<string>纳斯达克银</string>
 				<key>colorValue</key>
-				<string>#3D4E93</string>
+				<string>#C9C9C9</string>
 				<key>colorImage</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>colorName</key>
-				<string>红</string>
-				<key>colorValue</key>
-				<string>#BE252B</string>
-				<key>colorImage</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>colorName</key>
-				<string>徽墨黑</string>
-				<key>colorValue</key>
-				<string>#2b2b2b</string>
-				<key>colorImage</key>
-				<string></string>
+				<string>纳斯达克银</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
 				<string>狼堡灰</string>
 				<key>colorValue</key>
-				<string>#504939</string>
+				<string>#8A7F72</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>狼堡灰</string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>红</string>
+				<key>colorValue</key>
+				<string>#CF0039</string>
+				<key>colorImage</key>
+				<string>红</string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>爱琴海蓝</string>
+				<key>colorValue</key>
+				<string>#49519D</string>
+				<key>colorImage</key>
+				<string>爱琴海蓝</string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>徽墨黑</string>
+				<key>colorValue</key>
+				<string>#515151</string>
+				<key>colorImage</key>
+				<string>徽墨黑</string>
 			</dict>
 		</array>
 		<key>video</key>
@@ -244,7 +218,7 @@
 				<key>colorValue</key>
 				<string>#2B2B2B</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>徽墨黑</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -252,7 +226,7 @@
 				<key>colorValue</key>
 				<string>#8C8C8C</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>纳斯达克银</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -260,7 +234,7 @@
 				<key>colorValue</key>
 				<string>#E3EAED</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>奇瑞白</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -268,7 +242,7 @@
 				<key>colorValue</key>
 				<string>#082B7E</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>玛格丽特蓝</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -276,7 +250,7 @@
 				<key>colorValue</key>
 				<string>#1D2B43</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>狼堡灰</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -284,7 +258,7 @@
 				<key>colorValue</key>
 				<string>#63111C</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>品尚红</string>
 			</dict>
 		</array>
 	</dict>
@@ -364,7 +338,7 @@
 				<key>colorValue</key>
 				<string>#937b61</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>2</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -372,7 +346,7 @@
 				<key>colorValue</key>
 				<string>#0E0E0E</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>1</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -380,7 +354,7 @@
 				<key>colorValue</key>
 				<string>#8A1621</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>3</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -388,15 +362,15 @@
 				<key>colorValue</key>
 				<string>#79756A</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>4</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
 				<string></string>
 				<key>colorValue</key>
-				<string>#73737B</string>
+				<string>#BEBEC0</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>5</string>
 			</dict>
 			<dict>
 				<key>colorName</key>
@@ -404,11 +378,37 @@
 				<key>colorValue</key>
 				<string>#b5b5b7</string>
 				<key>colorImage</key>
-				<string></string>
+				<string>6</string>
 			</dict>
 		</array>
 		<key>video</key>
 		<string>E5TVC</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>M16 TEASER</string>
+		<key>image</key>
+		<string>M16</string>
+		<key>colors</key>
+		<string>M16</string>
+		<key>video</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>T21 TEASER</string>
+		<key>image</key>
+		<string>T21</string>
+		<key>colors</key>
+		<string>T21-colors</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>ANT 2</string>
+		<key>image</key>
+		<string>ANT2</string>
+		<key>colors</key>
+		<string>ANT2-colors</string>
 	</dict>
 </array>
 </plist>
