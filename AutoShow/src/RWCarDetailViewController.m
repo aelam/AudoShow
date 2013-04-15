@@ -156,6 +156,12 @@
     [self.moviePlayer stop];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self stopVideo];
+}
+
 
 - (IBAction)tapOnScreen:(id)sender {
     [self stopVideo];

@@ -770,7 +770,7 @@
                                     <constraint firstAttribute="width" constant="225" id="AWh-1n-jOO"/>
                                 </constraints>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uSK-a0-grf">
-                                    <rect key="frame" x="0.0" y="0.0" width="225" height="12900"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="13330"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <sections/>
@@ -1446,7 +1446,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l8T-Fq-0bI">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="738" id="7Lr-GB-Dza"/>
+                                    <constraint firstAttribute="height" constant="758" id="xFo-6z-Heb"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="22" minimumInteritemSpacing="0.0" id="ic5-gl-Ie2">
                                     <size key="itemSize" width="214" height="165"/>
@@ -1553,7 +1553,6 @@
                             <constraint firstItem="h9t-os-yKb" firstAttribute="top" secondItem="YYC-fp-R3E" secondAttribute="top" constant="168" id="4aC-SF-RH4"/>
                             <constraint firstItem="l8T-Fq-0bI" firstAttribute="trailing" secondItem="YYC-fp-R3E" secondAttribute="trailing" type="default" id="4nl-3a-5a1"/>
                             <constraint firstItem="l8T-Fq-0bI" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="8UJ-bn-5MD"/>
-                            <constraint firstItem="dJb-10-mK7" firstAttribute="top" secondItem="YYC-fp-R3E" secondAttribute="top" constant="127" id="ADo-Z8-r09"/>
                             <constraint firstItem="UD4-E1-f4X" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="NWO-2f-RDU"/>
                             <constraint firstItem="l8T-Fq-0bI" firstAttribute="bottom" secondItem="YYC-fp-R3E" secondAttribute="bottom" type="default" id="NwG-MA-ymd"/>
                             <constraint firstItem="CrQ-2M-ARU" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="PSY-Ss-btL"/>
@@ -1561,6 +1560,7 @@
                             <constraint firstItem="h9t-os-yKb" firstAttribute="trailing" secondItem="YYC-fp-R3E" secondAttribute="trailing" type="default" id="iRs-kU-h2d"/>
                             <constraint firstItem="h9t-os-yKb" firstAttribute="leading" secondItem="YYC-fp-R3E" secondAttribute="leading" type="default" id="m3v-XJ-a3t"/>
                             <constraint firstItem="dJb-10-mK7" firstAttribute="trailing" secondItem="YYC-fp-R3E" secondAttribute="trailing" type="default" id="tQ3-lF-UAJ"/>
+                            <constraint firstItem="UD4-E1-f4X" firstAttribute="top" secondItem="YYC-fp-R3E" secondAttribute="top" constant="127" id="wAW-qo-bne"/>
                             <constraint firstItem="dJb-10-mK7" firstAttribute="top" secondItem="UD4-E1-f4X" secondAttribute="top" type="default" id="xuc-EZ-4U9"/>
                         </constraints>
                     </view>
@@ -2961,9 +2961,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
