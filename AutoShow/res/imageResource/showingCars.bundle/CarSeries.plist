@@ -410,5 +410,15 @@
 		<key>colors</key>
 		<string>ANT2-colors</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>动力总成</string>
+		<key>colors</key>
+		<string>动力总成</string>
+		<key>image</key>
+		<string>动力总成</string>
+		<key>type</key>
+		<integer>2</integer>
+	</dict>
 </array>
 </plist>

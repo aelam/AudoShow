@@ -80,6 +80,9 @@
     
     [self selectIndex:-1];
     
+    
+    self.titleLabel.text = [self.carSeriesInfo objectForKey:@"title"];
+    self.backButton.hidden = YES;
 }
 
 - (void)selectIndex:(NSInteger)index {
@@ -100,6 +103,9 @@
         self.touchScreenButton.hidden = NO;
         
         self.jingShadow.hidden = YES;
+        
+        self.backButton.hidden = YES;
+
     } else {
         self.redBorder.hidden = NO;
         self.contentView.hidden = NO;
@@ -115,6 +121,8 @@
         } else {
             self.jingShadow.hidden = YES;
         }
+        
+        self.backButton.hidden = NO;
     }
 }
 
@@ -155,6 +163,7 @@
     [self.view sendSubviewToBack: self.moviePlayer.view];
     
     [self selectIndex:self.tabBarController.selectedIndex];
+    
 }
 
 
@@ -176,7 +185,7 @@
 - (IBAction)homeButtonAcion:(id)sender {
     [self popToCarSeriesController:sender];
 }
-#else
+#elif 0
 
 
 - (IBAction)backButtonAcion:(id)sender {
@@ -186,6 +195,18 @@
 - (IBAction)homeButtonAcion:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+#else 
+- (IBAction)backButtonAcion:(UIButton *)sender {
+    self.contentView.hidden = YES;
+    [self selectIndex:-1];
+    [self playVideo];
+//    self.backButton.hidden = YES;
+}
+
+- (IBAction)homeButtonAcion:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #endif
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {

@@ -48,6 +48,7 @@
 		9445EF1E1709BFE50068D524 /* RWCarConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF1D1709BFE50068D524 /* RWCarConfigViewController.m */; };
 		9445EF231709CA3A0068D524 /* RWCarColorBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445EF221709CA3A0068D524 /* RWCarColorBrowserController.m */; };
 		9445EF251709D5B50068D524 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9445EF241709D5B50068D524 /* QuartzCore.framework */; };
+		944B70FB171B02F700A284FA /* RWAnimationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944B70FA171B02F700A284FA /* RWAnimationTabBarController.m */; };
 		945951E517049F8200DA57BF /* RWSaleLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951E417049F8200DA57BF /* RWSaleLoginViewController.m */; };
 		945951E81704A19B00DA57BF /* RWClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951E71704A19B00DA57BF /* RWClientViewController.m */; };
 		945951EE1704A57E00DA57BF /* RWClientInfo1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 945951ED1704A57E00DA57BF /* RWClientInfo1Controller.m */; };
@@ -309,6 +310,8 @@
 		9445EF211709CA390068D524 /* RWCarColorBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarColorBrowserController.h; sourceTree = "<group>"; };
 		9445EF221709CA3A0068D524 /* RWCarColorBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarColorBrowserController.m; sourceTree = "<group>"; };
 		9445EF241709D5B50068D524 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		944B70F9171B02F700A284FA /* RWAnimationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAnimationTabBarController.h; sourceTree = "<group>"; };
+		944B70FA171B02F700A284FA /* RWAnimationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWAnimationTabBarController.m; sourceTree = "<group>"; };
 		945951E317049F8200DA57BF /* RWSaleLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSaleLoginViewController.h; sourceTree = "<group>"; };
 		945951E417049F8200DA57BF /* RWSaleLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSaleLoginViewController.m; sourceTree = "<group>"; };
 		945951E61704A19B00DA57BF /* RWClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClientViewController.h; sourceTree = "<group>"; };
@@ -923,6 +926,8 @@
 				94F4E3C1170F1D2B00825CE2 /* UIAlertView+Quick.m */,
 				943FDFE71711CB86005EC47D /* UIColor+Hex.h */,
 				943FDFE81711CB86005EC47D /* UIColor+Hex.m */,
+				944B70F9171B02F700A284FA /* RWAnimationTabBarController.h */,
+				944B70FA171B02F700A284FA /* RWAnimationTabBarController.m */,
 			);
 			path = categories;
 			sourceTree = "<group>";
@@ -1317,6 +1322,7 @@
 				9484BB781715A2BB0022CBA5 /* PSTGridLayoutRow.m in Sources */,
 				9484BB791715A2BB0022CBA5 /* PSTGridLayoutSection.m in Sources */,
 				9484BB7C1715B9A10022CBA5 /* RWSmallImageCell.m in Sources */,
+				944B70FB171B02F700A284FA /* RWAnimationTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

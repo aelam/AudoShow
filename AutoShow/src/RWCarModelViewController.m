@@ -61,8 +61,11 @@
 
     NSDictionary *info = [self.carSeries objectAtIndex:indexPath.row];
     NSString *imageName = [info objectForKey:@"image"];
+
     
-    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"showingCars.bundle/%@.png",imageName]];
+//    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"showingCars.bundle/%@.png",imageName]];
+    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"showingCars.bundle/%@/cover",imageName]];
+
     backgroundImageView.image = image;
     
     label.text = [info objectForKey:@"title"];;

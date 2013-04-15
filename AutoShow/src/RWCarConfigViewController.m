@@ -7,6 +7,7 @@
 //
 
 #import "RWCarConfigViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RWCarConfigViewController ()
 
@@ -26,7 +27,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    NSString *folder = [self.carSeriesInfo objectForKey:@"colors"];
+    NSString *bundlePath = [NSString stringWithFormat:@"showingCars.bundle/%@/config.jpg",folder];
+    UIImage *image = [UIImage imageNamed:bundlePath];
+
+    if (image == nil) return;
+    
+    self.imageView = [[UIImageView alloc] initWithImage:image];
+    [self.scrollView addSubview:self.imageView];
+    
+    CGSize imageSize = image.size;
+    
+    CGFloat width =  CGRectGetWidth(self.view.frame);
+    
+    self.imageView.autoresizingMask = UIViewAutoresizingNone;
+    self.imageView.frame = CGRectMake(0, 0, width, width / imageSize.width *imageSize.height);
+    [self.scrollView setContentSize:self.imageView.frame.size];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

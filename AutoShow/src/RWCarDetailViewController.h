@@ -21,7 +21,7 @@
 
 @property (nonatomic,strong) IBOutlet UIImageView *jingShadow; //精美图片sharow
 
-
+@property (nonatomic,strong) IBOutlet UILabel *titleLabel;
 @property (nonatomic,strong) IBOutlet UIButton *homeButton;
 @property (nonatomic,strong) IBOutlet UIButton *backButton;
 
