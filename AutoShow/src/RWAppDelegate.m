@@ -24,15 +24,15 @@
     objectManager.managedObjectStore = managedObjectStore;
     
     
-    RKEntityMapping *userMapping = [RKEntityMapping mappingForEntityForName:@"RWManager" inManagedObjectStore:managedObjectStore];
-    [userMapping addAttributeMappingsFromArray:@[ @"userId",@"username",@"password",@"isAdmin",@"phone"]];
-    [userMapping setIdentificationAttributes:@[@"userId",@"username"]];
     
 
     NSError *error;
 
 #define GENERATE_SEED_DB  0
 #if GENERATE_SEED_DB
+    RKEntityMapping *userMapping = [RKEntityMapping mappingForEntityForName:@"RWManager" inManagedObjectStore:managedObjectStore];
+    [userMapping addAttributeMappingsFromArray:@[ @"userId",@"username",@"password",@"isAdmin",@"phone"]];
+    [userMapping setIdentificationAttributes:@[@"userId",@"username"]];
 
     NSString *seedPath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
 
@@ -51,9 +51,6 @@
         NSLog(@"error : %@",error);
         
     }
-
-//    NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:nil error:&error];
-//    NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
 
 #else
 
