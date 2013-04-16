@@ -34,16 +34,30 @@
 
     if (image == nil) return;
     
+    
     self.imageView = [[UIImageView alloc] initWithImage:image];
     [self.scrollView addSubview:self.imageView];
     
     CGSize imageSize = image.size;
     
-    CGFloat width =  CGRectGetWidth(self.view.frame);
+//    BOOL isNewUI = [[self.carSeriesInfo objectForKey:@"NEW_UI"] boolValue];
+
+//    if (isNewUI == NO) {
+    if (1) {
     
-    self.imageView.autoresizingMask = UIViewAutoresizingNone;
-    self.imageView.frame = CGRectMake(0, 0, width, width / imageSize.width *imageSize.height);
-    [self.scrollView setContentSize:self.imageView.frame.size];
+        CGFloat width =  CGRectGetWidth(self.view.frame);
+        
+        self.imageView.frame = CGRectMake(0, 0, width, width / imageSize.width *imageSize.height);
+        [self.scrollView setContentSize:self.imageView.frame.size];
+    } else {
+        CGFloat height =  CGRectGetHeight(self.view.frame);
+
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        self.imageView.frame = CGRectMake(0, 0, imageSize.height / height * imageSize.width , height);
+        [self.scrollView setContentSize:self.imageView.frame.size];
+        
+    }
+   
     
 }
 

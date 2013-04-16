@@ -31,6 +31,7 @@
 
 //@property (nonatomic, strong) RWBrowserContainer *tabBarController;
 
+#define NEW_UI @"NEW_UI"
 
 @end
 
@@ -53,7 +54,14 @@
 //    
     
     
-    self.menuTitles = @[@"车型颜色",@"车型配置",@"精美照片",@"活动信息"];
+    
+    BOOL isNewUI = [[self.carSeriesInfo objectForKey:NEW_UI] boolValue];
+    if (isNewUI) {
+        self.menuTitles = @[@"动力选择",@"动力配置",@"精美照片",@"活动信息"];
+    } else {
+        self.menuTitles = @[@"车型颜色",@"车型配置",@"精美照片",@"活动信息"];
+    }
+    
     
     NSEnumerator *objectEnumerator = self.childViewControllers.objectEnumerator;
     UIViewController *v;
@@ -138,6 +146,7 @@
     
    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
   
+    [self.moviePlayer setRepeatMode:MPMovieRepeatModeOne];
     
    self.moviePlayer.view.frame = CGRectMake(-80,0, 768+160, 585+150);
    [self.view addSubview:self.moviePlayer.view];

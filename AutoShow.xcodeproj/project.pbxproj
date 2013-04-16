@@ -113,6 +113,13 @@
 		9484BB781715A2BB0022CBA5 /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484BB6A1715A2BB0022CBA5 /* PSTGridLayoutRow.m */; };
 		9484BB791715A2BB0022CBA5 /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484BB6C1715A2BB0022CBA5 /* PSTGridLayoutSection.m */; };
 		9484BB7C1715B9A10022CBA5 /* RWSmallImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484BB7B1715B9A10022CBA5 /* RWSmallImageCell.m */; };
+		948E5262171D88FC00A4CC17 /* home_video_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5260171D88FC00A4CC17 /* home_video_bg.png */; };
+		948E5263171D88FC00A4CC17 /* home_video_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5261171D88FC00A4CC17 /* home_video_bg@2x.png */; };
+		948E526B171D895300A4CC17 /* RWHomeVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948E526A171D895300A4CC17 /* RWHomeVideoController.m */; };
+		948E5270171D8E1C00A4CC17 /* about chery.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526C171D8E1C00A4CC17 /* about chery.png */; };
+		948E5271171D8E1C00A4CC17 /* about chery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526D171D8E1C00A4CC17 /* about chery@2x.png */; };
+		948E5272171D8E1C00A4CC17 /* APPship_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526E171D8E1C00A4CC17 /* APPship_02.png */; };
+		948E5273171D8E1C00A4CC17 /* APPship_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526F171D8E1C00A4CC17 /* APPship_02@2x.png */; };
 		94A3AC4B17047D2C00DF350B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4A17047D2C00DF350B /* UIKit.framework */; };
 		94A3AC4D17047D2C00DF350B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4C17047D2C00DF350B /* Foundation.framework */; };
 		94A3AC4F17047D2C00DF350B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4E17047D2C00DF350B /* CoreGraphics.framework */; };
@@ -400,6 +407,14 @@
 		9484BB6C1715A2BB0022CBA5 /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutSection.m; sourceTree = "<group>"; };
 		9484BB7A1715B9A10022CBA5 /* RWSmallImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWSmallImageCell.h; path = AutoShow/src/cell/RWSmallImageCell.h; sourceTree = SOURCE_ROOT; };
 		9484BB7B1715B9A10022CBA5 /* RWSmallImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWSmallImageCell.m; path = AutoShow/src/cell/RWSmallImageCell.m; sourceTree = SOURCE_ROOT; };
+		948E5260171D88FC00A4CC17 /* home_video_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_video_bg.png; sourceTree = "<group>"; };
+		948E5261171D88FC00A4CC17 /* home_video_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_video_bg@2x.png"; sourceTree = "<group>"; };
+		948E5269171D895300A4CC17 /* RWHomeVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWHomeVideoController.h; sourceTree = "<group>"; };
+		948E526A171D895300A4CC17 /* RWHomeVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWHomeVideoController.m; sourceTree = "<group>"; };
+		948E526C171D8E1C00A4CC17 /* about chery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about chery.png"; sourceTree = "<group>"; };
+		948E526D171D8E1C00A4CC17 /* about chery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about chery@2x.png"; sourceTree = "<group>"; };
+		948E526E171D8E1C00A4CC17 /* APPship_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = APPship_02.png; sourceTree = "<group>"; };
+		948E526F171D8E1C00A4CC17 /* APPship_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APPship_02@2x.png"; sourceTree = "<group>"; };
 		94A3AC4717047D2C00DF350B /* AutoShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3AC4A17047D2C00DF350B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94A3AC4C17047D2C00DF350B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -544,6 +559,12 @@
 		94058BA4170D806600D28C49 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				948E526C171D8E1C00A4CC17 /* about chery.png */,
+				948E526D171D8E1C00A4CC17 /* about chery@2x.png */,
+				948E526E171D8E1C00A4CC17 /* APPship_02.png */,
+				948E526F171D8E1C00A4CC17 /* APPship_02@2x.png */,
+				948E5260171D88FC00A4CC17 /* home_video_bg.png */,
+				948E5261171D88FC00A4CC17 /* home_video_bg@2x.png */,
 				94B7E1D21719A3FB00692A45 /* jing_shadow.png */,
 				94B7E1D31719A3FB00692A45 /* jing_shadow@2x.png */,
 				94B7E1CE1719A3E400692A45 /* mask.png */,
@@ -792,6 +813,8 @@
 				947D266F170735950057E6CB /* RWClientInfoCell.m */,
 				94A3AC8C17047E0F00DF350B /* RWEventsViewController.h */,
 				94A3AC8D17047E0F00DF350B /* RWEventsViewController.m */,
+				948E5269171D895300A4CC17 /* RWHomeVideoController.h */,
+				948E526A171D895300A4CC17 /* RWHomeVideoController.m */,
 				94A3AC95170492F600DF350B /* RWCarModelViewController.h */,
 				94A3AC96170492F600DF350B /* RWCarModelViewController.m */,
 				94A3AC98170497A900DF350B /* RWCarDetailViewController.h */,
@@ -1228,6 +1251,12 @@
 				94B7E1D11719A3E400692A45 /* mask@2x.png in Resources */,
 				94B7E1D41719A3FB00692A45 /* jing_shadow.png in Resources */,
 				94B7E1D51719A3FB00692A45 /* jing_shadow@2x.png in Resources */,
+				948E5262171D88FC00A4CC17 /* home_video_bg.png in Resources */,
+				948E5263171D88FC00A4CC17 /* home_video_bg@2x.png in Resources */,
+				948E5270171D8E1C00A4CC17 /* about chery.png in Resources */,
+				948E5271171D8E1C00A4CC17 /* about chery@2x.png in Resources */,
+				948E5272171D8E1C00A4CC17 /* APPship_02.png in Resources */,
+				948E5273171D8E1C00A4CC17 /* APPship_02@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1323,6 +1352,7 @@
 				9484BB791715A2BB0022CBA5 /* PSTGridLayoutSection.m in Sources */,
 				9484BB7C1715B9A10022CBA5 /* RWSmallImageCell.m in Sources */,
 				944B70FB171B02F700A284FA /* RWAnimationTabBarController.m in Sources */,
+				948E526B171D895300A4CC17 /* RWHomeVideoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1437,7 +1467,7 @@
 		94A3AC8017047D2D00DF350B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai PrimeBank software Co., Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoShow/AutoShow-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
@@ -1445,7 +1475,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1C8B00EC-D374-4221-8889-A5FA58BE2857";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1453,7 +1483,7 @@
 		94A3AC8117047D2D00DF350B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai PrimeBank software Co., Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoShow/AutoShow-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
@@ -1461,7 +1491,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1C8B00EC-D374-4221-8889-A5FA58BE2857";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

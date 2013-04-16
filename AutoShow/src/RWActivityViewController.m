@@ -29,7 +29,23 @@
 {
     [super viewDidLoad];
 
-//    self.view.backgroundColor = [UIColor greenColor];
+    NSString *folder = [self.carSeriesInfo objectForKey:@"colors"];
+    NSString *bundlePath = [NSString stringWithFormat:@"showingCars.bundle/%@/activity.jpg",folder];
+    UIImage *image = [UIImage imageNamed:bundlePath];
+    
+    if (image == nil) return;
+    
+    self.imageView = [[UIImageView alloc] initWithImage:image];
+    [self.scrollView addSubview:self.imageView];
+    
+    CGSize imageSize = image.size;
+    
+    CGFloat width =  CGRectGetWidth(self.view.frame);
+    
+    self.imageView.autoresizingMask = UIViewAutoresizingNone;
+    self.imageView.frame = CGRectMake(0, 0, width, width / imageSize.width *imageSize.height);
+    [self.scrollView setContentSize:self.imageView.frame.size];
+
 }
 
 - (void)didReceiveMemoryWarning

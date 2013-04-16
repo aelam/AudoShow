@@ -38,6 +38,12 @@
     NSString *plistPath = [self.bundlePath stringByAppendingPathComponent:@"CarSeries.plist"];
     self.carSeries = [NSArray arrayWithContentsOfFile:plistPath];
     
+    UIViewController *videoController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWHomeVideoController"];
+    
+    [self presentViewController:videoController animated:NO completion:^{
+        
+    }];
+    
     
 }
 

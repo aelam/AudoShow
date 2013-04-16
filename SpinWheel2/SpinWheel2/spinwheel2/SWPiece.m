@@ -41,8 +41,11 @@
     self.backgroundColor = [UIColor clearColor];
     
     
-//    _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
+    _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
+    _titleLabel.backgroundColor = [UIColor clearColor];
     _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.textColor = [UIColor whiteColor];
+    
     [self addSubview:_titleLabel];
     
 }
@@ -126,7 +129,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    _titleLabel.frame = CGRectMake(0, 0, self.bounds.size.width, 30);
+    _titleLabel.frame = CGRectMake(0, 0, self.bounds.size.width, 80);
 }
 
 

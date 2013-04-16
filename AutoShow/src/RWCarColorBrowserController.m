@@ -11,6 +11,7 @@
 #import "UISpinWheel.h"
 #import "SWPiece.h"
 #import "UIColor+Hex.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RWCarColorBrowserController () <UICollectionViewDataSource, UICollectionViewDelegate,SpinWheelDelegate>
 
@@ -18,7 +19,7 @@
 @property (nonatomic, strong) UISpinWheel *spinWheel;
 
 @property (nonatomic, strong) NSArray *carColorInfo;
-
+@property (nonatomic, assign) BOOL isNewUI;
 @end
 
 @implementation RWCarColorBrowserController
@@ -35,8 +36,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.isNewUI = [[self.carSeriesInfo objectForKey:@"NEW_UI"] boolValue];
+
     
-    
+    if (self.isNewUI) {
+
+        self.carImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 900)];
+        self.carImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self.view addSubview:self.carImageView];
+        
+    }
+        
     self.carColorInfo = [self.carSeriesInfo objectForKey:@"colorInfo"];
     
     UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chex014"]];
@@ -74,6 +84,14 @@
 
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.isNewUI) {
+//        self.carImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 1024);
+//        self.carImageView.frame = CGRectMake(0, 0, 20,20);
+    }
+}
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -89,8 +107,8 @@
     
     NSDictionary *colorItem = [self.carColorInfo objectAtIndex:indexPath.row];
     NSString *imageName = [colorItem objectForKey:@"imageName"];
+
     NSString *colorName = [colorItem objectForKey:@"colorName"];
-    
     
     
     NSString *imageFull = [NSString stringWithFormat:@"%@/%@/colors/%@",[RWResourceManager bundleName],[self.carSeriesInfo objectForKey:@"colors"],imageName?imageName:colorName];
@@ -110,10 +128,16 @@
     NSDictionary *colorItem = [self.carColorInfo objectAtIndex:index];
     NSString *colorString = [colorItem objectForKey:@"colorValue"];
     UIColor *color = [UIColor colorWithHexString:colorString];
-    
+
     piece.sectorColor = color;
     
-    piece.titleLabel.text = [NSString stringWithFormat:@"%d",index];
+    if (self.isNewUI) {
+        NSString *colorName = [colorItem objectForKey:@"colorName"];
+        piece.titleLabel.text = colorName;
+        piece.titleLabel.font = [UIFont boldSystemFontOfSize:20];
+    }
+    
+
     
     return piece;
 }

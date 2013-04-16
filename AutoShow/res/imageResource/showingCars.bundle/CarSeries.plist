@@ -400,7 +400,7 @@
 		<key>image</key>
 		<string>T21</string>
 		<key>colors</key>
-		<string>T21-colors</string>
+		<string>T21</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -408,7 +408,7 @@
 		<key>image</key>
 		<string>ANT2</string>
 		<key>colors</key>
-		<string>ANT2-colors</string>
+		<string>ANT2</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -419,6 +419,35 @@
 		<string>动力总成</string>
 		<key>type</key>
 		<integer>2</integer>
+		<key>NEW_UI</key>
+		<true/>
+		<key>colorInfo</key>
+		<array>
+			<dict>
+				<key>colorName</key>
+				<string>SQRF3J12</string>
+				<key>colorValue</key>
+				<string>#00FF00</string>
+				<key>colorImage</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>SQRF4J16</string>
+				<key>colorValue</key>
+				<string>#EB2F2E</string>
+				<key>colorImage</key>
+				<string>2</string>
+			</dict>
+			<dict>
+				<key>colorName</key>
+				<string>SQRE4T16</string>
+				<key>colorValue</key>
+				<string>#3e7eac</string>
+				<key>colorImage</key>
+				<string>3</string>
+			</dict>
+		</array>
 	</dict>
 </array>
 </plist>

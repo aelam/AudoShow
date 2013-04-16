@@ -770,7 +770,7 @@
                                     <constraint firstAttribute="width" constant="225" id="AWh-1n-jOO"/>
                                 </constraints>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uSK-a0-grf">
-                                    <rect key="frame" x="0.0" y="0.0" width="225" height="13330"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="13760"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <sections/>
@@ -1435,6 +1435,56 @@
             </objects>
             <point key="canvasLocation" x="3026" y="-4128"/>
         </scene>
+        <!--Home Video Controller-->
+        <scene sceneID="P4X-Ly-sQu">
+            <objects>
+                <viewController storyboardIdentifier="RWHomeVideoController" id="qgv-QY-qAs" customClass="RWHomeVideoController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aCK-zd-Ua5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZj-j1-lpK">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AXo-wV-tc9" appends="YES" id="Rm4-6o-1aR"/>
+                                </connections>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="top_bar0.png" translatesAutoresizingMaskIntoConstraints="NO" id="P1b-Ld-1tf"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="APPship_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="jIJ-TD-Yek">
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AXo-wV-tc9" appends="YES" id="gMC-cr-lFl"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="about chery.png" translatesAutoresizingMaskIntoConstraints="NO" id="tAJ-Pq-Hay"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WZj-j1-lpK" firstAttribute="top" secondItem="aCK-zd-Ua5" secondAttribute="top" constant="5" id="0C6-PM-zAZ"/>
+                            <constraint firstItem="P1b-Ld-1tf" firstAttribute="top" secondItem="aCK-zd-Ua5" secondAttribute="top" type="default" id="16g-qb-KpU"/>
+                            <constraint firstItem="WZj-j1-lpK" firstAttribute="leading" secondItem="aCK-zd-Ua5" secondAttribute="leading" type="default" id="Efj-8E-g93"/>
+                            <constraint firstItem="jIJ-TD-Yek" firstAttribute="bottom" secondItem="aCK-zd-Ua5" secondAttribute="bottom" type="default" id="EgB-5f-FqH"/>
+                            <constraint firstAttribute="centerX" secondItem="tAJ-Pq-Hay" secondAttribute="centerX" type="user" id="KxG-x6-jdq"/>
+                            <constraint firstAttribute="bottom" secondItem="tAJ-Pq-Hay" secondAttribute="bottom" constant="109" id="NGl-7r-2PO"/>
+                            <constraint firstItem="jIJ-TD-Yek" firstAttribute="leading" secondItem="aCK-zd-Ua5" secondAttribute="leading" type="default" id="XgW-hB-Vso"/>
+                            <constraint firstAttribute="bottom" secondItem="WZj-j1-lpK" secondAttribute="bottom" constant="387" id="aBr-y8-SJ8"/>
+                            <constraint firstItem="P1b-Ld-1tf" firstAttribute="leading" secondItem="aCK-zd-Ua5" secondAttribute="leading" type="default" id="mho-a0-W1q"/>
+                            <constraint firstItem="WZj-j1-lpK" firstAttribute="trailing" secondItem="aCK-zd-Ua5" secondAttribute="trailing" type="default" id="sL0-Zk-rxs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="WZj-j1-lpK" id="Hwy-qg-NAc"/>
+                        <outlet property="tapper" destination="AXo-wV-tc9" id="Yzm-2h-KUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYO-2S-XWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AXo-wV-tc9">
+                    <connections>
+                        <action selector="dismissModalViewController:" destination="qgv-QY-qAs" id="jMJ-z2-Nim"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1486" y="-3539"/>
+        </scene>
         <!--Car Model View Controller-->
         <scene sceneID="fUR-8O-jCP">
             <objects>
@@ -1537,8 +1587,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="U2H-G1-JII" firstAttribute="bottom" secondItem="h9t-os-yKb" secondAttribute="bottom" type="default" id="K3V-II-hR5"/>
                                     <constraint firstItem="U2H-G1-JII" firstAttribute="leading" secondItem="h9t-os-yKb" secondAttribute="leading" constant="42" id="VeJ-ta-oD9"/>
-                                    <constraint firstAttribute="bottom" secondItem="U2H-G1-JII" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="auJ-bg-94E"/>
                                     <constraint firstItem="U2H-G1-JII" firstAttribute="top" secondItem="h9t-os-yKb" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dVr-8X-qyX"/>
                                 </constraints>
                             </view>
@@ -1814,29 +1864,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="595"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-aI-ksL">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLj-8r-tzq"/>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="zLj-8r-tzq" firstAttribute="bottom" secondItem="lfN-aI-ksL" secondAttribute="bottom" type="default" id="7aP-Ja-Qvn"/>
-                                    <constraint firstItem="zLj-8r-tzq" firstAttribute="top" secondItem="lfN-aI-ksL" secondAttribute="top" type="default" id="BEx-JL-dWD"/>
-                                    <constraint firstItem="zLj-8r-tzq" firstAttribute="leading" secondItem="lfN-aI-ksL" secondAttribute="leading" type="default" id="VEf-PG-29W"/>
-                                    <constraint firstItem="zLj-8r-tzq" firstAttribute="trailing" secondItem="lfN-aI-ksL" secondAttribute="trailing" type="default" id="cgT-zj-9Fv"/>
-                                    <constraint firstItem="zLj-8r-tzq" firstAttribute="centerX" secondItem="lfN-aI-ksL" secondAttribute="centerX" type="default" id="dns-uO-bZ0"/>
-                                    <constraint firstItem="zLj-8r-tzq" firstAttribute="centerY" secondItem="lfN-aI-ksL" secondAttribute="centerY" type="default" id="muL-1d-bQ4"/>
-                                </constraints>
-                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-aI-ksL"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="lfN-aI-ksL" secondAttribute="trailing" constant="-13" id="Atf-NU-7jX"/>
-                            <constraint firstItem="lfN-aI-ksL" firstAttribute="bottom" secondItem="wK9-1d-dlC" secondAttribute="bottom" type="default" id="C7h-6h-Qbv"/>
-                            <constraint firstItem="lfN-aI-ksL" firstAttribute="leading" secondItem="wK9-1d-dlC" secondAttribute="leading" constant="13" id="iD2-zW-FJ2"/>
-                            <constraint firstItem="lfN-aI-ksL" firstAttribute="top" secondItem="wK9-1d-dlC" secondAttribute="top" constant="-78" id="mDy-U8-vgg"/>
+                            <constraint firstItem="lfN-aI-ksL" firstAttribute="bottom" secondItem="wK9-1d-dlC" secondAttribute="bottom" type="default" id="A9u-9h-osH"/>
+                            <constraint firstItem="lfN-aI-ksL" firstAttribute="leading" secondItem="wK9-1d-dlC" secondAttribute="leading" type="default" id="AYX-cK-tcV"/>
+                            <constraint firstItem="lfN-aI-ksL" firstAttribute="trailing" secondItem="wK9-1d-dlC" secondAttribute="trailing" type="default" id="I01-Si-2ef"/>
+                            <constraint firstItem="lfN-aI-ksL" firstAttribute="top" secondItem="wK9-1d-dlC" secondAttribute="top" type="default" id="J9E-2k-RX5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="IwE-an-mnO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="lfN-aI-ksL" id="ocu-ds-EL9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n92-eB-yhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2732,6 +2773,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="APPship_02.png" width="768" height="390"/>
+        <image name="about chery.png" width="315" height="35"/>
         <image name="back.png" width="58" height="53"/>
         <image name="bg.png" width="768" height="1004"/>
         <image name="bottom_bg.png" width="768" height="252"/>
@@ -2774,6 +2817,10 @@
         </class>
         <class className="RWActivityViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWActivityViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
         </class>
         <class className="RWAdminCarEditController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWAdminCarEditController.h"/>
@@ -2929,6 +2976,13 @@
         </class>
         <class className="RWFilterTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWFilterTableViewController.h"/>
+        </class>
+        <class className="RWHomeVideoController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWHomeVideoController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="tapper" candidateClass="UITapGestureRecognizer"/>
+            </relationships>
         </class>
         <class className="RWInfoBaseController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWInfoBaseController.h"/>
