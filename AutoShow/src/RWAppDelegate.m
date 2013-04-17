@@ -34,6 +34,13 @@
     [userMapping addAttributeMappingsFromArray:@[ @"userId",@"username",@"password",@"isAdmin",@"phone"]];
     [userMapping setIdentificationAttributes:@[@"userId",@"username"]];
 
+    RKEntityMapping *channelMapping = [RKEntityMapping mappingForEntityForName:@"RWChannel" inManagedObjectStore:managedObjectStore];
+    [channelMapping addAttributeMappingsFromArray:@[ @"channelId",@"channelName"]];
+    
+    RKEntityMapping *orderDateMapping = [RKEntityMapping mappingForEntityForName:@"RWOrderDayType" inManagedObjectStore:managedObjectStore];
+    [orderDateMapping addAttributeMappingsFromArray:@[ @"typeId",@"typeName"]];
+
+    
     NSString *seedPath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"RKSeedDatabase.sqlite"];
 
     RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:managedObjectModel storePath:seedPath];
@@ -42,6 +49,17 @@
                               withMapping:userMapping
                                   keyPath:nil
                                     error:&error];
+
+    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"channel" ofType:@"json"]
+                              withMapping:channelMapping
+                                  keyPath:nil
+                                    error:&error];
+
+    [importer importObjectsFromItemAtPath:[[NSBundle mainBundle] pathForResource:@"order_type" ofType:@"json"]
+                              withMapping:orderDateMapping
+                                  keyPath:nil
+                                    error:&error];
+
     
     BOOL success = [importer finishImporting:&error];
     if (success) {
@@ -56,7 +74,7 @@
 
     [managedObjectStore createPersistentStoreCoordinator];
     
-    NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"AutoShow-2.sqlite"];
+    NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"AutoShow-3.sqlite"];
 
     NSString *seedPath = [[NSBundle mainBundle] pathForResource:@"RKSeedDatabase" ofType:@"sqlite"];
 

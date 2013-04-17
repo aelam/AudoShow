@@ -41,7 +41,7 @@
     
     if (self.isNewUI) {
 
-        self.carImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 900)];
+        self.carImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -5, CGRectGetWidth(self.view.frame), 900)];
         self.carImageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.view addSubview:self.carImageView];
         

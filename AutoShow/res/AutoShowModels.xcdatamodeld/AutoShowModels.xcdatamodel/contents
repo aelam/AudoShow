@@ -4,7 +4,7 @@
         <attribute name="colorId" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="colorName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="createAt" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="model" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RWCarModel" inverseName="colors" inverseEntity="RWCarModel" syncable="YES"/>
+        <relationship name="models" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RWCarModel" inverseName="colors" inverseEntity="RWCarModel" syncable="YES"/>
     </entity>
     <entity name="RWCarModel" representedClassName="RWCarModel" syncable="YES">
         <attribute name="createAt" optional="YES" attributeType="Date" syncable="YES"/>
@@ -13,7 +13,7 @@
         <attribute name="modelId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="modelName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="colors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RWCarColor" inverseName="model" inverseEntity="RWCarColor" syncable="YES"/>
+        <relationship name="colors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RWCarColor" inverseName="models" inverseEntity="RWCarColor" syncable="YES"/>
         <relationship name="series" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RWCarSeries" inverseName="models" inverseEntity="RWCarSeries" syncable="YES"/>
     </entity>
     <entity name="RWCarSeries" representedClassName="RWCarSeries" syncable="YES">
@@ -25,21 +25,26 @@
     <entity name="RWChannel" representedClassName="RWChannel" syncable="YES">
         <attribute name="channelId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="clients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RWClient" inverseName="channels" inverseEntity="RWClient" syncable="YES"/>
     </entity>
     <entity name="RWClient" representedClassName="RWClient" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="budget" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chassis" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="comparingModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="head" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="isFirstlyBuy" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="oldCar" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="oldCarEvaluator" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="oldCarPrice" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="oldCarReplace" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="other" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="channels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RWChannel" syncable="YES"/>
+        <relationship name="carColor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RWCarColor" syncable="YES"/>
+        <relationship name="channels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RWChannel" inverseName="clients" inverseEntity="RWChannel" syncable="YES"/>
         <relationship name="orderDay" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RWOrderDayType" syncable="YES"/>
     </entity>
     <entity name="RWManager" representedClassName="RWManager" syncable="YES">
@@ -60,9 +65,9 @@
         <element name="RWCarColor" positionX="-11" positionY="63" width="128" height="103"/>
         <element name="RWCarModel" positionX="-200" positionY="18" width="128" height="165"/>
         <element name="RWCarSeries" positionX="-369" positionY="84" width="128" height="105"/>
-        <element name="RWChannel" positionX="-398" positionY="396" width="128" height="73"/>
-        <element name="RWClient" positionX="-191" positionY="221" width="128" height="253"/>
+        <element name="RWChannel" positionX="-398" positionY="396" width="128" height="88"/>
+        <element name="RWClient" positionX="-207" positionY="216" width="128" height="313"/>
         <element name="RWManager" positionX="-369" positionY="216" width="128" height="146"/>
-        <element name="RWOrderDayType" positionX="34" positionY="384" width="128" height="75"/>
+        <element name="RWOrderDayType" positionX="135" positionY="465" width="128" height="75"/>
     </elements>
 </model>

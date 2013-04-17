@@ -14,6 +14,11 @@
 #import "RWCarSeries.h"
 #import "RWCarModel.h"
 #import "RWCarColor.h"
+#import "RWClient.h"
+#import "RWClientInfoController.h"
+
+//#import "RWPopoverBackgroundView.h"
+#import "KSCustomPopoverBackgroundView.h"
 
 @interface RWCarModelChooseController () <NSFetchedResultsControllerDelegate>
 
@@ -113,14 +118,15 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (tableView == self.seriesTableView) {
-        return @"车系选择";
+        return nil;//@"车系选择";
     } else if (tableView == self.modelsTableViewController.tableView) {
-        return @"车型选择";
+//        return @"车型选择";
     } else if(tableView == self.colorsTableViewController.tableView) {
-        return @"颜色选择";
+//        return @"颜色选择";
     } else {
         return nil;
     }
+    return nil;
 
 }
 
@@ -155,8 +161,7 @@
             
 
         _seriesLabel.text =  self.selectedSeries.seriesName;
-        self.modelsTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWFilterTableViewController"];//[[RWFilterTableViewController alloc] init];
-        
+        self.modelsTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RWFilterTableViewController"];
         
         
         NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"createAt" ascending:NO]];
@@ -164,9 +169,13 @@
 
         self.modelsTableViewController.tableView.delegate = self;
         self.modelsTableViewController.tableView.dataSource = self;
-        self.modelsTableViewController.contentSizeForViewInPopover = CGSizeMake(150,300);
+        self.modelsTableViewController.contentSizeForViewInPopover = CGSizeMake(213,300);
         self.modelPopover = [[UIPopoverController alloc] initWithContentViewController:self.modelsTableViewController];
         [self.modelsTableViewController.tableView reloadData];
+        
+        self.modelPopover.popoverBackgroundViewClass = [KSCustomPopoverBackgroundView class];
+        
+        self.modelsTableViewController.tableView.tableHeaderView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"model_choose_header"]];
         
         CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
         CGRect rect0 = [self.view convertRect:rect fromView:tableView];
@@ -185,10 +194,12 @@
         self.colorsTableViewController.tableView.dataSource = self;
         self.colorsTableViewController.contentSizeForViewInPopover = CGSizeMake(150,300);
         self.colorPopover = [[UIPopoverController alloc] initWithContentViewController:self.colorsTableViewController];
-//
+
+        self.colorPopover.popoverBackgroundViewClass = [KSCustomPopoverBackgroundView class];
+        
         CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
         CGRect rect0 = [self.view convertRect:rect fromView:tableView];
-//
+
         [self.colorPopover presentPopoverFromRect:rect0 inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 
     
@@ -218,6 +229,33 @@
     self.colorsTableViewController.data = self.currentColors;
     [self.colorsTableViewController.tableView reloadData];
     
+    
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if (self.selectedColor == nil) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"请选择车型" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles: nil];
+        [alert show];
+        
+        
+        
+        
+        return NO;
+    }
+    else return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    RWClientInfoController *clientInfoController = (RWClientInfoController *)segue.destinationViewController;
+
+    RWClient *client = [NSEntityDescription insertNewObjectForEntityForName:@"RWClient" inManagedObjectContext:self.currentContext];
+    client.carColor = self.selectedColor;
+
+    clientInfoController.currentClient = client;
+    
+    [super prepareForSegue:segue sender:sender];
     
 }
 

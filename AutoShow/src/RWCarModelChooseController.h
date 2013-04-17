@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class RWClient;
+
+
 @interface RWCarModelChooseController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *seriesTableView;
@@ -18,5 +21,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *seriesLabel;
 @property (nonatomic, strong) IBOutlet UILabel *modelLabel;
 @property (nonatomic, strong) IBOutlet UILabel *colorLabel;
+
+
+@property (nonatomic,readonly) RWClient *currentClient;
 
 @end

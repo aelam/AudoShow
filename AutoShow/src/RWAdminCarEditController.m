@@ -346,7 +346,7 @@
         
     }
 }
-/*
+
 - (IBAction)addColorAction:(id)sender {
     NSString *colorText = self.colorField.text;
     if (colorText == nil || colorText.length == 0) {
@@ -375,26 +375,26 @@
     }
 
 }
- */
-- (IBAction)addColorAction:(id)sender {
-    
-    NSArray *colors = @[@"塞纳金",@"纳斯达克银"];
-    for(NSString *c in colors) {
-        RWCarColor *color = [NSEntityDescription insertNewObjectForEntityForName:@"RWCarColor" inManagedObjectContext:self.currentContext];
-        color.colorName = c;
-        [self.selectedModel addColorsObject:color];
-        NSError *error1 = nil;
-        if ([self.currentContext hasChanges]) {
-            [self.currentContext save:&error1];
-            if (error1) {
-                NSLog(@"%@", error1);
-            } else {
-                [self updateColorsAndTable];
-            }
-        }
-        
-    }
 
-}
+//- (IBAction)addColorAction:(id)sender {
+//    
+//    NSArray *colors = @[@"塞纳金",@"纳斯达克银"];
+//    for(NSString *c in colors) {
+//        RWCarColor *color = [NSEntityDescription insertNewObjectForEntityForName:@"RWCarColor" inManagedObjectContext:self.currentContext];
+//        color.colorName = c;
+//        [self.selectedModel addColorsObject:color];
+//        NSError *error1 = nil;
+//        if ([self.currentContext hasChanges]) {
+//            [self.currentContext save:&error1];
+//            if (error1) {
+//                NSLog(@"%@", error1);
+//            } else {
+//                [self updateColorsAndTable];
+//            }
+//        }
+//        
+//    }
+//
+//}
 
 @end

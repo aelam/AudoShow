@@ -2,30 +2,35 @@
 //  RWClient.m
 //  AutoShow
 //
-//  Created by Ryan Wang on 13-4-4.
+//  Created by Ryan Wang on 13-4-17.
 //  Copyright (c) 2013年 Ryan Wang. All rights reserved.
 //
 
 #import "RWClient.h"
+#import "RWCarColor.h"
 #import "RWChannel.h"
 #import "RWOrderDayType.h"
 
 
 @implementation RWClient
 
-@dynamic name;
-@dynamic tel;
 @dynamic address;
 @dynamic budget;
-@dynamic head;
-@dynamic other;
-@dynamic comparingModel;
-@dynamic isFirstlyBuy;
 @dynamic channel;
+@dynamic comparingModel;
+@dynamic head;
+@dynamic isFirstlyBuy;
+@dynamic name;
 @dynamic oldCar;
-@dynamic oldCarPrice;
 @dynamic oldCarEvaluator;
-@dynamic orderDay;
+@dynamic oldCarPrice;
+@dynamic other;
+@dynamic tel;
+@dynamic chassis;
+@dynamic email;
+@dynamic oldCarReplace;
 @dynamic channels;
+@dynamic orderDay;
+@dynamic carColor;
 
 @end

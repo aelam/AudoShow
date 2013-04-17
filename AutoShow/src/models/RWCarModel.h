@@ -2,7 +2,7 @@
 //  RWCarModel.h
 //  AutoShow
 //
-//  Created by Ryan Wang on 13-4-4.
+//  Created by Ryan Wang on 13-4-17.
 //  Copyright (c) 2013年 Ryan Wang. All rights reserved.
 //
 
@@ -16,8 +16,8 @@
 @property (nonatomic, retain) NSDate * createAt;
 @property (nonatomic, retain) NSNumber * hasNoTurboType;
 @property (nonatomic, retain) NSNumber * hasTurboType;
-@property (nonatomic, retain) NSString * modelName;
 @property (nonatomic, retain) NSNumber * modelId;
+@property (nonatomic, retain) NSString * modelName;
 @property (nonatomic, retain) NSNumber * price;
 @property (nonatomic, retain) NSSet *colors;
 @property (nonatomic, retain) RWCarSeries *series;

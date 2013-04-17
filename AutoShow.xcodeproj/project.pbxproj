@@ -113,6 +113,42 @@
 		9484BB781715A2BB0022CBA5 /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484BB6A1715A2BB0022CBA5 /* PSTGridLayoutRow.m */; };
 		9484BB791715A2BB0022CBA5 /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484BB6C1715A2BB0022CBA5 /* PSTGridLayoutSection.m */; };
 		9484BB7C1715B9A10022CBA5 /* RWSmallImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484BB7B1715B9A10022CBA5 /* RWSmallImageCell.m */; };
+		948BCDB3171DE0FF00C38A49 /* model_choose_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDB1171DE0FF00C38A49 /* model_choose_header.png */; };
+		948BCDB4171DE0FF00C38A49 /* model_choose_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDB2171DE0FF00C38A49 /* model_choose_header@2x.png */; };
+		948BCDBF171DE8DE00C38A49 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 948BCDBE171DE8DE00C38A49 /* NSString+Extension.m */; };
+		948BCDC4171DEEFC00C38A49 /* channel.json in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDC3171DEEFC00C38A49 /* channel.json */; };
+		948BCDC6171DEFFD00C38A49 /* order_type.json in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDC5171DEFFD00C38A49 /* order_type.json */; };
+		948BCDC9171E039000C38A49 /* RWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 948BCDC8171E039000C38A49 /* RWClient.m */; };
+		948BCDCC171E039100C38A49 /* RWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 948BCDCB171E039100C38A49 /* RWChannel.m */; };
+		948BCDCF171E0D3A00C38A49 /* RWReadOnlyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948BCDCE171E0D3A00C38A49 /* RWReadOnlyTabBarController.m */; };
+		948BCDD8171E0F8F00C38A49 /* RWCarColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 948BCDD7171E0F8F00C38A49 /* RWCarColor.m */; };
+		948BCDDB171E0F9000C38A49 /* RWCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 948BCDDA171E0F9000C38A49 /* RWCarModel.m */; };
+		948BCDE0171E100800C38A49 /* 上一步.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDDC171E100800C38A49 /* 上一步.png */; };
+		948BCDE1171E100800C38A49 /* 上一步@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDDD171E100800C38A49 /* 上一步@2x.png */; };
+		948BCDE2171E100800C38A49 /* 下一步.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDDE171E100800C38A49 /* 下一步.png */; };
+		948BCDE3171E100800C38A49 /* 下一步@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDDF171E100800C38A49 /* 下一步@2x.png */; };
+		948BCDE6171E11BA00C38A49 /* 设置管理文字.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDE4171E11BA00C38A49 /* 设置管理文字.png */; };
+		948BCDE7171E11BA00C38A49 /* 设置管理文字@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDE5171E11BA00C38A49 /* 设置管理文字@2x.png */; };
+		948BCDEA171E14B600C38A49 /* admin_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDE8171E14B600C38A49 /* admin_login.png */; };
+		948BCDEB171E14B600C38A49 /* admin_login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDE9171E14B600C38A49 /* admin_login@2x.png */; };
+		948BCDEE171E168000C38A49 /* 车色添加背景图.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDEC171E168000C38A49 /* 车色添加背景图.png */; };
+		948BCDEF171E168000C38A49 /* 车色添加背景图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDED171E168000C38A49 /* 车色添加背景图@2x.png */; };
+		948BCDF2171E168A00C38A49 /* 车型添加背景图.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDF0171E168A00C38A49 /* 车型添加背景图.png */; };
+		948BCDF3171E168A00C38A49 /* 车型添加背景图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDF1171E168A00C38A49 /* 车型添加背景图@2x.png */; };
+		948BCDF6171E169900C38A49 /* 车系添加背景图.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDF4171E169900C38A49 /* 车系添加背景图.png */; };
+		948BCDF7171E169900C38A49 /* 车系添加背景图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDF5171E169900C38A49 /* 车系添加背景图@2x.png */; };
+		948BCDFE171E17E800C38A49 /* 底图0.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDFC171E17E800C38A49 /* 底图0.png */; };
+		948BCDFF171E17E800C38A49 /* 底图0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCDFD171E17E800C38A49 /* 底图0@2x.png */; };
+		948BCE02171E1CF800C38A49 /* 车系添加按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE00171E1CF800C38A49 /* 车系添加按钮.png */; };
+		948BCE03171E1CF800C38A49 /* 车系添加按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE01171E1CF800C38A49 /* 车系添加按钮@2x.png */; };
+		948BCE06171E1E0E00C38A49 /* 车色添加按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE04171E1E0E00C38A49 /* 车色添加按钮@2x.png */; };
+		948BCE07171E1E0E00C38A49 /* 车色添加框.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE05171E1E0E00C38A49 /* 车色添加框.png */; };
+		948BCE0A171E1E6A00C38A49 /* 车色添加框.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE08171E1E6A00C38A49 /* 车色添加框.png */; };
+		948BCE0B171E1E6A00C38A49 /* 车色添加框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE09171E1E6A00C38A49 /* 车色添加框@2x.png */; };
+		948BCE0E171E200900C38A49 /* 车系添加框.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE0C171E200900C38A49 /* 车系添加框.png */; };
+		948BCE0F171E200900C38A49 /* 车系添加框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE0D171E200900C38A49 /* 车系添加框@2x.png */; };
+		948BCE12171E212E00C38A49 /* 车型添加按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE10171E212D00C38A49 /* 车型添加按钮.png */; };
+		948BCE13171E212E00C38A49 /* 车型添加按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948BCE11171E212E00C38A49 /* 车型添加按钮@2x.png */; };
 		948E5262171D88FC00A4CC17 /* home_video_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5260171D88FC00A4CC17 /* home_video_bg.png */; };
 		948E5263171D88FC00A4CC17 /* home_video_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5261171D88FC00A4CC17 /* home_video_bg@2x.png */; };
 		948E526B171D895300A4CC17 /* RWHomeVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948E526A171D895300A4CC17 /* RWHomeVideoController.m */; };
@@ -120,6 +156,29 @@
 		948E5271171D8E1C00A4CC17 /* about chery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526D171D8E1C00A4CC17 /* about chery@2x.png */; };
 		948E5272171D8E1C00A4CC17 /* APPship_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526E171D8E1C00A4CC17 /* APPship_02.png */; };
 		948E5273171D8E1C00A4CC17 /* APPship_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E526F171D8E1C00A4CC17 /* APPship_02@2x.png */; };
+		948E527A171DAE8800A4CC17 /* info3.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5278171DAE8800A4CC17 /* info3.png */; };
+		948E527B171DAE8800A4CC17 /* info3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5279171DAE8800A4CC17 /* info3@2x.png */; };
+		948E5283171DB40E00A4CC17 /* 提交.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5281171DB40E00A4CC17 /* 提交.png */; };
+		948E5284171DB40E00A4CC17 /* 提交@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5282171DB40E00A4CC17 /* 提交@2x.png */; };
+		948E5287171DB46B00A4CC17 /* 奇瑞金融服务.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5285171DB46B00A4CC17 /* 奇瑞金融服务.png */; };
+		948E5288171DB46B00A4CC17 /* 奇瑞金融服务@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5286171DB46B00A4CC17 /* 奇瑞金融服务@2x.png */; };
+		948E528B171DB4F400A4CC17 /* 返回客户列表.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5289171DB4F400A4CC17 /* 返回客户列表.png */; };
+		948E528C171DB4F400A4CC17 /* 返回客户列表@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E528A171DB4F400A4CC17 /* 返回客户列表@2x.png */; };
+		948E528F171DD8B200A4CC17 /* 车系选择.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E528D171DD8B200A4CC17 /* 车系选择.png */; };
+		948E5290171DD8B200A4CC17 /* 车系选择@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E528E171DD8B200A4CC17 /* 车系选择@2x.png */; };
+		948E5293171DDBC200A4CC17 /* RWPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 948E5292171DDBC200A4CC17 /* RWPopoverBackgroundView.m */; };
+		948E529F171DDCC400A4CC17 /* popover-black-bcg-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5295171DDCC400A4CC17 /* popover-black-bcg-image.png */; };
+		948E52A0171DDCC400A4CC17 /* popover-black-bcg-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5296171DDCC400A4CC17 /* popover-black-bcg-image@2x.png */; };
+		948E52A1171DDCC400A4CC17 /* popover-black-bottom-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5297171DDCC400A4CC17 /* popover-black-bottom-arrow-image.png */; };
+		948E52A2171DDCC400A4CC17 /* popover-black-bottom-arrow-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5298171DDCC400A4CC17 /* popover-black-bottom-arrow-image@2x.png */; };
+		948E52A3171DDCC400A4CC17 /* popover-black-left-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E5299171DDCC400A4CC17 /* popover-black-left-arrow-image.png */; };
+		948E52A4171DDCC400A4CC17 /* popover-black-left-arrow-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E529A171DDCC400A4CC17 /* popover-black-left-arrow-image@2x.png */; };
+		948E52A5171DDCC400A4CC17 /* popover-black-right-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E529B171DDCC400A4CC17 /* popover-black-right-arrow-image.png */; };
+		948E52A6171DDCC400A4CC17 /* popover-black-right-arrow-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E529C171DDCC400A4CC17 /* popover-black-right-arrow-image@2x.png */; };
+		948E52A7171DDCC400A4CC17 /* popover-black-top-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E529D171DDCC400A4CC17 /* popover-black-top-arrow-image.png */; };
+		948E52A8171DDCC400A4CC17 /* popover-black-top-arrow-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E529E171DDCC400A4CC17 /* popover-black-top-arrow-image@2x.png */; };
+		948E52AF171DDCFF00A4CC17 /* KSCustomPopoverFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948E52AE171DDCFF00A4CC17 /* KSCustomPopoverFlipsideViewController.m */; };
+		948E52B0171DDD3F00A4CC17 /* KSCustomPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 948E52AA171DDCEC00A4CC17 /* KSCustomPopoverBackgroundView.m */; };
 		94A3AC4B17047D2C00DF350B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4A17047D2C00DF350B /* UIKit.framework */; };
 		94A3AC4D17047D2C00DF350B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4C17047D2C00DF350B /* Foundation.framework */; };
 		94A3AC4F17047D2C00DF350B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A3AC4E17047D2C00DF350B /* CoreGraphics.framework */; };
@@ -147,11 +206,8 @@
 		94B7E1D11719A3E400692A45 /* mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7E1CF1719A3E400692A45 /* mask@2x.png */; };
 		94B7E1D41719A3FB00692A45 /* jing_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7E1D21719A3FB00692A45 /* jing_shadow.png */; };
 		94B7E1D51719A3FB00692A45 /* jing_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7E1D31719A3FB00692A45 /* jing_shadow@2x.png */; };
-		94BA6976170D654300D61573 /* RWCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BA6975170D654300D61573 /* RWCarModel.m */; };
 		94BD67FD170D94740087CF1E /* showingCars.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 94BD67FC170D94740087CF1E /* showingCars.bundle */; };
 		94BD6801170DC6DE0087CF1E /* RWOrderDayType.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD6800170DC6DE0087CF1E /* RWOrderDayType.m */; };
-		94BD6804170DC6E00087CF1E /* RWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD6803170DC6DF0087CF1E /* RWChannel.m */; };
-		94BD6807170DC6E00087CF1E /* RWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD6806170DC6E00087CF1E /* RWClient.m */; };
 		94BD6827170DDE5C0087CF1E /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 94BD680B170DC89B0087CF1E /* user.json */; };
 		94C3618A17146FC400A16F5C /* title(奇瑞).png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3614E17146FC300A16F5C /* title(奇瑞).png */; };
 		94C3619517146FC400A16F5C /* 帮助按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C3615A17146FC300A16F5C /* 帮助按钮.png */; };
@@ -178,7 +234,6 @@
 		94DBA6E5170C7CA4003A8689 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBA6E4170C7CA4003A8689 /* SystemConfiguration.framework */; };
 		94DBA6E7170C7CF9003A8689 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBA6E6170C7CF9003A8689 /* MobileCoreServices.framework */; };
 		94DBA762170C84A8003A8689 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBA758170C80E8003A8689 /* libRestKit.a */; };
-		94DBA765170C97DE003A8689 /* RWCarColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DBA764170C97DD003A8689 /* RWCarColor.m */; };
 		94DBA768170C97DF003A8689 /* RWCarSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DBA767170C97DF003A8689 /* RWCarSeries.m */; };
 		94E85CBF170F2C4D00CE452F /* RKSeedDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 94F4E3C6170F229000825CE2 /* RKSeedDatabase.sqlite */; };
 		94E85CCA170F31E400CE452F /* IdentifierValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E85CC9170F31E400CE452F /* IdentifierValidator.m */; };
@@ -407,6 +462,48 @@
 		9484BB6C1715A2BB0022CBA5 /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutSection.m; sourceTree = "<group>"; };
 		9484BB7A1715B9A10022CBA5 /* RWSmallImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWSmallImageCell.h; path = AutoShow/src/cell/RWSmallImageCell.h; sourceTree = SOURCE_ROOT; };
 		9484BB7B1715B9A10022CBA5 /* RWSmallImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWSmallImageCell.m; path = AutoShow/src/cell/RWSmallImageCell.m; sourceTree = SOURCE_ROOT; };
+		948BCDB1171DE0FF00C38A49 /* model_choose_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_choose_header.png; sourceTree = "<group>"; };
+		948BCDB2171DE0FF00C38A49 /* model_choose_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "model_choose_header@2x.png"; sourceTree = "<group>"; };
+		948BCDBD171DE8DE00C38A49 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		948BCDBE171DE8DE00C38A49 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		948BCDC3171DEEFC00C38A49 /* channel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channel.json; sourceTree = "<group>"; };
+		948BCDC5171DEFFD00C38A49 /* order_type.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order_type.json; sourceTree = "<group>"; };
+		948BCDC7171E039000C38A49 /* RWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClient.h; sourceTree = "<group>"; };
+		948BCDC8171E039000C38A49 /* RWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWClient.m; sourceTree = "<group>"; };
+		948BCDCA171E039100C38A49 /* RWChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWChannel.h; sourceTree = "<group>"; };
+		948BCDCB171E039100C38A49 /* RWChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWChannel.m; sourceTree = "<group>"; };
+		948BCDCD171E0D3A00C38A49 /* RWReadOnlyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWReadOnlyTabBarController.h; sourceTree = "<group>"; };
+		948BCDCE171E0D3A00C38A49 /* RWReadOnlyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWReadOnlyTabBarController.m; sourceTree = "<group>"; };
+		948BCDD6171E0F8F00C38A49 /* RWCarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarColor.h; sourceTree = "<group>"; };
+		948BCDD7171E0F8F00C38A49 /* RWCarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarColor.m; sourceTree = "<group>"; };
+		948BCDD9171E0F9000C38A49 /* RWCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarModel.h; sourceTree = "<group>"; };
+		948BCDDA171E0F9000C38A49 /* RWCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarModel.m; sourceTree = "<group>"; };
+		948BCDDC171E100800C38A49 /* 上一步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上一步.png"; sourceTree = "<group>"; };
+		948BCDDD171E100800C38A49 /* 上一步@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上一步@2x.png"; sourceTree = "<group>"; };
+		948BCDDE171E100800C38A49 /* 下一步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步.png"; sourceTree = "<group>"; };
+		948BCDDF171E100800C38A49 /* 下一步@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步@2x.png"; sourceTree = "<group>"; };
+		948BCDE4171E11BA00C38A49 /* 设置管理文字.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置管理文字.png"; sourceTree = "<group>"; };
+		948BCDE5171E11BA00C38A49 /* 设置管理文字@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置管理文字@2x.png"; sourceTree = "<group>"; };
+		948BCDE8171E14B600C38A49 /* admin_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = admin_login.png; sourceTree = "<group>"; };
+		948BCDE9171E14B600C38A49 /* admin_login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_login@2x.png"; sourceTree = "<group>"; };
+		948BCDEC171E168000C38A49 /* 车色添加背景图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车色添加背景图.png"; sourceTree = "<group>"; };
+		948BCDED171E168000C38A49 /* 车色添加背景图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车色添加背景图@2x.png"; sourceTree = "<group>"; };
+		948BCDF0171E168A00C38A49 /* 车型添加背景图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车型添加背景图.png"; sourceTree = "<group>"; };
+		948BCDF1171E168A00C38A49 /* 车型添加背景图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车型添加背景图@2x.png"; sourceTree = "<group>"; };
+		948BCDF4171E169900C38A49 /* 车系添加背景图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系添加背景图.png"; sourceTree = "<group>"; };
+		948BCDF5171E169900C38A49 /* 车系添加背景图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系添加背景图@2x.png"; sourceTree = "<group>"; };
+		948BCDFC171E17E800C38A49 /* 底图0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "底图0.png"; sourceTree = "<group>"; };
+		948BCDFD171E17E800C38A49 /* 底图0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "底图0@2x.png"; sourceTree = "<group>"; };
+		948BCE00171E1CF800C38A49 /* 车系添加按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系添加按钮.png"; sourceTree = "<group>"; };
+		948BCE01171E1CF800C38A49 /* 车系添加按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系添加按钮@2x.png"; sourceTree = "<group>"; };
+		948BCE04171E1E0E00C38A49 /* 车色添加按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车色添加按钮@2x.png"; sourceTree = "<group>"; };
+		948BCE05171E1E0E00C38A49 /* 车色添加框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车色添加框.png"; sourceTree = "<group>"; };
+		948BCE08171E1E6A00C38A49 /* 车色添加框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车色添加框.png"; sourceTree = "<group>"; };
+		948BCE09171E1E6A00C38A49 /* 车色添加框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车色添加框@2x.png"; sourceTree = "<group>"; };
+		948BCE0C171E200900C38A49 /* 车系添加框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系添加框.png"; sourceTree = "<group>"; };
+		948BCE0D171E200900C38A49 /* 车系添加框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系添加框@2x.png"; sourceTree = "<group>"; };
+		948BCE10171E212D00C38A49 /* 车型添加按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车型添加按钮.png"; sourceTree = "<group>"; };
+		948BCE11171E212E00C38A49 /* 车型添加按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车型添加按钮@2x.png"; sourceTree = "<group>"; };
 		948E5260171D88FC00A4CC17 /* home_video_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_video_bg.png; sourceTree = "<group>"; };
 		948E5261171D88FC00A4CC17 /* home_video_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_video_bg@2x.png"; sourceTree = "<group>"; };
 		948E5269171D895300A4CC17 /* RWHomeVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWHomeVideoController.h; sourceTree = "<group>"; };
@@ -415,6 +512,32 @@
 		948E526D171D8E1C00A4CC17 /* about chery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about chery@2x.png"; sourceTree = "<group>"; };
 		948E526E171D8E1C00A4CC17 /* APPship_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = APPship_02.png; sourceTree = "<group>"; };
 		948E526F171D8E1C00A4CC17 /* APPship_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APPship_02@2x.png"; sourceTree = "<group>"; };
+		948E5278171DAE8800A4CC17 /* info3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info3.png; sourceTree = "<group>"; };
+		948E5279171DAE8800A4CC17 /* info3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info3@2x.png"; sourceTree = "<group>"; };
+		948E5281171DB40E00A4CC17 /* 提交.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提交.png"; sourceTree = "<group>"; };
+		948E5282171DB40E00A4CC17 /* 提交@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提交@2x.png"; sourceTree = "<group>"; };
+		948E5285171DB46B00A4CC17 /* 奇瑞金融服务.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奇瑞金融服务.png"; sourceTree = "<group>"; };
+		948E5286171DB46B00A4CC17 /* 奇瑞金融服务@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奇瑞金融服务@2x.png"; sourceTree = "<group>"; };
+		948E5289171DB4F400A4CC17 /* 返回客户列表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回客户列表.png"; sourceTree = "<group>"; };
+		948E528A171DB4F400A4CC17 /* 返回客户列表@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回客户列表@2x.png"; sourceTree = "<group>"; };
+		948E528D171DD8B200A4CC17 /* 车系选择.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系选择.png"; sourceTree = "<group>"; };
+		948E528E171DD8B200A4CC17 /* 车系选择@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车系选择@2x.png"; sourceTree = "<group>"; };
+		948E5291171DDBC200A4CC17 /* RWPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPopoverBackgroundView.h; sourceTree = "<group>"; };
+		948E5292171DDBC200A4CC17 /* RWPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPopoverBackgroundView.m; sourceTree = "<group>"; };
+		948E5295171DDCC400A4CC17 /* popover-black-bcg-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-bcg-image.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-bcg-image.png"; sourceTree = SOURCE_ROOT; };
+		948E5296171DDCC400A4CC17 /* popover-black-bcg-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-bcg-image@2x.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-bcg-image@2x.png"; sourceTree = SOURCE_ROOT; };
+		948E5297171DDCC400A4CC17 /* popover-black-bottom-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-bottom-arrow-image.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-bottom-arrow-image.png"; sourceTree = SOURCE_ROOT; };
+		948E5298171DDCC400A4CC17 /* popover-black-bottom-arrow-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-bottom-arrow-image@2x.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-bottom-arrow-image@2x.png"; sourceTree = SOURCE_ROOT; };
+		948E5299171DDCC400A4CC17 /* popover-black-left-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-left-arrow-image.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-left-arrow-image.png"; sourceTree = SOURCE_ROOT; };
+		948E529A171DDCC400A4CC17 /* popover-black-left-arrow-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-left-arrow-image@2x.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-left-arrow-image@2x.png"; sourceTree = SOURCE_ROOT; };
+		948E529B171DDCC400A4CC17 /* popover-black-right-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-right-arrow-image.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-right-arrow-image.png"; sourceTree = SOURCE_ROOT; };
+		948E529C171DDCC400A4CC17 /* popover-black-right-arrow-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-right-arrow-image@2x.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-right-arrow-image@2x.png"; sourceTree = SOURCE_ROOT; };
+		948E529D171DDCC400A4CC17 /* popover-black-top-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-top-arrow-image.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-top-arrow-image.png"; sourceTree = SOURCE_ROOT; };
+		948E529E171DDCC400A4CC17 /* popover-black-top-arrow-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popover-black-top-arrow-image@2x.png"; path = "KSCustomUIPopover/KSCustomPopover/popover-black-top-arrow-image@2x.png"; sourceTree = SOURCE_ROOT; };
+		948E52AA171DDCEC00A4CC17 /* KSCustomPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCustomPopoverBackgroundView.m; path = KSCustomUIPopover/KSCustomPopover/KSCustomPopoverBackgroundView.m; sourceTree = SOURCE_ROOT; };
+		948E52AB171DDCEC00A4CC17 /* KSCustomPopoverFlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCustomPopoverFlipsideViewController.h; path = KSCustomUIPopover/KSCustomPopover/KSCustomPopoverFlipsideViewController.h; sourceTree = SOURCE_ROOT; };
+		948E52AD171DDCF600A4CC17 /* KSCustomPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCustomPopoverBackgroundView.h; path = KSCustomUIPopover/KSCustomPopover/KSCustomPopoverBackgroundView.h; sourceTree = SOURCE_ROOT; };
+		948E52AE171DDCFF00A4CC17 /* KSCustomPopoverFlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCustomPopoverFlipsideViewController.m; path = KSCustomUIPopover/KSCustomPopover/KSCustomPopoverFlipsideViewController.m; sourceTree = SOURCE_ROOT; };
 		94A3AC4717047D2C00DF350B /* AutoShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3AC4A17047D2C00DF350B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94A3AC4C17047D2C00DF350B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -451,15 +574,9 @@
 		94B7E1CF1719A3E400692A45 /* mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask@2x.png"; sourceTree = "<group>"; };
 		94B7E1D21719A3FB00692A45 /* jing_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jing_shadow.png; sourceTree = "<group>"; };
 		94B7E1D31719A3FB00692A45 /* jing_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jing_shadow@2x.png"; sourceTree = "<group>"; };
-		94BA6974170D654300D61573 /* RWCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarModel.h; sourceTree = "<group>"; };
-		94BA6975170D654300D61573 /* RWCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarModel.m; sourceTree = "<group>"; };
 		94BD67FC170D94740087CF1E /* showingCars.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = showingCars.bundle; sourceTree = "<group>"; };
 		94BD67FF170DC6DE0087CF1E /* RWOrderDayType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWOrderDayType.h; sourceTree = "<group>"; };
 		94BD6800170DC6DE0087CF1E /* RWOrderDayType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWOrderDayType.m; sourceTree = "<group>"; };
-		94BD6802170DC6DF0087CF1E /* RWChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWChannel.h; sourceTree = "<group>"; };
-		94BD6803170DC6DF0087CF1E /* RWChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWChannel.m; sourceTree = "<group>"; };
-		94BD6805170DC6E00087CF1E /* RWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWClient.h; sourceTree = "<group>"; };
-		94BD6806170DC6E00087CF1E /* RWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWClient.m; sourceTree = "<group>"; };
 		94BD680B170DC89B0087CF1E /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		94C3614E17146FC300A16F5C /* title(奇瑞).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title(奇瑞).png"; sourceTree = "<group>"; };
 		94C3615A17146FC300A16F5C /* 帮助按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帮助按钮.png"; sourceTree = "<group>"; };
@@ -486,8 +603,6 @@
 		94DBA6E4170C7CA4003A8689 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		94DBA6E6170C7CF9003A8689 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		94DBA750170C80E8003A8689 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
-		94DBA763170C97DD003A8689 /* RWCarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarColor.h; sourceTree = "<group>"; };
-		94DBA764170C97DD003A8689 /* RWCarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarColor.m; sourceTree = "<group>"; };
 		94DBA766170C97DE003A8689 /* RWCarSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCarSeries.h; sourceTree = "<group>"; };
 		94DBA767170C97DF003A8689 /* RWCarSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCarSeries.m; sourceTree = "<group>"; };
 		94E85CC8170F31E400CE452F /* IdentifierValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifierValidator.h; sourceTree = "<group>"; };
@@ -559,6 +674,22 @@
 		94058BA4170D806600D28C49 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				948BCDDC171E100800C38A49 /* 上一步.png */,
+				948BCDDD171E100800C38A49 /* 上一步@2x.png */,
+				948BCDDE171E100800C38A49 /* 下一步.png */,
+				948BCDDF171E100800C38A49 /* 下一步@2x.png */,
+				948BCDB1171DE0FF00C38A49 /* model_choose_header.png */,
+				948BCDB2171DE0FF00C38A49 /* model_choose_header@2x.png */,
+				948E528D171DD8B200A4CC17 /* 车系选择.png */,
+				948E528E171DD8B200A4CC17 /* 车系选择@2x.png */,
+				948E5289171DB4F400A4CC17 /* 返回客户列表.png */,
+				948E528A171DB4F400A4CC17 /* 返回客户列表@2x.png */,
+				948E5285171DB46B00A4CC17 /* 奇瑞金融服务.png */,
+				948E5286171DB46B00A4CC17 /* 奇瑞金融服务@2x.png */,
+				948E5281171DB40E00A4CC17 /* 提交.png */,
+				948E5282171DB40E00A4CC17 /* 提交@2x.png */,
+				948E5278171DAE8800A4CC17 /* info3.png */,
+				948E5279171DAE8800A4CC17 /* info3@2x.png */,
 				948E526C171D8E1C00A4CC17 /* about chery.png */,
 				948E526D171D8E1C00A4CC17 /* about chery@2x.png */,
 				948E526E171D8E1C00A4CC17 /* APPship_02.png */,
@@ -694,6 +825,34 @@
 			path = PSTCollectionView/PSTCollectionView;
 			sourceTree = SOURCE_ROOT;
 		};
+		948E5294171DDCB300A4CC17 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				948E5295171DDCC400A4CC17 /* popover-black-bcg-image.png */,
+				948E5296171DDCC400A4CC17 /* popover-black-bcg-image@2x.png */,
+				948E5297171DDCC400A4CC17 /* popover-black-bottom-arrow-image.png */,
+				948E5298171DDCC400A4CC17 /* popover-black-bottom-arrow-image@2x.png */,
+				948E5299171DDCC400A4CC17 /* popover-black-left-arrow-image.png */,
+				948E529A171DDCC400A4CC17 /* popover-black-left-arrow-image@2x.png */,
+				948E529B171DDCC400A4CC17 /* popover-black-right-arrow-image.png */,
+				948E529C171DDCC400A4CC17 /* popover-black-right-arrow-image@2x.png */,
+				948E529D171DDCC400A4CC17 /* popover-black-top-arrow-image.png */,
+				948E529E171DDCC400A4CC17 /* popover-black-top-arrow-image@2x.png */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+		948E52A9171DDCE000A4CC17 /* KSCustomPopover */ = {
+			isa = PBXGroup;
+			children = (
+				948E52AD171DDCF600A4CC17 /* KSCustomPopoverBackgroundView.h */,
+				948E52AA171DDCEC00A4CC17 /* KSCustomPopoverBackgroundView.m */,
+				948E52AB171DDCEC00A4CC17 /* KSCustomPopoverFlipsideViewController.h */,
+				948E52AE171DDCFF00A4CC17 /* KSCustomPopoverFlipsideViewController.m */,
+			);
+			name = KSCustomPopover;
+			sourceTree = "<group>";
+		};
 		94A3AC3E17047D2C00DF350B = {
 			isa = PBXGroup;
 			children = (
@@ -781,12 +940,15 @@
 		94A3AC8817047E0F00DF350B /* res */ = {
 			isa = PBXGroup;
 			children = (
+				948E5294171DDCB300A4CC17 /* Popover */,
 				94C3614D17146FC300A16F5C /* 销售系统切图 */,
 				94058BA4170D806600D28C49 /* graphics */,
 				94BA697F170D76C100D61573 /* imageResource */,
 				9462011517073BCF0006B517 /* content.sqlite */,
 				9442E6CD170BFD87005D7FE6 /* db.schema */,
 				94BD680B170DC89B0087CF1E /* user.json */,
+				948BCDC3171DEEFC00C38A49 /* channel.json */,
+				948BCDC5171DEFFD00C38A49 /* order_type.json */,
 				94DBA6AB170C74CF003A8689 /* AutoShowModels.xcdatamodeld */,
 				94F4E3C6170F229000825CE2 /* RKSeedDatabase.sqlite */,
 				94A3AC9317047E3F00DF350B /* MainStoryboard.storyboard */,
@@ -800,6 +962,7 @@
 		94A3AC8917047E0F00DF350B /* src */ = {
 			isa = PBXGroup;
 			children = (
+				948E52A9171DDCE000A4CC17 /* KSCustomPopover */,
 				943FDFD71711B8E0005EC47D /* spinwheel2 */,
 				94E85CC7170F31E400CE452F /* utilities */,
 				94BD67EF170D88570087CF1E /* cells */,
@@ -865,6 +1028,28 @@
 		94C3614D17146FC300A16F5C /* 销售系统切图 */ = {
 			isa = PBXGroup;
 			children = (
+				948BCE10171E212D00C38A49 /* 车型添加按钮.png */,
+				948BCE11171E212E00C38A49 /* 车型添加按钮@2x.png */,
+				948BCE0C171E200900C38A49 /* 车系添加框.png */,
+				948BCE0D171E200900C38A49 /* 车系添加框@2x.png */,
+				948BCE08171E1E6A00C38A49 /* 车色添加框.png */,
+				948BCE09171E1E6A00C38A49 /* 车色添加框@2x.png */,
+				948BCE04171E1E0E00C38A49 /* 车色添加按钮@2x.png */,
+				948BCE05171E1E0E00C38A49 /* 车色添加框.png */,
+				948BCE00171E1CF800C38A49 /* 车系添加按钮.png */,
+				948BCE01171E1CF800C38A49 /* 车系添加按钮@2x.png */,
+				948BCDFC171E17E800C38A49 /* 底图0.png */,
+				948BCDFD171E17E800C38A49 /* 底图0@2x.png */,
+				948BCDF4171E169900C38A49 /* 车系添加背景图.png */,
+				948BCDF5171E169900C38A49 /* 车系添加背景图@2x.png */,
+				948BCDF0171E168A00C38A49 /* 车型添加背景图.png */,
+				948BCDF1171E168A00C38A49 /* 车型添加背景图@2x.png */,
+				948BCDEC171E168000C38A49 /* 车色添加背景图.png */,
+				948BCDED171E168000C38A49 /* 车色添加背景图@2x.png */,
+				948BCDE8171E14B600C38A49 /* admin_login.png */,
+				948BCDE9171E14B600C38A49 /* admin_login@2x.png */,
+				948BCDE4171E11BA00C38A49 /* 设置管理文字.png */,
+				948BCDE5171E11BA00C38A49 /* 设置管理文字@2x.png */,
 				9484BB401714876A0022CBA5 /* sign_in.png */,
 				9484BB411714876A0022CBA5 /* sign_in@2x.png */,
 				94C361E51714833200A16F5C /* client_list_selected.png */,
@@ -936,6 +1121,10 @@
 				94E85CC9170F31E400CE452F /* IdentifierValidator.m */,
 				947C30801711EF3B00799888 /* RWCollectionViewFlowLayout.h */,
 				947C30811711EF3B00799888 /* RWCollectionViewFlowLayout.m */,
+				948E5291171DDBC200A4CC17 /* RWPopoverBackgroundView.h */,
+				948E5292171DDBC200A4CC17 /* RWPopoverBackgroundView.m */,
+				948BCDBD171DE8DE00C38A49 /* NSString+Extension.h */,
+				948BCDBE171DE8DE00C38A49 /* NSString+Extension.m */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -958,6 +1147,10 @@
 		94FD487A1707F31700BED06B /* Sales */ = {
 			isa = PBXGroup;
 			children = (
+				94FD48701707DB3700BED06B /* RWCarModelChooseController.h */,
+				94FD48711707DB3700BED06B /* RWCarModelChooseController.m */,
+				948BCDCD171E0D3A00C38A49 /* RWReadOnlyTabBarController.h */,
+				948BCDCE171E0D3A00C38A49 /* RWReadOnlyTabBarController.m */,
 				94FD48731707E04800BED06B /* RWClientInfoController.h */,
 				94FD48741707E04800BED06B /* RWClientInfoController.m */,
 				94FD488517084D7800BED06B /* RWTaxInfoController.h */,
@@ -970,8 +1163,6 @@
 				945951F01704A58E00DA57BF /* RWClientInfo2Controller.m */,
 				945951E61704A19B00DA57BF /* RWClientViewController.h */,
 				945951E71704A19B00DA57BF /* RWClientViewController.m */,
-				94FD48701707DB3700BED06B /* RWCarModelChooseController.h */,
-				94FD48711707DB3700BED06B /* RWCarModelChooseController.m */,
 				94B7905E1706834D00FD88E4 /* RWClientListViewController.h */,
 				94B7905F1706834D00FD88E4 /* RWClientListViewController.m */,
 				94FD487B170815C000BED06B /* RWFilterTableViewController.h */,
@@ -1001,18 +1192,18 @@
 				9442E6C9170BFCA9005D7FE6 /* RWStuff.m */,
 				94F4E3C3170F20F000825CE2 /* RWManager.h */,
 				94F4E3C4170F20F000825CE2 /* RWManager.m */,
-				94BD6805170DC6E00087CF1E /* RWClient.h */,
-				94BD6806170DC6E00087CF1E /* RWClient.m */,
-				94BD6802170DC6DF0087CF1E /* RWChannel.h */,
-				94BD6803170DC6DF0087CF1E /* RWChannel.m */,
 				94BD67FF170DC6DE0087CF1E /* RWOrderDayType.h */,
 				94BD6800170DC6DE0087CF1E /* RWOrderDayType.m */,
-				94BA6974170D654300D61573 /* RWCarModel.h */,
-				94BA6975170D654300D61573 /* RWCarModel.m */,
-				94DBA763170C97DD003A8689 /* RWCarColor.h */,
-				94DBA764170C97DD003A8689 /* RWCarColor.m */,
 				94DBA766170C97DE003A8689 /* RWCarSeries.h */,
 				94DBA767170C97DF003A8689 /* RWCarSeries.m */,
+				948BCDC7171E039000C38A49 /* RWClient.h */,
+				948BCDC8171E039000C38A49 /* RWClient.m */,
+				948BCDCA171E039100C38A49 /* RWChannel.h */,
+				948BCDCB171E039100C38A49 /* RWChannel.m */,
+				948BCDD6171E0F8F00C38A49 /* RWCarColor.h */,
+				948BCDD7171E0F8F00C38A49 /* RWCarColor.m */,
+				948BCDD9171E0F9000C38A49 /* RWCarModel.h */,
+				948BCDDA171E0F9000C38A49 /* RWCarModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -1257,6 +1448,56 @@
 				948E5271171D8E1C00A4CC17 /* about chery@2x.png in Resources */,
 				948E5272171D8E1C00A4CC17 /* APPship_02.png in Resources */,
 				948E5273171D8E1C00A4CC17 /* APPship_02@2x.png in Resources */,
+				948E527A171DAE8800A4CC17 /* info3.png in Resources */,
+				948E527B171DAE8800A4CC17 /* info3@2x.png in Resources */,
+				948E5283171DB40E00A4CC17 /* 提交.png in Resources */,
+				948E5284171DB40E00A4CC17 /* 提交@2x.png in Resources */,
+				948E5287171DB46B00A4CC17 /* 奇瑞金融服务.png in Resources */,
+				948E5288171DB46B00A4CC17 /* 奇瑞金融服务@2x.png in Resources */,
+				948E528B171DB4F400A4CC17 /* 返回客户列表.png in Resources */,
+				948E528C171DB4F400A4CC17 /* 返回客户列表@2x.png in Resources */,
+				948E528F171DD8B200A4CC17 /* 车系选择.png in Resources */,
+				948E5290171DD8B200A4CC17 /* 车系选择@2x.png in Resources */,
+				948E529F171DDCC400A4CC17 /* popover-black-bcg-image.png in Resources */,
+				948E52A0171DDCC400A4CC17 /* popover-black-bcg-image@2x.png in Resources */,
+				948E52A1171DDCC400A4CC17 /* popover-black-bottom-arrow-image.png in Resources */,
+				948E52A2171DDCC400A4CC17 /* popover-black-bottom-arrow-image@2x.png in Resources */,
+				948E52A3171DDCC400A4CC17 /* popover-black-left-arrow-image.png in Resources */,
+				948E52A4171DDCC400A4CC17 /* popover-black-left-arrow-image@2x.png in Resources */,
+				948E52A5171DDCC400A4CC17 /* popover-black-right-arrow-image.png in Resources */,
+				948E52A6171DDCC400A4CC17 /* popover-black-right-arrow-image@2x.png in Resources */,
+				948E52A7171DDCC400A4CC17 /* popover-black-top-arrow-image.png in Resources */,
+				948E52A8171DDCC400A4CC17 /* popover-black-top-arrow-image@2x.png in Resources */,
+				948BCDB3171DE0FF00C38A49 /* model_choose_header.png in Resources */,
+				948BCDB4171DE0FF00C38A49 /* model_choose_header@2x.png in Resources */,
+				948BCDC4171DEEFC00C38A49 /* channel.json in Resources */,
+				948BCDC6171DEFFD00C38A49 /* order_type.json in Resources */,
+				948BCDE0171E100800C38A49 /* 上一步.png in Resources */,
+				948BCDE1171E100800C38A49 /* 上一步@2x.png in Resources */,
+				948BCDE2171E100800C38A49 /* 下一步.png in Resources */,
+				948BCDE3171E100800C38A49 /* 下一步@2x.png in Resources */,
+				948BCDE6171E11BA00C38A49 /* 设置管理文字.png in Resources */,
+				948BCDE7171E11BA00C38A49 /* 设置管理文字@2x.png in Resources */,
+				948BCDEA171E14B600C38A49 /* admin_login.png in Resources */,
+				948BCDEB171E14B600C38A49 /* admin_login@2x.png in Resources */,
+				948BCDEE171E168000C38A49 /* 车色添加背景图.png in Resources */,
+				948BCDEF171E168000C38A49 /* 车色添加背景图@2x.png in Resources */,
+				948BCDF2171E168A00C38A49 /* 车型添加背景图.png in Resources */,
+				948BCDF3171E168A00C38A49 /* 车型添加背景图@2x.png in Resources */,
+				948BCDF6171E169900C38A49 /* 车系添加背景图.png in Resources */,
+				948BCDF7171E169900C38A49 /* 车系添加背景图@2x.png in Resources */,
+				948BCDFE171E17E800C38A49 /* 底图0.png in Resources */,
+				948BCDFF171E17E800C38A49 /* 底图0@2x.png in Resources */,
+				948BCE02171E1CF800C38A49 /* 车系添加按钮.png in Resources */,
+				948BCE03171E1CF800C38A49 /* 车系添加按钮@2x.png in Resources */,
+				948BCE06171E1E0E00C38A49 /* 车色添加按钮@2x.png in Resources */,
+				948BCE07171E1E0E00C38A49 /* 车色添加框.png in Resources */,
+				948BCE0A171E1E6A00C38A49 /* 车色添加框.png in Resources */,
+				948BCE0B171E1E6A00C38A49 /* 车色添加框@2x.png in Resources */,
+				948BCE0E171E200900C38A49 /* 车系添加框.png in Resources */,
+				948BCE0F171E200900C38A49 /* 车系添加框@2x.png in Resources */,
+				948BCE12171E212E00C38A49 /* 车型添加按钮.png in Resources */,
+				948BCE13171E212E00C38A49 /* 车型添加按钮@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1322,12 +1563,8 @@
 				9445EF231709CA3A0068D524 /* RWCarColorBrowserController.m in Sources */,
 				9442E6CA170BFCA9005D7FE6 /* RWStuff.m in Sources */,
 				94DBA6AD170C74CF003A8689 /* AutoShowModels.xcdatamodeld in Sources */,
-				94DBA765170C97DE003A8689 /* RWCarColor.m in Sources */,
 				94DBA768170C97DF003A8689 /* RWCarSeries.m in Sources */,
-				94BA6976170D654300D61573 /* RWCarModel.m in Sources */,
 				94BD6801170DC6DE0087CF1E /* RWOrderDayType.m in Sources */,
-				94BD6804170DC6E00087CF1E /* RWChannel.m in Sources */,
-				94BD6807170DC6E00087CF1E /* RWClient.m in Sources */,
 				94F4E3C2170F1D2B00825CE2 /* UIAlertView+Quick.m in Sources */,
 				94F4E3C5170F20F000825CE2 /* RWManager.m in Sources */,
 				94E85CCA170F31E400CE452F /* IdentifierValidator.m in Sources */,
@@ -1353,6 +1590,15 @@
 				9484BB7C1715B9A10022CBA5 /* RWSmallImageCell.m in Sources */,
 				944B70FB171B02F700A284FA /* RWAnimationTabBarController.m in Sources */,
 				948E526B171D895300A4CC17 /* RWHomeVideoController.m in Sources */,
+				948E5293171DDBC200A4CC17 /* RWPopoverBackgroundView.m in Sources */,
+				948E52AF171DDCFF00A4CC17 /* KSCustomPopoverFlipsideViewController.m in Sources */,
+				948E52B0171DDD3F00A4CC17 /* KSCustomPopoverBackgroundView.m in Sources */,
+				948BCDBF171DE8DE00C38A49 /* NSString+Extension.m in Sources */,
+				948BCDC9171E039000C38A49 /* RWClient.m in Sources */,
+				948BCDCC171E039100C38A49 /* RWChannel.m in Sources */,
+				948BCDCF171E0D3A00C38A49 /* RWReadOnlyTabBarController.m in Sources */,
+				948BCDD8171E0F8F00C38A49 /* RWCarColor.m in Sources */,
+				948BCDDB171E0F9000C38A49 /* RWCarModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

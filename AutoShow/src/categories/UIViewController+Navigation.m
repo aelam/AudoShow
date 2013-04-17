@@ -25,7 +25,7 @@
 }
 
 - (IBAction)checkBoxAction:(UIButton *)sender {
-    sender.selected = !sender.selected;
+//    sender.selected = !sender.selected;
     
 }
 

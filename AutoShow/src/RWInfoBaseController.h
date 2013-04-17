@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RWReadOnlyTabBarController.h"
 
 @interface RWInfoBaseController : UIViewController
 

@@ -8,6 +8,7 @@
 
 #import "RWInfoBaseController.h"
 
+
 @interface RWInfoBaseController ()
 
 
@@ -18,7 +19,7 @@
     NSArray *tabTitles;
     
     NSInteger highlightedIndex;
-    UITabBarController *tabBarController;
+    RWReadOnlyTabBarController *tabBarController;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,6 +41,8 @@
     tabBarController = [self.childViewControllers lastObject];
     
     tabBarController.selectedIndex = highlightedIndex;
+    tabBarController.readOnly = false;
+    
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
